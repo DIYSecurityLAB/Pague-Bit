@@ -1,0 +1,56 @@
+{
+  "title": "Perguntas Frequentes",
+  "categories": {
+    "bitcoin": {
+      "title": "Integração com Bitcoin",
+      "items": [
+        {
+          "question": "Como funciona o processo de integração do Bitcoin em minha empresa?",
+          "answer": "O processo começa com uma consultoria personalizada onde avaliamos as necessidades específicas do seu negócio. Em seguida, desenvolvemos um plano de implementação que inclui a configuração do sistema, treinamento da equipe e suporte contínuo."
+        },
+        {
+          "question": "Quais são os requisitos para começar a aceitar Bitcoin?",
+          "answer": "Os requisitos básicos incluem documentação da empresa em dia, conexão à internet estável e dispositivos compatíveis com nosso sistema. Nossa equipe fornece todo o suporte necessário para a configuração inicial."
+        },
+        {
+          "question": "O sistema é seguro contra fraudes?",
+          "answer": "Sim, nosso sistema possui múltiplas camadas de segurança, incluindo verificação KYC, autenticação em dois fatores e monitoramento em tempo real das transações."
+        }
+      ]
+    },
+    "general": {
+      "title": "Perguntas Gerais sobre Bitcoin",
+      "items": [
+        {
+          "question": "O que é Bitcoin?",
+          "answer": "Bitcoin é uma moeda digital descentralizada, que permite transações seguras e transparentes sem a necessidade de intermediários como bancos."
+        },
+        {
+          "question": "Como comprar Bitcoin?",
+          "answer": "Você pode comprar Bitcoin através de corretoras de criptomoedas, plataformas P2P ou diretamente conosco. Oferecemos suporte completo para facilitar sua compra."
+        },
+        {
+          "question": "Bitcoin é legal?",
+          "answer": "Sim, Bitcoin é legal no Brasil. A Receita Federal exige a declaração de criptoativos no Imposto de Renda."
+        }
+      ]
+    },
+    "services": {
+      "title": "Serviços PagueBit",
+      "items": [
+        {
+          "question": "Quais serviços a PagueBit oferece?",
+          "answer": "Oferecemos soluções completas para pessoas físicas e jurídicas, incluindo compra e venda de Bitcoin, carteira digital, processamento de pagamentos, consultoria e suporte técnico."
+        },
+        {
+          "question": "Como a PagueBit pode ajudar minha empresa?",
+          "answer": "Podemos ajudar sua empresa a aceitar Bitcoin como forma de pagamento, reduzir taxas, alcançar novos mercados e modernizar suas operações financeiras."
+        },
+        {
+          "question": "Quais as taxas da PagueBit?",
+          "answer": "Nossas taxas são competitivas e transparentes. Entre em contato conosco para obter uma cotação personalizada."
+        }
+      ]
+    }
+  }
+}
