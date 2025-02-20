@@ -1,0 +1,70 @@
+{
+  "header": {
+    "about": "Sobre Nós",
+    "services": "Serviços",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Pague BIT: Sua Solução Completa em Bitcoin",
+    "subtitle": "Simplificamos o mundo do Bitcoin para empresas e pessoas. Oferecemos soluções seguras, rápidas e fáceis para você comprar, vender, armazenar e usar Bitcoin.",
+    "cta": "Entre em Contato",
+    "forIndividuals": "Para Pessoas Físicas",
+    "forCompanies": "Para Pessoas Jurídicas",
+    "individualDesc": "Controle seu dinheiro com Bitcoin. Compre, venda e use Bitcoin de forma segura e fácil. Invista no futuro financeiro com a Pague BIT.",
+    "companyDesc": "Aceite Bitcoin em seu negócio. Reduza taxas, alcance novos mercados e modernize seus pagamentos. Soluções completas para empresas de todos os tamanhos.",
+    "learnMore": "Saiba Mais"
+  },
+  "features": {
+    "title": "Por Que Escolher a PagueBit?",
+    "trust": {
+      "title": "Confiança e Segurança",
+      "desc": "Priorizamos a segurança dos seus fundos e dados, com tecnologias avançadas de proteção."
+    },
+    "speed": {
+      "title": "Rapidez e Eficiência",
+      "desc": "Transações rápidas e suporte ágil para você aproveitar ao máximo o mundo Bitcoin."
+    },
+    "solutions": {
+      "title": "Soluções Completas",
+      "desc": "Oferecemos tudo que você precisa para comprar, vender, usar e aceitar Bitcoin."
+    },
+    "support": {
+      "title": "Foco no Cliente",
+      "desc": "Nossa equipe está sempre pronta para te ajudar, com atendimento personalizado."
+    }
+  },
+  "bitcoin": {
+    "whatIs": {
+      "title": "O Que é Bitcoin?",
+      "decentralized": {
+        "title": "Moeda Digital Descentralizada",
+        "desc": "Bitcoin é a primeira criptomoeda descentralizada, permitindo transações P2P sem intermediários."
+      },
+      "security": {
+        "title": "Segurança e Blockchain",
+        "desc": "A segurança do Bitcoin é garantida pela tecnologia blockchain, um registro público imutável."
+      },
+      "supply": {
+        "title": "Oferta Limitada e Valor",
+        "desc": "Bitcoin tem fornecimento limitado a 21 milhões, contribuindo para seu potencial de valor."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "name": "Nome",
+    "company": "Empresa",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar Mensagem",
+    "sending": "Enviando..."
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  }
+}

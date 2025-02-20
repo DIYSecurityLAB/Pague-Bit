@@ -1,0 +1,33 @@
+import React from 'react';
+import { WalletOption } from './data';
+
+interface WalletListProps {
+  options: WalletOption[];
+  onSelect: (option: WalletOption) => void;
+}
+
+const WalletList: React.FC<WalletListProps> = ({ options, onSelect }) => {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {options.map((option) => (
+        <button
+          key={option.key}
+          onClick={() => onSelect(option)}
+          disabled={option.disabled}
+          className={`p-4 border rounded-xl transition hover:bg-orange-50 ${
+            option.disabled ? 'opacity-50 cursor-not-allowed' : ''
+          }`}
+        >
+          <strong>{option.title}</strong>
+          {option.description && (
+            <small className="block text-sm text-gray-500 mt-2">
+              {option.description}
+            </small>
+          )}
+        </button>
+      ))}
+    </div>
+  );
+};
+
+export default WalletList;

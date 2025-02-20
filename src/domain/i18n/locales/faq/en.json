@@ -1,0 +1,56 @@
+{
+  "title": "Frequently Asked Questions",
+  "categories": {
+    "bitcoin": {
+      "title": "Bitcoin Integration",
+      "items": [
+        {
+          "question": "How does the Bitcoin integration process work for my company?",
+          "answer": "The process begins with a personalized consultation where we assess your business's specific needs. Then, we develop an implementation plan that includes system configuration, team training, and ongoing support."
+        },
+        {
+          "question": "What are the requirements to start accepting Bitcoin?",
+          "answer": "Basic requirements include up-to-date company documentation, stable internet connection, and devices compatible with our system. Our team provides all necessary support for initial setup."
+        },
+        {
+          "question": "Is the system secure against fraud?",
+          "answer": "Yes, our system has multiple security layers, including KYC verification, two-factor authentication, and real-time transaction monitoring."
+        }
+      ]
+    },
+    "general": {
+      "title": "General Bitcoin Questions",
+      "items": [
+        {
+          "question": "What is Bitcoin?",
+          "answer": "Bitcoin is a decentralized digital currency that enables secure and transparent transactions without the need for intermediaries like banks."
+        },
+        {
+          "question": "How to buy Bitcoin?",
+          "answer": "You can buy Bitcoin through cryptocurrency exchanges, P2P platforms, or directly with us. We offer complete support to facilitate your purchase."
+        },
+        {
+          "question": "Is Bitcoin legal?",
+          "answer": "Yes, Bitcoin is legal in most countries. Many jurisdictions require crypto assets to be declared for tax purposes."
+        }
+      ]
+    },
+    "services": {
+      "title": "PagueBit Services",
+      "items": [
+        {
+          "question": "What services does PagueBit offer?",
+          "answer": "We offer complete solutions for individuals and businesses, including Bitcoin buying and selling, digital wallet, payment processing, consulting, and technical support."
+        },
+        {
+          "question": "How can PagueBit help my business?",
+          "answer": "We can help your business accept Bitcoin as a payment method, reduce fees, reach new markets, and modernize your financial operations."
+        },
+        {
+          "question": "What are PagueBit's fees?",
+          "answer": "Our fees are competitive and transparent. Contact us to get a personalized quote."
+        }
+      ]
+    }
+  }
+}

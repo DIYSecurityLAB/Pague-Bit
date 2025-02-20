@@ -1,0 +1,70 @@
+{
+  "header": {
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Pague BIT: Your Complete Bitcoin Solution",
+    "subtitle": "We simplify the Bitcoin world for businesses and individuals. We offer secure, fast, and easy solutions to buy, sell, store, and use Bitcoin.",
+    "cta": "Contact Us",
+    "forIndividuals": "For Individuals",
+    "forCompanies": "For Companies",
+    "individualDesc": "Control your money with Bitcoin. Buy, sell, and use Bitcoin safely and easily. Invest in the financial future with Pague BIT.",
+    "companyDesc": "Accept Bitcoin in your business. Reduce fees, reach new markets, and modernize your payments. Complete solutions for companies of all sizes.",
+    "learnMore": "Learn More"
+  },
+  "features": {
+    "title": "Why Choose PagueBit?",
+    "trust": {
+      "title": "Trust and Security",
+      "desc": "We prioritize the security of your funds and data with advanced protection technologies."
+    },
+    "speed": {
+      "title": "Speed and Efficiency",
+      "desc": "Fast transactions and agile support to help you make the most of the Bitcoin world."
+    },
+    "solutions": {
+      "title": "Complete Solutions",
+      "desc": "We offer everything you need to buy, sell, use, and accept Bitcoin."
+    },
+    "support": {
+      "title": "Customer Focus",
+      "desc": "Our team is always ready to help you with personalized service."
+    }
+  },
+  "bitcoin": {
+    "whatIs": {
+      "title": "What is Bitcoin?",
+      "decentralized": {
+        "title": "Decentralized Digital Currency",
+        "desc": "Bitcoin is the first decentralized cryptocurrency, enabling P2P transactions without intermediaries."
+      },
+      "security": {
+        "title": "Security and Blockchain",
+        "desc": "Bitcoin security is guaranteed by blockchain technology, an immutable public ledger."
+      },
+      "supply": {
+        "title": "Limited Supply and Value",
+        "desc": "Bitcoin has a limited supply of 21 million, contributing to its value potential."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "company": "Company",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending..."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English",
+    "es": "Español"
+  }
+}
