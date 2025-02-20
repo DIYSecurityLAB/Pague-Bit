@@ -1,15 +1,14 @@
 import { motion } from 'framer-motion';
 import { Bitcoin, Wallet, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import BitcoinPrice from '../bitcoinprice/BitcoinPrice';
 import { useHero } from './useHero';
 
 const Hero = () => {
   const { t, getLocalizedPath } = useHero();
 
   return (
-    <section className="bg-white text-gray-800 py-12 md:py-20 relative overflow-hidden mt-16">
-      <div className="absolute inset-0 z-0">
+<section className="bg-white text-gray-800 py-12 md:py-20 relative overflow-hidden">
+<div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1920&q=80"
           alt="Bitcoin Background"
@@ -67,10 +66,6 @@ const Hero = () => {
             Compre Bitcoin
           </Link>
         </motion.div>
-
-        <div className='mt-6'>
-          <BitcoinPrice />
-        </div>
       </div>
     </section>
   );

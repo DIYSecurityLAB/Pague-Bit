@@ -1,11 +1,9 @@
-// wallet/WalletDashboard.tsx
 import React, { useState } from 'react';
 import WalletFilterSidebar, { SelectedFilters } from './WalletFilterSidebar';
 import WalletTable from './WalletTable';
 import { wallets, Wallet } from './walletData';
 
 const RatingLegend: React.FC = () => {
-  // O mapeamento utiliza as cores definidas para os ratings (B = Bom, A = Aceitável, C = Cuidadoso, N = Neutro)
   const legendItems = [
     { label: 'Bom (B)', color: 'bg-green-500' },
     { label: 'Aceitável (A)', color: 'bg-yellow-500' },
@@ -35,7 +33,6 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({ initialFilters }) => 
     setSelectedFilters(filters);
   };
 
-  // Filtra as carteiras de acordo com os filtros selecionados.
   const filteredWallets: Wallet[] = wallets.filter((wallet) => {
     const matchOs =
       selectedFilters.os.length === 0 ||
@@ -48,20 +45,17 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({ initialFilters }) => 
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center py-8">
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex w-full max-w-6xl">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-6xl">
         {/* Sidebar com filtros */}
-        <div className="w-1/4 border-r border-gray-200">
+        <div className="w-full md:w-1/4 border-b md:border-b-0 md:border-r border-gray-200">
           <WalletFilterSidebar
             selectedFilters={selectedFilters}
             onFilterChange={handleFilterChange}
           />
         </div>
         {/* Conteúdo principal */}
-        <div className="w-3/4 p-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Carteiras Disponíveis
-          </h2>
-          {/* Legenda para os ratings */}
+        <div className="w-full md:w-3/4 p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Carteiras Disponíveis</h2>
           <RatingLegend />
           <WalletTable wallets={filteredWallets} />
         </div>

@@ -1,4 +1,3 @@
-// wallet/Step4.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import WalletList from '../WalletList';
@@ -30,11 +29,11 @@ const Step4: React.FC<Step4Props> = ({ onSelect, onFinish }) => {
       transition={{ duration: 0.5 }}
     >
       <h2 className="text-2xl font-bold mb-4">
-        Qual recurso você está procurando?{' '}
+        Qual recurso adicional você procura?{' '}
         <span className="text-sm text-gray-500">(Opcional)</span>
       </h2>
       <p className="mb-6 text-gray-600">
-        Selecione o recurso que deseja ter em sua carteira.
+        Selecione um recurso que agregue valor à sua carteira.
       </p>
       <WalletList options={step4Options} onSelect={handleSelect} />
       <div className="mt-8 flex justify-end">

@@ -1,14 +1,12 @@
-// wallet/WalletFilterSidebar.tsx
 import React from 'react';
 import { osFilterGroups, usageFilters, FilterOption, FilterGroup } from './walletData';
 import { FaAndroid, FaApple, FaLinux, FaWindows, FaMicrochip } from 'react-icons/fa';
 
 export interface SelectedFilters {
-  os: string[];    // Agora as chaves são: 'A', 'I', 'L', 'M', 'W', 'H'
+  os: string[];    // 'A', 'I', 'L', 'M', 'W', 'H'
   usage: string[]; // 'novo' ou 'experiente'
 }
 
-// Mapeamento de ícones para cada sistema operacional (usando as novas abreviações)
 const osIcons: Record<string, JSX.Element> = {
   A: <FaAndroid size={24} />,
   I: <FaApple size={24} />,
@@ -101,11 +99,12 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({ selectedFilte
         </div>
       </div>
 
+      {/* Botão para limpar filtros */}
       <button
         onClick={() => onFilterChange({ os: [], usage: [] })}
         className="text-blue-600 hover:underline"
       >
-        Ignorar tutorial
+        Limpar Filtros
       </button>
     </div>
   );

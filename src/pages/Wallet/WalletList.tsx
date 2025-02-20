@@ -1,4 +1,3 @@
-// wallet/WalletList.tsx
 import React from 'react';
 import { WalletOption } from './data';
 
@@ -9,7 +8,7 @@ interface WalletListProps {
 
 const WalletList: React.FC<WalletListProps> = ({ options, onSelect }) => {
   return (
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {options.map((option) => (
         <button
           key={option.key}

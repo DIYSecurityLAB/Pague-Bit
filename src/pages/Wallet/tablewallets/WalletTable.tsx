@@ -1,13 +1,6 @@
-// wallet/WalletTable.tsx
 import React from 'react';
 import { Wallet } from './walletData';
 
-interface WalletTableProps {
-  wallets: Wallet[];
-}
-
-// Atualize o mapeamento para ratings usando as novas abreviações:
-// 'B' = Bom, 'A' = Aceitável, 'C' = Cuidadoso, 'N' = Neutro
 const getRatingColor = (rating: string): string => {
   const r = rating.toUpperCase();
   switch (r) {
@@ -37,6 +30,10 @@ const RatingCell: React.FC<RatingCellProps> = ({ rating }) => {
     ></div>
   );
 };
+
+interface WalletTableProps {
+  wallets: Wallet[];
+}
 
 const WalletTable: React.FC<WalletTableProps> = ({ wallets }) => {
   return (

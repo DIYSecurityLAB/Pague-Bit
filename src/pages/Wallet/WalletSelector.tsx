@@ -1,4 +1,3 @@
-// wallet/WalletSelector.tsx
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Step1 from './steps/Step1';
@@ -25,41 +24,49 @@ const WalletSelector: React.FC = () => {
   });
   const [tutorialCompleted, setTutorialCompleted] = useState<boolean>(false);
 
+  const skipTutorial = () => {
+    setTutorialCompleted(true);
+  };
+
   const handleSelect = (key: keyof TutorialAnswers, value: string) => {
+    // Se a opção for "ignorar" (pular tutorial), encerra o tutorial imediatamente.
+    if (value === 'ignorar') {
+      setTutorialCompleted(true);
+      return;
+    }
     setAnswers((prev) => ({ ...prev, [key]: value }));
     if (step < 4) {
       setStep((prev) => prev + 1);
     } else {
-      // Quando finalizar o tutorial (última etapa) marca como concluído
       setTutorialCompleted(true);
     }
   };
 
-  // Mapeia as respostas do tutorial para os filtros iniciais da dashboard.
+  // Mapeia as respostas do tutorial para os filtros iniciais (usando as chaves corretas)
   const getInitialFilters = (): SelectedFilters => {
     let osFilters: string[] = [];
     let usageFilters: string[] = [];
     
     if (answers.sistema) {
-      switch(answers.sistema) {
+      switch (answers.sistema) {
         case 'celular-android':
-          osFilters.push('android');
+          osFilters.push('A');
           break;
         case 'celular-ios':
-          osFilters.push('ios');
+          osFilters.push('I');
           break;
         case 'desktop':
-          osFilters.push('linux', 'mac', 'windows');
+          osFilters.push('L', 'W', 'M');
           break;
         case 'hardware':
-          osFilters.push('hardware');
+          osFilters.push('H');
           break;
         default:
           break;
       }
     }
     if (answers.conhecimento) {
-      switch(answers.conhecimento) {
+      switch (answers.conhecimento) {
         case 'novo':
           usageFilters.push('novo');
           break;
@@ -79,7 +86,14 @@ const WalletSelector: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6 relative">
+      {/* Botão permanente "Pular Tutorial" */}
+      <button
+        onClick={skipTutorial}
+        className="absolute top-4 right-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+      >
+        Pular Tutorial
+      </button>
       <div className="max-w-4xl w-full bg-white p-8 rounded-xl shadow-lg">
         <AnimatePresence mode="wait">
           {step === 1 && <Step1 onSelect={handleSelect} />}

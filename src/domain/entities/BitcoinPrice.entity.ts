@@ -1,6 +1,9 @@
 export interface BitcoinPrice {
   usd?: number;
   brl?: number;
+  eur?: number;
+  cny?: number;
+  [key: string]: number | undefined;
 }
 
 export interface HistoricalData {
@@ -9,8 +12,5 @@ export interface HistoricalData {
 }
 
 export interface BitcoinHistoricalData {
-  [key: string]: {
-    categories: number[];
-    series: number[];
-  };
+  [key: string]: HistoricalData;
 }

@@ -1,4 +1,3 @@
-// wallet/Step3.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import WalletList from '../WalletList';
@@ -29,11 +28,11 @@ const Step3: React.FC<Step3Props> = ({ onSelect }) => {
       transition={{ duration: 0.5 }}
     >
       <h2 className="text-2xl font-bold mb-4">
-        Qual critério é importante para você?{' '}
+        Qual critério é mais importante para você?{' '}
         <span className="text-sm text-gray-500">(Opcional)</span>
       </h2>
       <p className="mb-6 text-gray-600">
-        Selecione um critério que seja essencial para sua escolha.
+        Escolha o aspecto que você considera essencial ao selecionar sua carteira.
       </p>
       <WalletList options={step3Options} onSelect={handleSelect} />
     </motion.div>

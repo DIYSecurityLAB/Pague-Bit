@@ -3,7 +3,7 @@ import { BitcoinPrice, BitcoinHistoricalData } from '../../domain/entities/Bitco
 const COINGECKO_API_BASE_URL = 'https://api.coingecko.com/api/v3';
 
 export class CoinGeckoDataSource {
-  async getCurrentPrice(currencies: string[] = ['brl', 'usd']): Promise<BitcoinPrice> {
+  async getCurrentPrice(currencies: string[] = ['brl', 'usd', 'eur', 'cny']): Promise<BitcoinPrice> {
     try {
       const currenciesString = currencies.join(',');
       const response = await fetch(`${COINGECKO_API_BASE_URL}/simple/price?ids=bitcoin&vs_currencies=${currenciesString}`);
@@ -22,7 +22,7 @@ export class CoinGeckoDataSource {
     }
   }
 
-  async getHistoricalData(currencies: string[] = ['brl', 'usd'], timePeriod: string = '7d'): Promise<BitcoinHistoricalData> {
+  async getHistoricalData(currencies: string[] = ['brl', 'usd', 'eur', 'cny']): Promise<BitcoinHistoricalData> {
     try {
       const now = Date.now();
       const from = now - (7 * 24 * 60 * 60 * 1000);

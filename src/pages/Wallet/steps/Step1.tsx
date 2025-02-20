@@ -1,4 +1,3 @@
-// wallet/Step1.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import WalletList from '../WalletList';
@@ -28,9 +27,9 @@ const Step1: React.FC<Step1Props> = ({ onSelect }) => {
       exit="exit"
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl font-bold mb-4">Qual seu Sistema Operacional?</h2>
+      <h2 className="text-2xl font-bold mb-4">Escolha seu Sistema Operacional</h2>
       <p className="mb-6 text-gray-600">
-        Selecione a opção que melhor descreve o dispositivo que você utiliza.
+        Selecione a opção que corresponde ao dispositivo que você utiliza.
       </p>
       <WalletList options={step1Options} onSelect={handleSelect} />
     </motion.div>
