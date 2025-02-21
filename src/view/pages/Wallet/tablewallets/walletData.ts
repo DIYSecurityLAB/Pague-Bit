@@ -436,6 +436,48 @@ export const wallets: Wallet[] = [
       taxas: 'A',
     },
   },
+  {
+    id: 31,
+    name: 'Krux',
+    os: ['H'],
+    usage: 'experiente',
+    ratings: {
+      controle: 'B',      // Alto controle do usuário
+      validacao: 'B',     // Suporta validação completa
+      transparencia: 'B', // Código aberto e auditável
+      ambiente: 'C',      // Requer montagem DIY
+      privacidade: 'B',   // Não armazena dados do usuário
+      taxas: 'A',         // Permite controle avançado de taxas
+    },
+  },
+  {
+    id: 32,
+    name: 'Jade',
+    os: ['H'],
+    usage: 'novo',
+    ratings: {
+      controle: 'A',      // Bom controle do usuário
+      validacao: 'A',     // Suporta validação completa
+      transparencia: 'B', // Código aberto, mas fabricado por empresa
+      ambiente: 'B',      // Fácil de usar, mas requer confiança no fabricante
+      privacidade: 'A',   // Suporta uso sem estado
+      taxas: 'A',         // Permite controle de taxas
+    },
+  },
+  {
+    id: 33,
+    name: 'SeedSigner',
+    os: ['H'],
+    usage: 'experiente',
+    ratings: {
+      controle: 'B',      // Alto controle do usuário
+      validacao: 'B',     // Suporta validação completa
+      transparencia: 'B', // Código aberto e auditável
+      ambiente: 'C',      // Requer montagem DIY
+      privacidade: 'B',   // Não armazena dados do usuário
+      taxas: 'A',         // Permite controle avançado de taxas
+    },
+  },
 ];
 
 export interface FilterOption {

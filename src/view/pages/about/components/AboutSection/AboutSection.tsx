@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { features } from './arrays';
 import { useAboutSection } from './useAboutSection';
@@ -6,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const AboutSection = () => {
   const { t } = useTranslation();
-  const { controls, variants } = useAboutSection();
+  const {   variants } = useAboutSection();
 // tem uma gambiarra enorme envolvendo o arquiv ode traducao e o arrays... futuramente va itirar o arrays, mas agora depende dele para a featurekey
   return (
     <section className="py-16">

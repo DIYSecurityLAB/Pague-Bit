@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 
 const ServicesSection = () => {
   const { t } = useTranslation();
-  const { controls, variants } = useServicesSection();
+  const {   variants } = useServicesSection();
   const { services } = useServicesContent();
 
   return (
-    <section className="py-16">
+    <section className="py-16 mt-[-80px]">
       <div className="container mx-auto px-4">
         <motion.div
           className="max-w-4xl mx-auto text-center"

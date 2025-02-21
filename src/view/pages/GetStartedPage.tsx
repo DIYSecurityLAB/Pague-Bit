@@ -4,6 +4,7 @@ import { Bitcoin, Building2, ArrowRight, ShoppingCart } from 'lucide-react';
 import { ROUTES } from '../routes/Routes';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../domain/i18n';
+import BackButton from '../components/BackButton';
 
 const GetStartedPage = () => {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ const GetStartedPage = () => {
 
   return (
     <div className="min-h-screen py-24 bg-white">
+           <BackButton/>
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center max-w-3xl mx-auto mb-16"

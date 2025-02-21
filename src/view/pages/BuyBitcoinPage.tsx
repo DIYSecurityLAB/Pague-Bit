@@ -2,12 +2,14 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import alfredlogo from "../assets/AlfredComercial.png";
+import BackButton from '../components/BackButton';
 
 const BuyBitcoinPage = () => {
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen bg-white">
+           <BackButton/>
       <main className="container mx-auto px-4 py-12 space-y-16">
         {/* Título da Página */}
         <motion.div

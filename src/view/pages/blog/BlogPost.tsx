@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useBlogPost } from './useBlogPost';
+import BackButton from '../../components/BackButton';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
@@ -15,6 +16,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen py-24">
+       <BackButton/>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
