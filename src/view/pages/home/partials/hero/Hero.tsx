@@ -1,14 +1,16 @@
 import { motion } from 'framer-motion';
 import { Bitcoin, Wallet, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useHero } from './useHero';
 
 const Hero = () => {
-  const { t, getLocalizedPath } = useHero();
+  const { t } = useTranslation();
+  const { getLocalizedPath } = useHero();
 
   return (
-<section className="bg-white text-gray-800 py-12 md:py-20 relative overflow-hidden">
-<div className="absolute inset-0 z-0">
+    <section className="bg-white text-gray-800 py-12 md:py-20 relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1920&q=80"
           alt="Bitcoin Background"
@@ -47,7 +49,7 @@ const Hero = () => {
             className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-2 transition-colors"
           >
             <Bitcoin className="h-5 w-5" />
-            Comece Agora Mesmo a Usar
+            {t('hero.getStarted')}
           </Link>
           
           <Link
@@ -55,7 +57,7 @@ const Hero = () => {
             className="bg-white hover:bg-orange-50 text-orange-500 font-bold py-4 px-8 rounded-xl flex items-center gap-2 border-2 border-orange-500 transition-colors"
           >
             <Wallet className="h-5 w-5" />
-            Escolha sua Carteira
+            {t('hero.chooseWallet')}
           </Link>
           
           <Link
@@ -63,7 +65,7 @@ const Hero = () => {
             className="bg-orange-100 hover:bg-orange-200 text-orange-600 font-bold py-4 px-8 rounded-xl flex items-center gap-2 transition-colors"
           >
             <ShoppingCart className="h-5 w-5" />
-            Compre Bitcoin
+            {t('hero.buyBitcoin')}
           </Link>
         </motion.div>
       </div>

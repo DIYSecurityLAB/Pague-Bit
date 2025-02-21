@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Bitcoin, Building2, ArrowRight, ShoppingCart} from 'lucide-react';
-import { ROUTES } from '../routes/Routes'; 
+import { Bitcoin, Building2, ArrowRight, ShoppingCart } from 'lucide-react';
+import { ROUTES } from '../routes/Routes';
+import { useTranslation } from 'react-i18next';
 import i18n from '../../domain/i18n';
 
 const GetStartedPage = () => {
-  const currentLang = i18n.language; 
+  const { t } = useTranslation();
+  const currentLang = i18n.language;
 
   return (
     <div className="min-h-screen py-24 bg-white">
@@ -17,10 +19,10 @@ const GetStartedPage = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Comece a Usar Bitcoin
+            {t("getStartedPage.heroTitle")}
           </h1>
           <p className="text-xl text-gray-600">
-            Escolha o perfil que melhor se adequa às suas necessidades e comece sua jornada no mundo do Bitcoin.
+            {t("getStartedPage.heroDescription")}
           </p>
         </motion.div>
 
@@ -36,23 +38,24 @@ const GetStartedPage = () => {
             <div className="bg-orange-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
               <Bitcoin className="h-8 w-8 text-orange-500" />
             </div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Para Pessoas Físicas</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              {t("getStartedPage.pf.title")}
+            </h2>
             <p className="text-gray-600 mb-6">
-              Comece sua jornada com Bitcoin de forma simples e segura. Ideal para investidores
-              individuais e entusiastas que querem entrar no mundo das criptomoedas.
+              {t("getStartedPage.pf.description")}
             </p>
             <ul className="space-y-3 mb-8 text-gray-600">
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                Compre e venda Bitcoin facilmente
+                {t("getStartedPage.pf.features.0")}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                Carteira segura e intuitiva
+                {t("getStartedPage.pf.features.1")}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                Suporte personalizado
+                {t("getStartedPage.pf.features.2")}
               </li>
             </ul>
 
@@ -61,14 +64,14 @@ const GetStartedPage = () => {
               className="flex items-center justify-center gap-2 bg-orange-50 text-orange-600 px-6 py-2 rounded-xl font-semibold hover:bg-orange-100 transition-colors w-full"
             >
               <ShoppingCart className="h-5 w-5" />
-              Comprar BTC
+              {t("getStartedPage.pf.buyButton")}
             </Link>
 
             <Link
               to={ROUTES.pf.call(currentLang)}
               className="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors w-full justify-center mt-4"
             >
-              Saiba Mais
+              {t("getStartedPage.pf.moreButton")}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </motion.div>
@@ -84,23 +87,24 @@ const GetStartedPage = () => {
             <div className="bg-orange-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
               <Building2 className="h-8 w-8 text-orange-500" />
             </div>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Para Empresas</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800">
+              {t("getStartedPage.pj.title")}
+            </h2>
             <p className="text-gray-600 mb-6">
-              Soluções completas para empresas que desejam integrar Bitcoin em seus negócios.
-              Ideal para comerciantes, prestadores de serviços e empresas inovadoras.
+              {t("getStartedPage.pj.description")}
             </p>
             <ul className="space-y-3 mb-8 text-gray-600">
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                Aceite pagamentos em Bitcoin
+                {t("getStartedPage.pj.features.0")}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                Gestão financeira completa
+                {t("getStartedPage.pj.features.1")}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                Integração com sistemas existentes
+                {t("getStartedPage.pj.features.2")}
               </li>
             </ul>
 
@@ -109,14 +113,14 @@ const GetStartedPage = () => {
               className="flex items-center justify-center gap-2 bg-orange-50 text-orange-600 px-6 py-2 rounded-xl font-semibold hover:bg-orange-100 transition-colors w-full"
             >
               <ShoppingCart className="h-5 w-5" />
-              Comprar BTC
+              {t("getStartedPage.pj.buyButton")}
             </Link>
 
             <Link
               to={ROUTES.pj.call(currentLang)}
               className="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors w-full justify-center mt-4"
             >
-              Saiba Mais
+              {t("getStartedPage.pj.moreButton")}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </motion.div>

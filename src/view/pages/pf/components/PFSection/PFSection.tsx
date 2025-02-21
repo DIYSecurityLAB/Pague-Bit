@@ -1,10 +1,13 @@
-import { motion } from 'framer-motion';
-import { Bitcoin, ArrowRight } from 'lucide-react';
-import { features, benefits } from './arrays';
-import { usePFSection } from './usePFSection';
+import { motion } from "framer-motion";
+import { Bitcoin, ArrowRight } from "lucide-react";
+import { usePFContent } from "./arrays";
+import { usePFSection } from "./usePFSection";
+import { useTranslation } from "react-i18next";
 
 const PFSection = () => {
+  const { t } = useTranslation();
   const { handleContactClick } = usePFSection();
+  const { features, benefits } = usePFContent();
 
   return (
     <div className="min-h-screen">
@@ -20,7 +23,7 @@ const PFSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Bitcoin para Você
+              {t("pf.heroTitle")}
             </motion.h1>
             <motion.p
               className="text-xl mb-8 text-gray-600"
@@ -28,8 +31,7 @@ const PFSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Descubra como o Bitcoin pode revolucionar sua vida financeira com mais liberdade,
-              segurança e praticidade em suas transações diárias.
+              {t("pf.heroDescription")}
             </motion.p>
           </div>
         </div>
@@ -66,7 +68,7 @@ const PFSection = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-16 text-center relative">
               <span className="relative text-gray-800">
-                Por que escolher Bitcoin?
+                {t("pf.whyChooseBitcoin")}
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-orange-500"></div>
               </span>
             </h2>
@@ -93,18 +95,15 @@ const PFSection = () => {
           <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-12 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639322537504-6427a16b0a28')] bg-cover bg-center opacity-10"></div>
             <div className="relative">
-              <h2 className="text-4xl font-bold mb-6">Comece Agora</h2>
-              <p className="text-xl mb-8 text-orange-50">
-                Descubra como o Bitcoin pode transformar sua vida financeira.
-                Nossa equipe está pronta para ajudar você a começar.
-              </p>
+              <h2 className="text-4xl font-bold mb-6">{t("pf.ctaTitle")}</h2>
+              <p className="text-xl mb-8 text-orange-50">{t("pf.ctaDescription")}</p>
               <motion.button
                 onClick={handleContactClick}
                 className="bg-white text-orange-500 px-8 py-4 rounded-xl font-semibold hover:bg-orange-50 transition-colors inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                Entre em Contato
+                {t("pf.contactButton")}
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </div>

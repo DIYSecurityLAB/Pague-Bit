@@ -1,0 +1,45 @@
+{
+    "heroTitle": "Bitcoin para Ti",
+    "heroDescription": "La mejor manera de usar Bitcoin en tu día a día.",
+    "whyChooseBitcoin": "¿Por qué elegir Bitcoin?",
+    "ctaTitle": "Comienza ahora con Bitcoin",
+    "ctaDescription": "Facilitamos tu entrada en el mundo de Bitcoin de forma simple y segura.",
+    "contactButton": "Ponte en contacto",
+    "features": {
+      "mobilePayments": {
+        "title": "Pagos vía Celular",
+        "description": "Realiza transacciones en Bitcoin de forma simple y rápida a través de tu smartphone. Simplemente escanea el código QR y confirma el pago."
+      },
+      "security": {
+        "title": "Seguridad Máxima",
+        "description": "Tus transacciones están protegidas por criptografía avanzada. Ten el control total de tus fondos con nuestra billetera digital segura."
+      },
+      "wallet": {
+        "title": "Billetera Digital",
+        "description": "Administra tus bitcoins con facilidad a través de nuestra billetera digital intuitiva. Consulta tu saldo, historial y mucho más."
+      },
+      "buySell": {
+        "title": "Compra y Venta",
+        "description": "Compra y vende Bitcoin de forma segura, con las mejores tasas del mercado y soporte personalizado."
+      },
+      "privacy": {
+        "title": "Privacidad",
+        "description": "Mantén tu información financiera protegida. Con Bitcoin, tienes control total sobre tus datos."
+      }
+    },
+    "benefits": {
+      "financialFreedom": {
+        "title": "Libertad Financiera",
+        "description": "Con Bitcoin, tienes control total sobre tu dinero. Realiza transacciones 24/7, sin límites ni restricciones bancarias."
+      },
+      "security": {
+        "title": "Seguridad Garantizada",
+        "description": "La tecnología blockchain garantiza la seguridad de tus transacciones. Tus bitcoins están protegidos por criptografía avanzada."
+      },
+      "convenience": {
+        "title": "Practicidad",
+        "description": "Envía y recibe pagos de forma rápida y fácil, usando solo tu smartphone."
+      }
+    }
+  }
+  

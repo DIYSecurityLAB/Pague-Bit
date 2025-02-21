@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import WalletList from '../WalletList';
-import { step2Options, WalletOption } from '../data';
+import { useWalletOptions, WalletOption } from '../data';
+import { useTranslation } from 'react-i18next';
 
 interface Step2Props {
   onSelect: (key: 'conhecimento', value: string) => void;
@@ -14,6 +15,9 @@ const containerVariants = {
 };
 
 const Step2: React.FC<Step2Props> = ({ onSelect }) => {
+  const { t } = useTranslation();
+  const { step2Options } = useWalletOptions();
+
   const handleSelect = (option: WalletOption) => {
     onSelect('conhecimento', option.key);
   };
@@ -27,10 +31,8 @@ const Step2: React.FC<Step2Props> = ({ onSelect }) => {
       exit="exit"
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl font-bold mb-4">Qual seu nível de conhecimento sobre Bitcoin?</h2>
-      <p className="mb-6 text-gray-600">
-        Selecione a opção que melhor reflete sua experiência.
-      </p>
+      <h2 className="text-2xl font-bold mb-4">{t("wallet.step2.title")}</h2>
+      <p className="mb-6 text-gray-600">{t("wallet.step2.description")}</p>
       <WalletList options={step2Options} onSelect={handleSelect} />
     </motion.div>
   );

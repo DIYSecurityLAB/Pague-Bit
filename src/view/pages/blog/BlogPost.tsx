@@ -7,6 +7,7 @@ const BlogPost = () => {
   const navigate = useNavigate();
   const { post } = useBlogPost(id);
 
+
   if (!post) {
     navigate('/');
     return null;

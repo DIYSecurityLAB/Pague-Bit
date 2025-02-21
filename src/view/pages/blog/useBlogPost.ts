@@ -1,15 +1,21 @@
 import { useState, useEffect } from 'react';
-import blogPosts from './data/blogPosts';
+import { useTranslation } from 'react-i18next';
 
 export const useBlogPost = (id: string | undefined) => {
-  const [post, setPost] = useState<typeof blogPosts[0] | undefined>();
+  const [post, setPost] = useState<{ title: string; date: string; content: string } | undefined>();
+  const { t } = useTranslation();
 
   useEffect(() => {
+    console.log(t(`faq.categories.bitcoin.title`))
     if (id) {
-      const foundPost = blogPosts.find(p => p.id === id);
-      setPost(foundPost);
+      const translatedPost = {
+        title: t(`blog.posts.${id}.title`),
+        date: t(`blog.posts.${id}.date`),
+        content: t(`blog.posts.${id}.content`),
+      };
+      setPost(translatedPost);
     }
-  }, [id]);
+  }, [id, t]);
 
   return { post };
 };

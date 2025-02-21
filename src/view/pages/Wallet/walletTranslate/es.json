@@ -1,0 +1,125 @@
+{
+    "step1": {
+      "title": "Elige tu Sistema Operativo",
+      "description": "Selecciona la opción que corresponde al dispositivo que utilizas."
+    },
+    "step2": {
+      "title": "¿Cuál es tu nivel de conocimiento sobre Bitcoin?",
+      "description": "Selecciona la opción que mejor refleje tu experiencia."
+    },
+    "step3": {
+      "title": "¿Qué criterio es más importante para ti?",
+      "optional": "Opcional",
+      "description": "Elige el aspecto que consideras esencial al seleccionar tu monedero."
+    },
+    "step4": {
+      "title": "¿Qué función adicional buscas?",
+      "optional": "Opcional",
+      "description": "Selecciona una función que agregue valor a tu monedero.",
+      "button": "Ver resultados"
+    },
+    "dashboard": {
+      "title": "Monederos Disponibles"
+    },
+    "ratingLegend": {
+      "good": "Bueno (B)",
+      "acceptable": "Aceptable (A)",
+      "cautious": "Cauteloso (C)",
+      "neutral": "Neutral (N)"
+    },
+    "sidebar": {
+      "filters": {
+        "title": "Filtros",
+        "osTitle": "Sistema Operativo",
+        "usageTitle": "Tipo de Uso",
+        "clear": "Limpiar Filtros"
+      }
+    },
+    "table": {
+      "wallet": "Monedero",
+      "controle": "Control",
+      "validation": "Validación",
+      "transparency": "Transparencia",
+      "environment": "Ambiente",
+      "privacy": "Privacidad",
+      "fees": "Tarifas"
+    },
+    "step1Options": {
+      "celular-android": {
+        "title": "Monederos para Móvil - Android",
+        "description": "Portátil y conveniente, ideal para transacciones cara a cara. Usa códigos QR para transacciones rápidas."
+      },
+      "celular-ios": {
+        "title": "Monederos para Móvil - iOS",
+        "description": "Portátil y conveniente, ideal para transacciones cara a cara. Usa códigos QR para transacciones rápidas."
+      },
+      "desktop": {
+        "title": "Monederos para Computadora",
+        "description": "Entorno que permite control total sobre los fondos. Puede ofrecer soporte a full nodes o monederos físicos, pero está sujeto a malware."
+      },
+      "hardware": {
+        "title": "Monederos Físicos (Hardware)",
+        "description": "Una de las formas más seguras de almacenar fondos, ideal para grandes cantidades. Menos práctico para uso diario."
+      }
+    },
+    "step2Options": {
+      "novo": {
+        "title": "plant & bitcoin (Nuevo)",
+        "description": "Mostrar monederos ideales para nuevos usuarios."
+      },
+      "experiente": {
+        "title": "trees & bitcoin (Con experiencia)",
+        "description": "Mostrar todos los monederos disponibles."
+      },
+      "ignorar": {
+        "title": "Omitir Tutorial"
+      }
+    },
+    "step3Options": {
+      "controle": {
+        "title": "Control",
+        "description": "Control total sobre tus bitcoins, sin depender de terceros."
+      },
+      "validacao": {
+        "title": "Validación",
+        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
+      },
+      "transparencia": {
+        "title": "Transparencia",
+        "description": "Código abierto y desarrollo determinístico."
+      },
+      "ambiente": {
+        "title": "Ambiente",
+        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
+      },
+      "privacidade": {
+        "title": "Privacidad",
+        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
+      },
+      "taxas": {
+        "title": "Tarifas",
+        "description": "Control total sobre las tarifas pagadas a la red Bitcoin."
+      },
+      "ignorar": {
+        "title": "Omitir Tutorial"
+      }
+    },
+    "step4Options": {
+      "2fa": {
+        "title": "2FA",
+        "description": "Autenticación de dos factores para seguridad adicional."
+      },
+      "bech32": {
+        "title": "Bech32",
+        "description": "Formato de dirección especial con SegWit para transacciones rápidas."
+      },
+      "fullnode": {
+        "title": "Full Node",
+        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
+      },
+      "ignorar": {
+        "title": "Omitir Tutorial"
+      }
+    }
+  }
+  

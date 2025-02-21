@@ -1,31 +1,21 @@
 import { motion } from 'framer-motion';
 import { socialLinks } from './arrays';
 import { useContactSection } from './useContactSection';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const { formData, isLoading, handleSubmit, handleChange } = useContactSection();
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-white">
-      <div className="w-full max-w-6xl p-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
-          {/* Left Side: Logo and Social Links */}
+    <section className="flex items-start justify-center bg-white p-4  ">
+      <div className="w-full max-w-7xl mx-auto p-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          {/* Lado Esquerdo: Redes Sociais */}
           <aside className="col-span-full md:col-span-5 flex flex-col items-center justify-center md:pr-8">
             <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <img
-                src="/paguebit-logo.png"
-                alt="PagueBit Logo"
-                className="w-56 mb-8 md:mb-12"
-              />
-            </motion.div>
-
-            <motion.div
-              className="flex flex-col gap-4 w-full max-w-[320px]"
-              initial={{ opacity: 0, x: -50 }}
+              className="flex flex-col gap-6 w-full max-w-md"
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
@@ -35,75 +25,77 @@ const ContactSection = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 border border-orange-100 rounded-xl shadow-sm hover:bg-orange-50 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
+                  className="flex items-center gap-4 p-8 rounded-full border border-orange-200 transition-transform transform hover:scale-105"
                 >
-                  <social.Icon size={24} className={social.colorClass} />
-                  <span className="font-medium text-base text-gray-800">
-                    {social.name}
+                  <social.Icon size={32} className={social.colorClass} />
+                  <span className="font-bold text-lg text-orange-800">
+                    {t(`contact.social.${social.name.toLowerCase()}`)}
                   </span>
                 </a>
               ))}
             </motion.div>
           </aside>
 
-          {/* Right Side: Contact Form */}
+          {/* Lado Direito: Formulário de Contato */}
           <article className="col-span-full md:col-span-7 flex items-center justify-center">
             <motion.form
               onSubmit={handleSubmit}
-              className="w-full max-w-[500px] p-8 md:p-10 rounded-2xl flex flex-col gap-y-6 bg-white border border-orange-100 shadow-xl"
-              initial={{ opacity: 0, y: 50 }}
+              className="w-full max-w-lg p-10 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col gap-6"
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <h3 className="font-bold text-2xl md:text-3xl text-center text-gray-800 mb-2">
-                Entre em Contato
+              <h3 className="text-3xl font-bold text-center text-gray-800">
+                {t("contact.title")}
               </h3>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Nome"
+                  placeholder={t("contact.form.name")}
                   required
-                  className="p-3 border border-orange-100 rounded-lg focus:outline-none focus:border-orange-300 text-gray-800 bg-white transition-all duration-300 focus:ring-2 focus:ring-orange-200"
+                  className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
                 />
                 <input
                   type="text"
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder="Empresa"
+                  placeholder={t("contact.form.company")}
                   required
-                  className="p-3 border border-orange-100 rounded-lg focus:outline-none focus:border-orange-300 text-gray-800 bg-white transition-all duration-300 focus:ring-2 focus:ring-orange-200"
+                  className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
                 />
               </div>
+
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Email"
+                placeholder={t("contact.form.email")}
                 required
-                className="p-3 border border-orange-100 rounded-lg focus:outline-none focus:border-orange-300 text-gray-800 bg-white transition-all duration-300 focus:ring-2 focus:ring-orange-200"
+                className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
               />
+
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Mensagem"
+                placeholder={t("contact.form.message")}
                 required
-                rows={5} // Corrigido o erro de tipo
-                className="p-3 border border-orange-100 rounded-lg focus:outline-none focus:border-orange-300 text-gray-800 bg-white transition-all duration-300 focus:ring-2 focus:ring-orange-200"
+                rows={5}
+                className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
               ></textarea>
 
               <button
                 type="submit"
-                className="w-full p-3 rounded-lg font-semibold transition-all duration-300 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 disabled:bg-gray-300 hover:shadow-md"
                 disabled={isLoading}
+                className="w-full py-4 rounded-lg font-semibold bg-orange-600 text-white transition-all hover:bg-orange-700 disabled:bg-gray-400"
               >
-                {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
+                {isLoading ? t("contact.form.sending") : t("contact.form.submit")}
               </button>
             </motion.form>
           </article>

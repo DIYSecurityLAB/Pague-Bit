@@ -1,6 +1,7 @@
 import React from 'react';
 import { osFilterGroups, usageFilters, FilterOption, FilterGroup } from './walletData';
 import { FaAndroid, FaApple, FaLinux, FaWindows, FaMicrochip } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 export interface SelectedFilters {
   os: string[];    // 'A', 'I', 'L', 'M', 'W', 'H'
@@ -22,6 +23,8 @@ interface WalletFilterSidebarProps {
 }
 
 const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({ selectedFilters, onFilterChange }) => {
+  const { t } = useTranslation();
+
   const handleOSClick = (key: string) => {
     let updated: string[];
     if (selectedFilters.os.includes(key)) {
@@ -50,11 +53,15 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({ selectedFilte
 
   return (
     <div className="p-6">
-      <h3 className="text-xl font-bold text-gray-800 mb-4">Filtros</h3>
+      <h3 className="text-xl font-bold text-gray-800 mb-4">
+        {t("wallet.sidebar.filters.title")}
+      </h3>
       
       {/* Filtro: Sistema Operacional */}
       <div className="mb-6">
-        <h4 className="text-lg font-semibold text-gray-700 mb-2">Sistema Operacional</h4>
+        <h4 className="text-lg font-semibold text-gray-700 mb-2">
+          {t("wallet.sidebar.filters.osTitle")}
+        </h4>
         {osFilterGroups.map((group: FilterGroup) => (
           <div key={group.group} className="mb-4">
             <div className="text-gray-600 font-medium mb-2">{group.group}</div>
@@ -80,7 +87,9 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({ selectedFilte
 
       {/* Filtro: Tipo de Uso */}
       <div className="mb-6">
-        <h4 className="text-lg font-semibold text-gray-700 mb-2">Tipo de Uso</h4>
+        <h4 className="text-lg font-semibold text-gray-700 mb-2">
+          {t("wallet.sidebar.filters.usageTitle")}
+        </h4>
         <div className="flex space-x-2">
           {usageFilters.map((option: FilterOption) => (
             <button
@@ -104,7 +113,7 @@ const WalletFilterSidebar: React.FC<WalletFilterSidebarProps> = ({ selectedFilte
         onClick={() => onFilterChange({ os: [], usage: [] })}
         className="text-blue-600 hover:underline"
       >
-        Limpar Filtros
+        {t("wallet.sidebar.filters.clear")}
       </button>
     </div>
   );

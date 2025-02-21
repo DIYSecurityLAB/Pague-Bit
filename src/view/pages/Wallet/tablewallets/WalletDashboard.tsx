@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import WalletFilterSidebar, { SelectedFilters } from './WalletFilterSidebar';
 import WalletTable from './WalletTable';
 import { wallets, Wallet } from './walletData';
+import { useTranslation } from 'react-i18next';
 
 const RatingLegend: React.FC = () => {
+  const { t } = useTranslation();
   const legendItems = [
-    { label: 'Bom (B)', color: 'bg-green-500' },
-    { label: 'Aceitável (A)', color: 'bg-yellow-500' },
-    { label: 'Cuidadoso (C)', color: 'bg-orange-500' },
-    { label: 'Neutro (N)', color: 'bg-red-500' },
+    { label: t("wallet.ratingLegend.good"), color: 'bg-green-500' },
+    { label: t("wallet.ratingLegend.acceptable"), color: 'bg-yellow-500' },
+    { label: t("wallet.ratingLegend.cautious"), color: 'bg-orange-500' },
+    { label: t("wallet.ratingLegend.neutral"), color: 'bg-red-500' },
   ];
   return (
     <div className="flex items-center space-x-4 mb-4">
@@ -27,6 +29,7 @@ interface WalletDashboardProps {
 }
 
 const WalletDashboard: React.FC<WalletDashboardProps> = ({ initialFilters }) => {
+  const { t } = useTranslation();
   const [selectedFilters, setSelectedFilters] = useState<SelectedFilters>(initialFilters);
 
   const handleFilterChange = (filters: SelectedFilters) => {
@@ -55,7 +58,9 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({ initialFilters }) => 
         </div>
         {/* Conteúdo principal */}
         <div className="w-full md:w-3/4 p-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Carteiras Disponíveis</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            {t("wallet.dashboard.title")}
+          </h2>
           <RatingLegend />
           <WalletTable wallets={filteredWallets} />
         </div>

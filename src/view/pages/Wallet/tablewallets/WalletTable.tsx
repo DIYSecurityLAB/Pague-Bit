@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wallet } from './walletData';
+import { useTranslation } from 'react-i18next';
 
 const getRatingColor = (rating: string): string => {
   const r = rating.toUpperCase();
@@ -36,18 +37,20 @@ interface WalletTableProps {
 }
 
 const WalletTable: React.FC<WalletTableProps> = ({ wallets }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="overflow-x-auto">
       <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
         <thead className="bg-orange-500">
           <tr>
-            <th className="p-4 text-left text-white font-semibold">Carteira</th>
-            <th className="p-4 text-center text-white font-semibold">Controle</th>
-            <th className="p-4 text-center text-white font-semibold">Validação</th>
-            <th className="p-4 text-center text-white font-semibold">Transparência</th>
-            <th className="p-4 text-center text-white font-semibold">Ambiente</th>
-            <th className="p-4 text-center text-white font-semibold">Privacidade</th>
-            <th className="p-4 text-center text-white font-semibold">Taxas</th>
+            <th className="p-4 text-left text-white font-semibold">{t("wallet.table.wallet")}</th>
+            <th className="p-4 text-center text-white font-semibold">{t("wallet.table.controle")}</th>
+            <th className="p-4 text-center text-white font-semibold">{t("wallet.table.validation")}</th>
+            <th className="p-4 text-center text-white font-semibold">{t("wallet.table.transparency")}</th>
+            <th className="p-4 text-center text-white font-semibold">{t("wallet.table.environment")}</th>
+            <th className="p-4 text-center text-white font-semibold">{t("wallet.table.privacy")}</th>
+            <th className="p-4 text-center text-white font-semibold">{t("wallet.table.fees")}</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-200">

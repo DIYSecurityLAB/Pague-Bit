@@ -1,0 +1,125 @@
+{
+"step1": {
+    "title": "Escolha seu Sistema Operacional",
+    "description": "Selecione a opção que corresponde ao dispositivo que você utiliza."
+  },
+  "step2": {
+    "title": "Qual seu nível de conhecimento sobre Bitcoin?",
+    "description": "Selecione a opção que melhor reflete sua experiência."
+  },
+  "step3": {
+    "title": "Qual critério é mais importante para você?",
+    "optional": "Opcional",
+    "description": "Escolha o aspecto que você considera essencial ao selecionar sua carteira."
+  },
+  "step4": {
+    "title": "Qual recurso adicional você procura?",
+    "optional": "Opcional",
+    "description": "Selecione um recurso que agregue valor à sua carteira.",
+    "button": "Ver resultados"
+  },
+  "dashboard": {
+    "title": "Carteiras Disponíveis"
+  },
+  "ratingLegend": {
+    "good": "Bom (B)",
+    "acceptable": "Aceitável (A)",
+    "cautious": "Cuidadoso (C)",
+    "neutral": "Neutro (N)"
+  },
+  "sidebar": {
+    "filters": {
+      "title": "Filtros",
+      "osTitle": "Sistema Operacional",
+      "usageTitle": "Tipo de Uso",
+      "clear": "Limpar Filtros"
+    }
+  },
+  "table": {
+    "wallet": "Carteira",
+    "controle": "Controle",
+    "validation": "Validação",
+    "transparency": "Transparência",
+    "environment": "Ambiente",
+    "privacy": "Privacidade",
+    "fees": "Taxas"
+  },
+  "step1Options": {
+    "celular-android": {
+      "title": "Carteiras para Celular - Android",
+      "description": "Portátil e conveniente, ideal para transações face-a-face. Usa QR codes para transações rápidas."
+    },
+    "celular-ios": {
+      "title": "Carteiras para Celular - iOS",
+      "description": "Portátil e conveniente, ideal para transações face-a-face. Usa QR codes para transações rápidas."
+    },
+    "desktop": {
+      "title": "Carteiras para Computador",
+      "description": "Ambiente que permite controle total sobre os fundos. Pode oferecer suporte a full nodes ou carteiras físicas, mas está sujeito a malware."
+    },
+    "hardware": {
+      "title": "Carteiras Físicas (Hardware)",
+      "description": "Uma das formas mais seguras de guardar fundos, ideal para grandes quantias. Menos prático para uso diário."
+    }
+  },
+  "step2Options": {
+    "novo": {
+      "title": "plant & bitcoin (Novo)",
+      "description": "Mostrar carteiras ideais para novos usuários."
+    },
+    "experiente": {
+      "title": "trees & bitcoin (Com experiência)",
+      "description": "Mostrar todas as carteiras disponíveis."
+    },
+    "ignorar": {
+      "title": "Pular Tutorial"
+    }
+  },
+  "step3Options": {
+    "controle": {
+      "title": "Controle",
+      "description": "Controle total sobre seus bitcoins, sem depender de terceiros."
+    },
+    "validacao": {
+      "title": "Validação",
+      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
+    },
+    "transparencia": {
+      "title": "Transparência",
+      "description": "Código aberto e desenvolvimento determinístico."
+    },
+    "ambiente": {
+      "title": "Ambiente",
+      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
+    },
+    "privacidade": {
+      "title": "Privacidade",
+      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
+    },
+    "taxas": {
+      "title": "Taxas",
+      "description": "Controle total sobre as taxas pagas à rede Bitcoin."
+    },
+    "ignorar": {
+      "title": "Pular Tutorial"
+    }
+  },
+  "step4Options": {
+    "2fa": {
+      "title": "2FA",
+      "description": "Autenticação de dois fatores para segurança adicional."
+    },
+    "bech32": {
+      "title": "Bech32",
+      "description": "Formato de endereço especial com SegWit para transações rápidas."
+    },
+    "fullnode": {
+      "title": "Full Node",
+      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
+    },
+    "ignorar": {
+      "title": "Pular Tutorial"
+    }
+  }
+
+}

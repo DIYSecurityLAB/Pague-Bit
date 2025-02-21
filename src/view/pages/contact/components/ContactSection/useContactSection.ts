@@ -22,7 +22,7 @@ export const useContactSection = () => {
     setIsLoading(true);
     console.log('Form submitted:', formData);
 
-    // Simulate an API call with a delay
+    // Simula uma chamada à API com um delay
     setTimeout(() => {
       setIsLoading(false);
       alert('Mensagem enviada com sucesso!');

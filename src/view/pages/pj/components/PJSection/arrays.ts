@@ -1,76 +1,83 @@
 import { Shield, Globe, Building2, BarChart as ChartBar, Lock, MessageSquare } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-export const features = [
-  {
-    Icon: Shield,
-    title: "Segurança Empresarial",
-    description: "Sistema robusto de segurança com múltiplas camadas de proteção para suas transações corporativas."
-  },
-  {
-    Icon: Globe,
-    title: "Pagamentos Internacionais",
-    description: "Realize transações globais sem burocracias, com custos reduzidos e liquidação rápida."
-  },
-  {
-    Icon: Building2,
-    title: "Integração Completa",
-    description: "Soluções personalizadas para integrar Bitcoin aos seus sistemas existentes."
-  },
-  {
-    Icon: ChartBar,
-    title: "Gestão Financeira",
-    description: "Dashboard completo para controle e análise de todas as suas operações em Bitcoin."
-  },
-  {
-    Icon: Lock,
-    title: "Conformidade",
-    description: "Operações em total conformidade com as regulamentações vigentes."
-  },
-  {
-    Icon: MessageSquare,
-    title: "Suporte Dedicado",
-    description: "Equipe especializada para auxiliar sua empresa 24/7."
-  }
-];
+export const usePJContent = () => {
+  const { t } = useTranslation();
 
-export const benefits = [
-  {
-    title: "Redução de Custos",
-    description: "Minimize taxas de transação e elimine intermediários desnecessários."
-  },
-  {
-    title: "Eficiência Operacional",
-    description: "Automatize processos e reduza tempo de liquidação de pagamentos."
-  },
-  {
-    title: "Expansão Global",
-    description: "Alcance novos mercados sem as limitações do sistema bancário tradicional."
-  },
-  {
-    title: "Inovação Tecnológica",
-    description: "Posicione sua empresa na vanguarda da revolução financeira digital."
-  }
-];
+  const features = [
+    {
+      Icon: Shield,
+      title: t("pj.features.securityEnterprise.title"),
+      description: t("pj.features.securityEnterprise.description"),
+    },
+    {
+      Icon: Globe,
+      title: t("pj.features.internationalPayments.title"),
+      description: t("pj.features.internationalPayments.description"),
+    },
+    {
+      Icon: Building2,
+      title: t("pj.features.completeIntegration.title"),
+      description: t("pj.features.completeIntegration.description"),
+    },
+    {
+      Icon: ChartBar,
+      title: t("pj.features.financialManagement.title"),
+      description: t("pj.features.financialManagement.description"),
+    },
+    {
+      Icon: Lock,
+      title: t("pj.features.compliance.title"),
+      description: t("pj.features.compliance.description"),
+    },
+    {
+      Icon: MessageSquare,
+      title: t("pj.features.dedicatedSupport.title"),
+      description: t("pj.features.dedicatedSupport.description"),
+    },
+  ];
 
-export const integrationSteps = [
-  {
-    step: 1,
-    title: "Consultoria Inicial",
-    description: "Análise detalhada das necessidades da sua empresa e planejamento estratégico."
-  },
-  {
-    step: 2,
-    title: "Desenvolvimento",
-    description: "Customização e implementação das soluções de acordo com seu negócio."
-  },
-  {
-    step: 3,
-    title: "Treinamento",
-    description: "Capacitação completa da sua equipe para operar o sistema."
-  },
-  {
-    step: 4,
-    title: "Suporte Contínuo",
-    description: "Acompanhamento e suporte técnico especializado para garantir o sucesso da operação."
-  }
-];
+  const benefits = [
+    {
+      title: t("pj.benefits.costReduction.title"),
+      description: t("pj.benefits.costReduction.description"),
+    },
+    {
+      title: t("pj.benefits.operationalEfficiency.title"),
+      description: t("pj.benefits.operationalEfficiency.description"),
+    },
+    {
+      title: t("pj.benefits.globalExpansion.title"),
+      description: t("pj.benefits.globalExpansion.description"),
+    },
+    {
+      title: t("pj.benefits.technologicalInnovation.title"),
+      description: t("pj.benefits.technologicalInnovation.description"),
+    },
+  ];
+
+  const integrationSteps = [
+    {
+      step: 1,
+      title: t("pj.integrationSteps.consultingInitial.title"),
+      description: t("pj.integrationSteps.consultingInitial.description"),
+    },
+    {
+      step: 2,
+      title: t("pj.integrationSteps.development.title"),
+      description: t("pj.integrationSteps.development.description"),
+    },
+    {
+      step: 3,
+      title: t("pj.integrationSteps.training.title"),
+      description: t("pj.integrationSteps.training.description"),
+    },
+    {
+      step: 4,
+      title: t("pj.integrationSteps.continuousSupport.title"),
+      description: t("pj.integrationSteps.continuousSupport.description"),
+    },
+  ];
+
+  return { features, benefits, integrationSteps };
+};

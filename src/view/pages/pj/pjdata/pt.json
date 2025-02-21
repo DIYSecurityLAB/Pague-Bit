@@ -1,0 +1,74 @@
+{
+    "features": {
+        "securityEnterprise": {
+          "title": "Segurança Empresarial",
+          "description": "Sistema robusto de segurança com múltiplas camadas de proteção para suas transações corporativas."
+        },
+        "internationalPayments": {
+          "title": "Pagamentos Internacionais",
+          "description": "Realize transações globais sem burocracias, com custos reduzidos e liquidação rápida."
+        },
+        "completeIntegration": {
+          "title": "Integração Completa",
+          "description": "Soluções personalizadas para integrar Bitcoin aos seus sistemas existentes."
+        },
+        "financialManagement": {
+          "title": "Gestão Financeira",
+          "description": "Dashboard completo para controle e análise de todas as suas operações em Bitcoin."
+        },
+        "compliance": {
+          "title": "Conformidade",
+          "description": "Operações em total conformidade com as regulamentações vigentes."
+        },
+        "dedicatedSupport": {
+          "title": "Suporte Dedicado",
+          "description": "Equipe especializada para auxiliar sua empresa 24/7."
+        }
+      },
+      "benefits": {
+        "costReduction": {
+          "title": "Redução de Custos",
+          "description": "Minimize taxas de transação e elimine intermediários desnecessários."
+        },
+        "operationalEfficiency": {
+          "title": "Eficiência Operacional",
+          "description": "Automatize processos e reduza tempo de liquidação de pagamentos."
+        },
+        "globalExpansion": {
+          "title": "Expansão Global",
+          "description": "Alcance novos mercados sem as limitações do sistema bancário tradicional."
+        },
+        "technologicalInnovation": {
+          "title": "Inovação Tecnológica",
+          "description": "Posicione sua empresa na vanguarda da revolução financeira digital."
+        }
+      },
+      "integrationSteps": {
+        "consultingInitial": {
+          "title": "Consultoria Inicial",
+          "description": "Análise detalhada das necessidades da sua empresa e planejamento estratégico."
+        },
+        "development": {
+          "title": "Desenvolvimento",
+          "description": "Customização e implementação das soluções de acordo com seu negócio."
+        },
+        "training": {
+          "title": "Treinamento",
+          "description": "Capacitação completa da sua equipe para operar o sistema."
+        },
+        "continuousSupport": {
+          "title": "Suporte Contínuo",
+          "description": "Acompanhamento e suporte técnico especializado para garantir o sucesso da operação."
+        }
+    },
+    "pjSection": {
+      "heroTitle": "Soluções Empresariais com Bitcoin",
+      "heroDescription": "A forma ideal de integrar Bitcoin aos processos da sua empresa.",
+      "benefitsTitle": "Benefícios para sua Empresa",
+      "integrationTitle": "Processo de Integração",
+      "ctaTitle": "Comece a transformar seu negócio",
+      "ctaDescription": "Fale conosco e descubra como integrar Bitcoin de forma segura e eficiente.",
+      "consultingButton": "Solicitar Consultoria"
+    }
+}
+  

@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import WalletList from '../WalletList';
-import { step3Options, WalletOption } from '../data';
+import { useWalletOptions, WalletOption } from '../data';
+import { useTranslation } from 'react-i18next';
 
 interface Step3Props {
   onSelect: (key: 'criterio', value: string) => void;
@@ -14,6 +15,9 @@ const containerVariants = {
 };
 
 const Step3: React.FC<Step3Props> = ({ onSelect }) => {
+  const { t } = useTranslation();
+    const { step3Options } = useWalletOptions();
+
   const handleSelect = (option: WalletOption) => {
     onSelect('criterio', option.key);
   };
@@ -28,12 +32,9 @@ const Step3: React.FC<Step3Props> = ({ onSelect }) => {
       transition={{ duration: 0.5 }}
     >
       <h2 className="text-2xl font-bold mb-4">
-        Qual critério é mais importante para você?{' '}
-        <span className="text-sm text-gray-500">(Opcional)</span>
+        {t("wallet.step3.title")} <span className="text-sm text-gray-500">({t("step3.optional")})</span>
       </h2>
-      <p className="mb-6 text-gray-600">
-        Escolha o aspecto que você considera essencial ao selecionar sua carteira.
-      </p>
+      <p className="mb-6 text-gray-600">{t("wallet.step3.description")}</p>
       <WalletList options={step3Options} onSelect={handleSelect} />
     </motion.div>
   );

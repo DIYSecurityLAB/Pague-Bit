@@ -18,6 +18,6 @@ export const socialLinks = [
     Icon: FaXTwitter,
     name: 'X',
     url: '#',
-    colorClass: 'text-white'
+    colorClass: 'text-black'
   }
 ];

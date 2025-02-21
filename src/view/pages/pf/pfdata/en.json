@@ -1,0 +1,45 @@
+{
+    "heroTitle": "Bitcoin for You",
+    "heroDescription": "The best way to use Bitcoin in your daily life.",
+    "whyChooseBitcoin": "Why choose Bitcoin?",
+    "ctaTitle": "Start now with Bitcoin",
+    "ctaDescription": "We make it easy for you to enter the world of Bitcoin in a simple and secure way.",
+    "contactButton": "Get in touch",
+    "features": {
+      "mobilePayments": {
+        "title": "Mobile Payments",
+        "description": "Make Bitcoin transactions simply and quickly using your smartphone. Just scan the QR Code and confirm the payment."
+      },
+      "security": {
+        "title": "Maximum Security",
+        "description": "Your transactions are protected by advanced encryption. Have full control over your funds with our secure digital wallet."
+      },
+      "wallet": {
+        "title": "Digital Wallet",
+        "description": "Manage your bitcoins easily through our intuitive digital wallet. Track your balance, history, and much more."
+      },
+      "buySell": {
+        "title": "Buy and Sell",
+        "description": "Buy and sell Bitcoin safely, with the best rates on the market and personalized support."
+      },
+      "privacy": {
+        "title": "Privacy",
+        "description": "Keep your financial information secure. With Bitcoin, you have full control over your data."
+      }
+    },
+    "benefits": {
+      "financialFreedom": {
+        "title": "Financial Freedom",
+        "description": "With Bitcoin, you have full control over your money. Make transactions 24/7, without limits or banking restrictions."
+      },
+      "security": {
+        "title": "Guaranteed Security",
+        "description": "Blockchain technology guarantees the security of your transactions. Your bitcoins are protected by advanced encryption."
+      },
+      "convenience": {
+        "title": "Convenience",
+        "description": "Send and receive payments quickly and easily, using only your smartphone."
+      }
+    }
+  }
+  

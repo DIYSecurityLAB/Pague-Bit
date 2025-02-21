@@ -1,14 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useBitcoinTickerPrices } from "./useBitcoinTickerPrices";
+import { useTranslation } from "react-i18next";
 
 const BitcoinTicker: React.FC = () => {
+  const { t } = useTranslation();
   const { prices, loading, itemsRef, controls, isHovered, setIsHovered } = useBitcoinTickerPrices();
 
   if (loading) {
     return (
       <div className="w-full bg-orange-500 text-white py-2 text-center text-lg font-semibold relative z-40">
-        Carregando preços...
+        {t("ticker.loading")}
       </div>
     );
   }
@@ -22,10 +24,10 @@ const BitcoinTicker: React.FC = () => {
 
   // Duplicação para um loop infinito real
   const tickerItems = [
-    { label: "🔥 Bitcoin para todas as moedas!", value: "" },
+    { label: "🔥", value: t("ticker.bitcoin_all_currencies") },
     ...formattedPrices,
     ...formattedPrices,
-    { label: "🔥 Bitcoin para todas as moedas!", value: "" },
+    { label: "🔥", value: t("ticker.bitcoin_all_currencies") },
     ...formattedPrices,
     ...formattedPrices
   ];
@@ -43,7 +45,7 @@ const BitcoinTicker: React.FC = () => {
       >
         {tickerItems.map((item, index) => (
           <span key={index} className="flex-shrink-0 px-6">
-            {item.label}: {item.value}
+            {item.label} {item.value}
           </span>
         ))}
       </motion.div>
