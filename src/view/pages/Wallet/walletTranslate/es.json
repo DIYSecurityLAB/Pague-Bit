@@ -62,19 +62,19 @@
         "description": "Una de las formas más seguras de almacenar fondos, ideal para grandes cantidades. Menos práctico para uso diario."
       }
     },
-    "step2Options": {
-      "novo": {
-        "title": "plant & bitcoin (Nuevo)",
-        "description": "Mostrar monederos ideales para nuevos usuarios."
-      },
-      "experiente": {
-        "title": "trees & bitcoin (Con experiencia)",
-        "description": "Mostrar todos los monederos disponibles."
-      },
-      "ignorar": {
-        "title": "Omitir Tutorial"
-      }
-    },
+   "step2Options": {
+  "novo": {
+    "title": "Bitcoin para Principiantes",
+    "description": "Mostrar billeteras ideales para nuevos usuarios."
+  },
+  "experiente": {
+    "title": "Opciones Avanzadas de Bitcoin",
+    "description": "Mostrar todas las billeteras disponibles."
+  },
+  "ignorar": {
+    "title": "Omitir Tutorial"
+  }
+},
     "step3Options": {
       "controle": {
         "title": "Control",

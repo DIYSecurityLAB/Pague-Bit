@@ -33,7 +33,7 @@ const Step4: React.FC<Step4Props> = ({ onSelect, onFinish }) => {
       transition={{ duration: 0.5 }}
     >
       <h2 className="text-2xl font-bold mb-4">
-        {t("wallet.step4.title")} <span className="text-sm text-gray-500">({t("step4.optional")})</span>
+        {t("wallet.step4.title")} <span className="text-sm text-gray-500">({t("wallet.step4.optional")})</span>
       </h2>
       <p className="mb-6 text-gray-600">{t("wallet.step4.description")}</p>
       <WalletList options={step4Options} onSelect={handleSelect} />
@@ -42,7 +42,7 @@ const Step4: React.FC<Step4Props> = ({ onSelect, onFinish }) => {
           onClick={onFinish}
           className="px-6 py-2 bg-orange-500 text-white rounded-xl hover:bg-orange-600 transition"
         >
-          {t("step4.button")}
+          {t("wallet.step4.button")}
         </button>
       </div>
     </motion.div>

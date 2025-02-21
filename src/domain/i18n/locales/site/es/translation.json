@@ -1,4 +1,7 @@
 {
+  "button":{
+    "back": "Volver"
+      },
   "header": {
   "about": "Sobre Nosotros",
   "services": "Servicios",

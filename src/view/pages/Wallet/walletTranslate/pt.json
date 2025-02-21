@@ -63,18 +63,18 @@
     }
   },
   "step2Options": {
-    "novo": {
-      "title": "plant & bitcoin (Novo)",
-      "description": "Mostrar carteiras ideais para novos usuários."
-    },
-    "experiente": {
-      "title": "trees & bitcoin (Com experiência)",
-      "description": "Mostrar todas as carteiras disponíveis."
-    },
-    "ignorar": {
-      "title": "Pular Tutorial"
-    }
+  "novo": {
+    "title": "Bitcoin para Iniciantes",
+    "description": "Mostrar carteiras ideais para novos usuários."
   },
+  "experiente": {
+    "title": "Opções Avançadas de Bitcoin",
+    "description": "Mostrar todas as carteiras disponíveis."
+  },
+  "ignorar": {
+    "title": "Pular Tutorial"
+  }
+},
   "step3Options": {
     "controle": {
       "title": "Controle",

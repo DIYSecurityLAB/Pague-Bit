@@ -9,7 +9,7 @@ const AboutSection = () => {
 // tem uma gambiarra enorme envolvendo o arquiv ode traducao e o arrays... futuramente va itirar o arrays, mas agora depende dele para a featurekey
   return (
     <section className="py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 mt-[-40px] ">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           initial="hidden"

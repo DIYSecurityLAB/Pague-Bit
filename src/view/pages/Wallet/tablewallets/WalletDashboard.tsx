@@ -3,6 +3,7 @@ import WalletFilterSidebar, { SelectedFilters } from './WalletFilterSidebar';
 import WalletTable from './WalletTable';
 import { wallets, Wallet } from './walletData';
 import { useTranslation } from 'react-i18next';
+import BackButton from '../../../components/BackButton';
 
 const RatingLegend: React.FC = () => {
   const { t } = useTranslation();
@@ -47,7 +48,9 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({ initialFilters }) => 
   });
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-8">
+    
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-8 ">
+       <BackButton/>
       <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-6xl">
         {/* Sidebar com filtros */}
         <div className="w-full md:w-1/4 border-b md:border-b-0 md:border-r border-gray-200">

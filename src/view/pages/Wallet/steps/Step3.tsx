@@ -32,7 +32,7 @@ const Step3: React.FC<Step3Props> = ({ onSelect }) => {
       transition={{ duration: 0.5 }}
     >
       <h2 className="text-2xl font-bold mb-4">
-        {t("wallet.step3.title")} <span className="text-sm text-gray-500">({t("step3.optional")})</span>
+        {t("wallet.step3.title")} <span className="text-sm text-gray-500">({t("wallet.step3.optional")})</span>
       </h2>
       <p className="mb-6 text-gray-600">{t("wallet.step3.description")}</p>
       <WalletList options={step3Options} onSelect={handleSelect} />

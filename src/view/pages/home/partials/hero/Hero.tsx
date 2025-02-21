@@ -61,12 +61,12 @@ const Hero = () => {
           </Link>
           
           <Link
-            to={getLocalizedPath('/buy')}
-            className="bg-orange-100 hover:bg-orange-200 text-orange-600 font-bold py-4 px-8 rounded-xl flex items-center gap-2 transition-colors"
-          >
-            <ShoppingCart className="h-5 w-5" />
-            {t('hero.buyBitcoin')}
-          </Link>
+  to={getLocalizedPath('/buy')}
+  className="bg-orange-300 hover:bg-orange-400 text-orange-800 font-bold py-4 px-8 rounded-xl flex items-center gap-2 border-2 border-orange-500 transition-all shadow-lg"
+>
+  <ShoppingCart className="h-5 w-5" />
+  {t('hero.buyBitcoin')}
+</Link>
         </motion.div>
       </div>
     </section>
