@@ -1,0 +1,18 @@
+{
+    "name": "PAGUE BIT Workspace",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+    "features": {},
+    "forwardPorts": [5173],
+    "postCreateCommand": "npm install && git init && npm run prepare",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "bradlc.vscode-tailwindcss",
+          "editorconfig.editorconfig"
+        ]
+      }
+    },
+    "remoteUser": "root"
+  }
+  
