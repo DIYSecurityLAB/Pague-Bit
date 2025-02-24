@@ -1,0 +1,16 @@
+ignores:
+  [
+    '@commitlint/*',
+    '@typescript-eslint/*',
+    'commitizen',
+    'depcheck',
+    'prettier',
+    'prettier-*',
+    'autoprefixer',
+    'postcss',
+    'tailwindcss',
+    'apexcharts',
+    'react-apexcharts',
+    'typescript-eslint',
+  ]
+skip-missing: true
