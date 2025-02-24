@@ -1,36 +1,50 @@
-import js from '@eslint/js';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
-import parser from '@typescript-eslint/parser';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import prettier from 'eslint-plugin-prettier';
-import reactHooks from 'eslint-plugin-react-hooks';
-import reactRefresh from 'eslint-plugin-react-refresh';
+import tsParser from '@typescript-eslint/parser';
+import prettierPlugin from 'eslint-plugin-prettier';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import reactRefreshPlugin from 'eslint-plugin-react-refresh';
 import globals from 'globals';
+
+const { rules: tsRecommendedRules } = tsPlugin.configs.recommended;
+const { rules: reactHooksRecommendedRules } =
+  reactHooksPlugin.configs.recommended;
 
 export default [
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
-      ecmaVersion: 2020,
-      parser: parser,
+      parser: tsParser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
       globals: {
         ...globals.browser,
-        AudioWorkletGlobalScope: 'readonly',
+        ...globals.node,
+        NodeJS: 'readonly',
       },
     },
-    extends: [
-      js.configs.recommended,
-      'plugin:@typescript-eslint/recommended',
-      eslintConfigPrettier,
-    ],
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
     plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
-      prettier: prettier,
+      react: reactPlugin,
+      'react-hooks': reactHooksPlugin,
+      'react-refresh': reactRefreshPlugin,
+      prettier: prettierPlugin,
       '@typescript-eslint': tsPlugin,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
+      'no-unused-vars': 'warn',
+      'no-undef': 'error',
+      ...tsRecommendedRules,
+      ...reactHooksRecommendedRules,
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
