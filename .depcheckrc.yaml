@@ -9,5 +9,7 @@ ignores:
     'autoprefixer',
     'postcss',
     'tailwindcss',
+    'apexcharts',
+    'react-apexcharts',
   ]
 skip-missing: true
