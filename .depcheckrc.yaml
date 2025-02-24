@@ -11,5 +11,6 @@ ignores:
     'tailwindcss',
     'apexcharts',
     'react-apexcharts',
+    'typescript-eslint',
   ]
 skip-missing: true
