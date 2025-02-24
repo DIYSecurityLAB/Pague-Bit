@@ -1,9 +1,9 @@
 import { Suspense, lazy } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Layout from '../pages/layout/Layout';
-import { ROUTES } from './Routes';
 import { useTranslation } from 'react-i18next';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Layout from '../pages/layout/Layout';
 import Load from '../utils/load/Load';
+import { ROUTES } from './Routes';
 
 const Home = lazy(() => import('../pages/home/Home'));
 const About = lazy(() => import('../pages/about/About'));
@@ -24,22 +24,33 @@ function App() {
     <Layout>
       <Suspense fallback={<Load />}>
         <Routes>
-          <Route path="/" element={<Navigate to={ROUTES.home.call(currentLang)} replace />} />
+          <Route
+            path="/"
+            element={<Navigate to={ROUTES.home.call(currentLang)} replace />}
+          />
           <Route path="/:lang" element={<Home />} />
-          <Route path="/:lang/*" element={
-            <Routes>
-              <Route path="about" element={<About />} />
-              <Route path="services" element={<Services />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="pf" element={<PF />} />
-              <Route path="pj" element={<PJ />} />
-              <Route path="blog/:id" element={<BlogPost />} />
-              <Route path="get-started" element={<GetStartedPage />} />
-              <Route path="wallet" element={<WalletPage />} />
-              <Route path="buy" element={<BuyBitcoinPage />} />
-              <Route path="*" element={<Navigate to={ROUTES.home.call(currentLang)} replace />} />
-            </Routes>
-          } />
+          <Route
+            path="/:lang/*"
+            element={
+              <Routes>
+                <Route path="about" element={<About />} />
+                <Route path="services" element={<Services />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="pf" element={<PF />} />
+                <Route path="pj" element={<PJ />} />
+                <Route path="blog/:id" element={<BlogPost />} />
+                <Route path="get-started" element={<GetStartedPage />} />
+                <Route path="wallet" element={<WalletPage />} />
+                <Route path="buy" element={<BuyBitcoinPage />} />
+                <Route
+                  path="*"
+                  element={
+                    <Navigate to={ROUTES.home.call(currentLang)} replace />
+                  }
+                />
+              </Routes>
+            }
+          />
         </Routes>
       </Suspense>
     </Layout>

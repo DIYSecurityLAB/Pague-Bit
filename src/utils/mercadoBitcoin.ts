@@ -5,7 +5,7 @@ export const getBitcoinPriceMercadoBitcoin = async () => {
     const response = await fetch(`${MERCADO_BITCOIN_API_BASE_URL}/BTC/ticker`);
     if (!response.ok) {
       throw new Error(
-        `Failed to fetch Bitcoin price from Mercado Bitcoin: ${response.status}`
+        `Failed to fetch Bitcoin price from Mercado Bitcoin: ${response.status}`,
       );
     }
     const data = await response.json();
@@ -18,7 +18,6 @@ export const getBitcoinPriceMercadoBitcoin = async () => {
   }
 };
 
-// A função de dados históricos não é mais necessária; portanto, mantemos apenas um placeholder.
 export const getBitcoinHistoricalDataMercadoBitcoin = async () => {
   return {};
 };
