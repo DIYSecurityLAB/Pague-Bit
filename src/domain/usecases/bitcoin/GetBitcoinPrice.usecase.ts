@@ -1,5 +1,5 @@
-import { IBitcoinPriceRepository } from '../../repositories/IBitcoinPriceRepository';
 import { BitcoinPrice } from '../../entities/BitcoinPrice.entity';
+import { IBitcoinPriceRepository } from '../../repositories/IBitcoinPriceRepository';
 
 export class GetBitcoinPriceUseCase {
   constructor(private bitcoinPriceRepository: IBitcoinPriceRepository) {}

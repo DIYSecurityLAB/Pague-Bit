@@ -1,5 +1,5 @@
-import { FiArrowLeft } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
+import { FiArrowLeft } from 'react-icons/fi';
 
 const BackButton = () => {
   const { t } = useTranslation();

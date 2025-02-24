@@ -1,19 +1,19 @@
 {
-        "posts": {
-            "decentralization": {
-                "title": "Decentralized Digital Currency",
-                "date": "2024-08-01",
-                "content": "<div class=\"space-y-6\">\n  <p class=\"text-gray-600\">Bitcoin revolutionized the concept of currency by introducing a fully decentralized structure, where no central entity – such as governments or banks – has control. This feature allows transactions to occur directly between users, eliminating intermediaries and consequently reducing fees while increasing financial autonomy.</p>\n  \n  <h2 class=\"text-2xl font-bold mt-8 mb-4 text-gray-800\">Fundamental Concepts of Decentralization</h2>\n  <p class=\"text-gray-600\">In a decentralized system, authority and power are distributed among all network participants. In the case of Bitcoin, the network consists of thousands of computers (nodes) that validate, record, and propagate transactions. This structure ensures that no single entity can control or manipulate the currency, promoting transparency and security.</p>\n  <p class=\"text-gray-600\">The core idea was first introduced in the <a href=\"https://bitcoin.org/bitcoin.pdf\" target=\"_blank\" class=\"text-blue-500 underline\">Bitcoin Whitepaper</a>, which described an electronic cash system based on cryptographic proof, eliminating the need to trust intermediaries.</p>\n</div>"
-            },
-            "security": {
-                "title": "Security and Blockchain",
-                "date": "2024-08-01",
-                "content": "<div class=\"space-y-6\">\n  <p class=\"text-gray-600\">Bitcoin's security is one of its fundamental pillars, upheld by blockchain technology. This innovative structure ensures the integrity of transactions through a public and immutable ledger, making fraud and manipulation virtually impossible.</p>\n  \n  <h2 class=\"text-2xl font-bold mt-8 mb-4 text-gray-800\">How Does Blockchain Technology Work?</h2>\n  <p class=\"text-gray-600\">Blockchain is a chain of interconnected blocks, where each block contains a set of verified transactions. Each new block incorporates a cryptographic code linking it to the previous block, forming a continuous and tamper-resistant chain. This decentralized structure is maintained by a global network of nodes that validate and confirm each transaction.</p>\n  <p class=\"text-gray-600\">This mechanism prevents any transaction from being modified or deleted, ensuring the immutability of the transaction history.</p>\n</div>"
-            },
-            "limited-supply": {
-                "title": "Limited Supply and Value",
-                "date": "2024-08-01",
-                "content": "<div class=\"space-y-6\">\n  <p class=\"text-gray-600\">One of Bitcoin’s most innovative features is its limited supply: only 21 million units will ever be created. This programmed scarcity is one of the factors contributing to the cryptocurrency’s potential appreciation over time.</p>\n  \n  <h2 class=\"text-2xl font-bold mt-8 mb-4 text-gray-800\">Understanding Limited Supply</h2>\n  <p class=\"text-gray-600\">Unlike traditional currencies, whose issuance can be expanded based on demand and monetary policy, Bitcoin was designed to have a finite supply. This limit has been implemented since its creation, ensuring that the currency maintains its scarcity and, therefore, its intrinsic value.</p>\n  <p class=\"text-gray-600\">This characteristic makes it an attractive option for investors seeking protection against inflation and portfolio diversification.</p>\n</div>"
-            }
-        }
+  "posts": {
+    "decentralization": {
+      "title": "Decentralized Digital Currency",
+      "date": "2024-08-01",
+      "content": "<div class=\"space-y-6\">\n  <p class=\"text-gray-600\">Bitcoin revolutionized the concept of currency by introducing a fully decentralized structure, where no central entity – such as governments or banks – has control. This feature allows transactions to occur directly between users, eliminating intermediaries and consequently reducing fees while increasing financial autonomy.</p>\n  \n  <h2 class=\"text-2xl font-bold mt-8 mb-4 text-gray-800\">Fundamental Concepts of Decentralization</h2>\n  <p class=\"text-gray-600\">In a decentralized system, authority and power are distributed among all network participants. In the case of Bitcoin, the network consists of thousands of computers (nodes) that validate, record, and propagate transactions. This structure ensures that no single entity can control or manipulate the currency, promoting transparency and security.</p>\n  <p class=\"text-gray-600\">The core idea was first introduced in the <a href=\"https://bitcoin.org/bitcoin.pdf\" target=\"_blank\" class=\"text-blue-500 underline\">Bitcoin Whitepaper</a>, which described an electronic cash system based on cryptographic proof, eliminating the need to trust intermediaries.</p>\n</div>"
+    },
+    "security": {
+      "title": "Security and Blockchain",
+      "date": "2024-08-01",
+      "content": "<div class=\"space-y-6\">\n  <p class=\"text-gray-600\">Bitcoin's security is one of its fundamental pillars, upheld by blockchain technology. This innovative structure ensures the integrity of transactions through a public and immutable ledger, making fraud and manipulation virtually impossible.</p>\n  \n  <h2 class=\"text-2xl font-bold mt-8 mb-4 text-gray-800\">How Does Blockchain Technology Work?</h2>\n  <p class=\"text-gray-600\">Blockchain is a chain of interconnected blocks, where each block contains a set of verified transactions. Each new block incorporates a cryptographic code linking it to the previous block, forming a continuous and tamper-resistant chain. This decentralized structure is maintained by a global network of nodes that validate and confirm each transaction.</p>\n  <p class=\"text-gray-600\">This mechanism prevents any transaction from being modified or deleted, ensuring the immutability of the transaction history.</p>\n</div>"
+    },
+    "limited-supply": {
+      "title": "Limited Supply and Value",
+      "date": "2024-08-01",
+      "content": "<div class=\"space-y-6\">\n  <p class=\"text-gray-600\">One of Bitcoin’s most innovative features is its limited supply: only 21 million units will ever be created. This programmed scarcity is one of the factors contributing to the cryptocurrency’s potential appreciation over time.</p>\n  \n  <h2 class=\"text-2xl font-bold mt-8 mb-4 text-gray-800\">Understanding Limited Supply</h2>\n  <p class=\"text-gray-600\">Unlike traditional currencies, whose issuance can be expanded based on demand and monetary policy, Bitcoin was designed to have a finite supply. This limit has been implemented since its creation, ensuring that the currency maintains its scarcity and, therefore, its intrinsic value.</p>\n  <p class=\"text-gray-600\">This characteristic makes it an attractive option for investors seeking protection against inflation and portfolio diversification.</p>\n</div>"
+    }
+  }
 }

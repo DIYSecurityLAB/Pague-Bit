@@ -1,13 +1,12 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import BackButton from '@/view/components/BackButton';
 import { motion } from 'framer-motion';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useBlogPost } from './useBlogPost';
-import BackButton from '../../components/BackButton';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { post } = useBlogPost(id);
-
 
   if (!post) {
     navigate('/');
@@ -16,7 +15,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen py-24">
-       <BackButton/>
+      <BackButton />
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -26,7 +25,7 @@ const BlogPost = () => {
         >
           <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
           <p className="text-gray-500 mb-8">{post.date}</p>
-          <div 
+          <div
             className="prose prose-orange max-w-none"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
