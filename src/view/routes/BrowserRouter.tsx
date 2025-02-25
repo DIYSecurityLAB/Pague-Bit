@@ -6,8 +6,8 @@ import {
   BrowserRouter as Router,
   Routes,
 } from 'react-router-dom';
+import { Loader } from '../components/Loader';
 import Layout from '../pages/layout/Layout';
-import Load from '../utils/load/Load';
 import { ROUTES } from './Routes';
 
 const Home = lazy(() => import('../pages/home/Home'));
@@ -28,7 +28,7 @@ export function BrowserRouter() {
   return (
     <Router>
       <Layout>
-        <Suspense fallback={<Load />}>
+        <Suspense fallback={<Loader />}>
           <Routes>
             <Route
               path="/"
