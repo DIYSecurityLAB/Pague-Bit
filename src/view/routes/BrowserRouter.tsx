@@ -39,15 +39,18 @@ export function BrowserRouter() {
               path="/:lang/*"
               element={
                 <Routes>
-                  <Route path="about" element={<About />} />
-                  <Route path="services" element={<Services />} />
-                  <Route path="contact" element={<Contact />} />
-                  <Route path="pf" element={<PF />} />
-                  <Route path="pj" element={<PJ />} />
-                  <Route path="blog/:id" element={<BlogPost />} />
-                  <Route path="get-started" element={<GetStartedPage />} />
-                  <Route path="wallet" element={<WalletPage />} />
-                  <Route path="buy" element={<BuyBitcoinPage />} />
+                  <Route path={ROUTES.about.path} element={<About />} />
+                  <Route path={ROUTES.services.path} element={<Services />} />
+                  <Route path={ROUTES.contact.path} element={<Contact />} />
+                  <Route path={ROUTES.pf.path} element={<PF />} />
+                  <Route path={ROUTES.pj.path} element={<PJ />} />
+                  <Route path={ROUTES.blog.path} element={<BlogPost />} />
+                  <Route
+                    path={ROUTES.getStarted.path}
+                    element={<GetStartedPage />}
+                  />
+                  <Route path={ROUTES.wallet.path} element={<WalletPage />} />
+                  <Route path={ROUTES.buy.path} element={<BuyBitcoinPage />} />
                   <Route
                     path="*"
                     element={
