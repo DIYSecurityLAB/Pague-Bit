@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from "react";
-import { useAnimation } from "framer-motion";
-import { BitcoinPriceRepository } from "../../../../../data/repositories";
-import { BitcoinPrice } from "../../../../../domain/entities/BitcoinPrice.entity";
+import { BitcoinPriceRepository } from '@/data/repositories/BitcoinPrice.repository';
+import { BitcoinPrice } from '@/domain/entities/BitcoinPrice.entity';
+import { useAnimation } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 export const useBitcoinTickerPrices = () => {
   const [prices, setPrices] = useState<BitcoinPrice>({});
@@ -19,7 +19,12 @@ export const useBitcoinTickerPrices = () => {
     const fetchPrices = async () => {
       setLoading(true);
       try {
-        const result = await repository.getCurrentPrice(["usd", "brl", "cny", "eur"]);
+        const result = await repository.getCurrentPrice([
+          'usd',
+          'brl',
+          'cny',
+          'eur',
+        ]);
         setPrices(result);
       } catch (error) {
         console.error(error);
@@ -45,8 +50,8 @@ export const useBitcoinTickerPrices = () => {
     };
 
     updateContainerWidth();
-    window.addEventListener("resize", updateContainerWidth);
-    return () => window.removeEventListener("resize", updateContainerWidth);
+    window.addEventListener('resize', updateContainerWidth);
+    return () => window.removeEventListener('resize', updateContainerWidth);
   }, [prices, controls]);
 
   useEffect(() => {
@@ -60,10 +65,10 @@ export const useBitcoinTickerPrices = () => {
       controls.start({
         x: -containerWidth,
         transition: {
-          ease: "linear",
+          ease: 'linear',
           duration: duration,
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: 'loop',
         },
       });
     } else {
