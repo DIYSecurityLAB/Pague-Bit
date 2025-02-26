@@ -1,221 +1,220 @@
 {
-  "button":{
-    "back": "Voltar"
-      },
-    "header": {
-      "about": "About Us",
-      "services": "Services",
-      "contact": "Contact"
-    },
-    "about": {
-      "title": "About Us",
-      "description": "Pague BIT was founded with the mission to simplify and democratize access to Bitcoin in Brazil. We are a team passionate about technology and innovation, committed to providing secure and efficient solutions for individuals and businesses looking to explore Bitcoin's potential.",
-      "features": {
-        "trust": {
-          "title": "Trust and Security",
-          "description": "We prioritize the security of your funds and data, with advanced protection technologies."
-        },
-        "speed": {
-          "title": "Speed and Efficiency",
-          "description": "Fast transactions and agile support so you can make the most of the Bitcoin world."
-        },
-        "solutions": {
-          "title": "Complete Solutions",
-          "description": "We offer everything you need to buy, sell, use, and accept Bitcoin."
-        }
-      }
-    },
-    "contact": {
-      "title": "Get in Touch",
-      "form": {
-        "name": "Name",
-        "company": "Company",
-        "email": "Email",
-        "message": "Message",
-        "submit": "Send Message",
-        "sending": "Sending..."
-      },
-      "social": {
-        "twitter": "Twitter",
-        "facebook": "Facebook",
-        "instagram": "Instagram",
-        "linkedin": "LinkedIn"
-      }
-    },
-    "getStarted": {
-      "title": "Start Now with Bitcoin",
-      "buy": {
-        "title": "Buy Bitcoin",
-        "description": "Acquire Bitcoin quickly and securely, with various payment options.",
-        "imageAlt": "Image representing buying Bitcoin"
-      },
-      "store": {
-        "title": "Store Securely",
-        "description": "Keep your Bitcoins in secure wallets, with full control over your keys.",
-        "imageAlt": "Image representing secure Bitcoin storage"
-      },
-      "accept": {
-        "title": "Accept Bitcoin",
-        "description": "Receive Bitcoin payments in your business, with simple and efficient solutions.",
-        "imageAlt": "Image representing accepting Bitcoin as payment"
-      }
-    },
-    "hero": {
-      "title": "Pague BIT: Your Complete Bitcoin Solution",
-      "subtitle": "We simplify the world of Bitcoin for businesses and individuals. We offer secure, fast, and easy solutions for you to buy, sell, store, and use Bitcoin.",
-      "getStarted": "Start Using Now",
-      "chooseWallet": "Choose Your Wallet",
-      "buyBitcoin": "Buy Bitcoin"
-    },
-    "whatIsBitcoin": {
-      "title": "What is Bitcoin?",
-      "learnMore": "Learn More",
-      "features": {
-        "1": {
-          "title": "Decentralized Digital Currency",
-          "description": "Discover how Bitcoin enables peer-to-peer transactions without intermediaries, promoting financial autonomy."
-        },
-        "2": {
-          "title": "Blockchain Security",
-          "description": "Blockchain technology ensures the integrity and security of transactions, protecting your investment."
-        },
-        "3": {
-          "title": "Limited Supply, Increasing Value",
-          "description": "With a maximum supply of 21 million, Bitcoin stands out as a unique store of value."
-        }
-      }
-    },
-    "whyPagueBit": {
-      "title": "Why Choose PagueBit?",
-      "reasons": {
-        "1": {
-          "title": "Trust and Security",
-          "description": "We prioritize the security of your funds and data, with advanced protection technologies.",
-          "alt": "Trust"
-        },
-        "2": {
-          "title": "Speed and Efficiency",
-          "description": "Fast transactions and agile support so you can make the most of the Bitcoin world.",
-          "alt": "Speed"
-        },
-        "3": {
-          "title": "Complete Solutions",
-          "description": "We offer everything you need to buy, sell, use, and accept Bitcoin.",
-          "alt": "Solutions"
-        }
-      }
-    },
-    "pfSection": {
-      "heroTitle": "Bitcoin for You",
-      "heroDescription": "Discover how Bitcoin can revolutionize your financial life with more freedom, security, and convenience in your daily transactions.",
-      "whyChooseBitcoin": "Why Choose Bitcoin?",
-      "ctaTitle": "Start Now",
-      "ctaDescription": "Discover how Bitcoin can transform your financial life. Our team is ready to help you get started.",
-      "contactButton": "Get in Touch"
-    },
-    "pjSection": {
-      "heroTitle": "Bitcoin for Businesses",
-      "heroDescription": "Modernize your financial operations with business solutions in Bitcoin. Security, efficiency, and innovation for your business.",
-      "benefitsTitle": "Benefits for Your Business",
-      "integrationTitle": "Integration Process",
-      "ctaTitle": "Transform Your Business",
-      "ctaDescription": "We are ready to help your company implement Bitcoin solutions. Get in touch and discover how we can boost your business.",
-      "consultingButton": "Schedule a Consultation"
-    },
+  "button": {
+    "back": "Back"
+  },
+  "header": {
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Pague BIT was founded with the mission to simplify and democratize access to Bitcoin in Brazil. We are a team passionate about technology and innovation, committed to providing secure and efficient solutions for individuals and businesses looking to explore Bitcoin's potential.",
     "features": {
-      "title": "Why Choose PagueBit?",
       "trust": {
         "title": "Trust and Security",
-        "desc": "We prioritize the security of your funds and data, with advanced protection technologies."
+        "description": "We prioritize the security of your funds and data, with advanced protection technologies."
       },
       "speed": {
         "title": "Speed and Efficiency",
-        "desc": "Fast transactions and agile support so you can make the most of the Bitcoin world."
+        "description": "Fast transactions and agile support so you can make the most of the Bitcoin world."
       },
       "solutions": {
         "title": "Complete Solutions",
-        "desc": "We offer everything you need to buy, sell, use, and accept Bitcoin."
-      },
-      "support": {
-        "title": "Customer Focus",
-        "desc": "Our team is always ready to help you, with personalized support."
+        "description": "We offer everything you need to buy, sell, use, and accept Bitcoin."
       }
-    },
-    "ticker": {
-      "loading": "Loading prices...",
-      "bitcoin_all_currencies": "Bitcoin for all currencies!"
-    },
-    "bitcoin": {
-      "whatIs": {
-        "title": "What is Bitcoin?",
-        "decentralized": {
-          "title": "Decentralized Digital Currency",
-          "desc": "Bitcoin is the first decentralized cryptocurrency, enabling P2P transactions without intermediaries."
-        },
-        "security": {
-          "title": "Security and Blockchain",
-          "desc": "Bitcoin's security is ensured by blockchain technology, an immutable public ledger."
-        },
-        "supply": {
-          "title": "Limited Supply and Value",
-          "desc": "Bitcoin has a limited supply of 21 million, contributing to its potential value."
-        }
-      }
-    },
-    "buyBitcoinPage": {
-      "heroTitle": "Revolutionize Your Transactions with PagueBit P2P",
-      "heroDescription": "A premium experience for buying and selling Bitcoin and USDT with security and innovation.",
-      "mainSection": {
-        "title": "Premium Experience",
-        "description": "At PagueBit, you enjoy a secure and innovative environment for P2P trading, with utmost integrity and exclusive support for Premium clients.",
-        "features": [
-          "Reinforced and verified security",
-          "Transactions with premium integrity",
-          "Exclusive support for Premium clients",
-          "Ease and innovation in every transaction"
-        ],
-        "button": "Access PagueBit"
-      },
-      "recommendation": {
-        "title": "Recommendation",
-        "alt": "Alfred Logo",
-        "description": "If you prefer an anonymous and direct purchase, we recommend using Alfred for P2P transactions.",
-        "button": "Buy with Alfred"
-      }
-    },
-    "getStartedPage": {
-      "heroTitle": "Start Using Bitcoin",
-      "heroDescription": "Choose the profile that best suits your needs and begin your journey in the world of Bitcoin.",
-      "pf": {
-        "title": "For Individuals",
-        "description": "Start your Bitcoin journey in a simple and secure way. Ideal for individual investors and enthusiasts looking to enter the world of cryptocurrencies.",
-        "features": [
-          "Buy and sell Bitcoin easily",
-          "Secure and intuitive wallet",
-          "Personalized support"
-        ],
-        "buyButton": "Buy BTC",
-        "moreButton": "Learn More"
-      },
-      "pj": {
-        "title": "For Businesses",
-        "description": "Complete solutions for companies looking to integrate Bitcoin into their operations. Ideal for merchants, service providers, and innovative companies.",
-        "features": [
-          "Accept Bitcoin payments",
-          "Comprehensive financial management",
-          "Integration with existing systems"
-        ],
-        "buyButton": "Buy BTC",
-        "moreButton": "Learn More"
-      }
-    },
-    "footer": {
-      "rights": "All rights reserved."
-    },
-    "language": {
-      "pt": "Portuguese",
-      "en": "English",
-      "es": "Spanish"
     }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "social": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "getStarted": {
+    "title": "Start Now with Bitcoin",
+    "buy": {
+      "title": "Buy Bitcoin",
+      "description": "Acquire Bitcoin quickly and securely, with various payment options.",
+      "imageAlt": "Image representing buying Bitcoin"
+    },
+    "store": {
+      "title": "Store Securely",
+      "description": "Keep your Bitcoins in secure wallets, with full control over your keys.",
+      "imageAlt": "Image representing secure Bitcoin storage"
+    },
+    "accept": {
+      "title": "Accept Bitcoin",
+      "description": "Receive Bitcoin payments in your business, with simple and efficient solutions.",
+      "imageAlt": "Image representing accepting Bitcoin as payment"
+    }
+  },
+  "hero": {
+    "title": "Pague BIT: Your Complete Bitcoin Solution",
+    "subtitle": "We simplify the world of Bitcoin for businesses and individuals. We offer secure, fast, and easy solutions for you to buy, sell, store, and use Bitcoin.",
+    "getStarted": "Start Using Now",
+    "chooseWallet": "Choose Your Wallet",
+    "buyBitcoin": "Buy Bitcoin"
+  },
+  "whatIsBitcoin": {
+    "title": "What is Bitcoin?",
+    "learnMore": "Learn More",
+    "features": {
+      "1": {
+        "title": "Decentralized Digital Currency",
+        "description": "Discover how Bitcoin enables peer-to-peer transactions without intermediaries, promoting financial autonomy."
+      },
+      "2": {
+        "title": "Blockchain Security",
+        "description": "Blockchain technology ensures the integrity and security of transactions, protecting your investment."
+      },
+      "3": {
+        "title": "Limited Supply, Increasing Value",
+        "description": "With a maximum supply of 21 million, Bitcoin stands out as a unique store of value."
+      }
+    }
+  },
+  "whyPagueBit": {
+    "title": "Why Choose PagueBit?",
+    "reasons": {
+      "1": {
+        "title": "Trust and Security",
+        "description": "We prioritize the security of your funds and data, with advanced protection technologies.",
+        "alt": "Trust"
+      },
+      "2": {
+        "title": "Speed and Efficiency",
+        "description": "Fast transactions and agile support so you can make the most of the Bitcoin world.",
+        "alt": "Speed"
+      },
+      "3": {
+        "title": "Complete Solutions",
+        "description": "We offer everything you need to buy, sell, use, and accept Bitcoin.",
+        "alt": "Solutions"
+      }
+    }
+  },
+  "pfSection": {
+    "heroTitle": "Bitcoin for You",
+    "heroDescription": "Discover how Bitcoin can revolutionize your financial life with more freedom, security, and convenience in your daily transactions.",
+    "whyChooseBitcoin": "Why Choose Bitcoin?",
+    "ctaTitle": "Start Now",
+    "ctaDescription": "Discover how Bitcoin can transform your financial life. Our team is ready to help you get started.",
+    "contactButton": "Get in Touch"
+  },
+  "pjSection": {
+    "heroTitle": "Bitcoin for Businesses",
+    "heroDescription": "Modernize your financial operations with business solutions in Bitcoin. Security, efficiency, and innovation for your business.",
+    "benefitsTitle": "Benefits for Your Business",
+    "integrationTitle": "Integration Process",
+    "ctaTitle": "Transform Your Business",
+    "ctaDescription": "We are ready to help your company implement Bitcoin solutions. Get in touch and discover how we can boost your business.",
+    "consultingButton": "Schedule a Consultation"
+  },
+  "features": {
+    "title": "Why Choose PagueBit?",
+    "trust": {
+      "title": "Trust and Security",
+      "desc": "We prioritize the security of your funds and data, with advanced protection technologies."
+    },
+    "speed": {
+      "title": "Speed and Efficiency",
+      "desc": "Fast transactions and agile support so you can make the most of the Bitcoin world."
+    },
+    "solutions": {
+      "title": "Complete Solutions",
+      "desc": "We offer everything you need to buy, sell, use, and accept Bitcoin."
+    },
+    "support": {
+      "title": "Customer Focus",
+      "desc": "Our team is always ready to help you, with personalized support."
+    }
+  },
+  "ticker": {
+    "loading": "Loading prices...",
+    "bitcoin_all_currencies": "Bitcoin for all currencies!"
+  },
+  "bitcoin": {
+    "whatIs": {
+      "title": "What is Bitcoin?",
+      "decentralized": {
+        "title": "Decentralized Digital Currency",
+        "desc": "Bitcoin is the first decentralized cryptocurrency, enabling P2P transactions without intermediaries."
+      },
+      "security": {
+        "title": "Security and Blockchain",
+        "desc": "Bitcoin's security is ensured by blockchain technology, an immutable public ledger."
+      },
+      "supply": {
+        "title": "Limited Supply and Value",
+        "desc": "Bitcoin has a limited supply of 21 million, contributing to its potential value."
+      }
+    }
+  },
+  "buyBitcoinPage": {
+    "heroTitle": "Revolutionize Your Transactions with PagueBit P2P",
+    "heroDescription": "A premium experience for buying and selling Bitcoin and USDT with security and innovation.",
+    "mainSection": {
+      "title": "Premium Experience",
+      "description": "At PagueBit, you enjoy a secure and innovative environment for P2P trading, with utmost integrity and exclusive support for Premium clients.",
+      "features": [
+        "Reinforced and verified security",
+        "Transactions with premium integrity",
+        "Exclusive support for Premium clients",
+        "Ease and innovation in every transaction"
+      ],
+      "button": "Access PagueBit"
+    },
+    "recommendation": {
+      "title": "Recommendation",
+      "alt": "Alfred Logo",
+      "description": "If you prefer an anonymous and direct purchase, we recommend using Alfred for P2P transactions.",
+      "button": "Buy with Alfred"
+    }
+  },
+  "getStartedPage": {
+    "heroTitle": "Start Using Bitcoin",
+    "heroDescription": "Choose the profile that best suits your needs and begin your journey in the world of Bitcoin.",
+    "pf": {
+      "title": "For Individuals",
+      "description": "Start your Bitcoin journey in a simple and secure way. Ideal for individual investors and enthusiasts looking to enter the world of cryptocurrencies.",
+      "features": [
+        "Buy and sell Bitcoin easily",
+        "Secure and intuitive wallet",
+        "Personalized support"
+      ],
+      "buyButton": "Buy BTC",
+      "moreButton": "Learn More"
+    },
+    "pj": {
+      "title": "For Businesses",
+      "description": "Complete solutions for companies looking to integrate Bitcoin into their operations. Ideal for merchants, service providers, and innovative companies.",
+      "features": [
+        "Accept Bitcoin payments",
+        "Comprehensive financial management",
+        "Integration with existing systems"
+      ],
+      "buyButton": "Buy BTC",
+      "moreButton": "Learn More"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "pt": "Portuguese",
+    "en": "English",
+    "es": "Spanish"
   }
-
+}
