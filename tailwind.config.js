@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Lexend Deca', 'sans-serif'],
+      },
       colors: {
         orange: {
           50: 'var(--color-orange-50)',

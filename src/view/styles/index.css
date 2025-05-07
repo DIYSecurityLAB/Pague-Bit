@@ -16,6 +16,10 @@
     --color-orange-800: #993000;
     --color-orange-900: #662000;
   }
+
+  html {
+    font-family: 'Lexend Deca', sans-serif;
+  }
 }
 
 .bg-orange-450 {
