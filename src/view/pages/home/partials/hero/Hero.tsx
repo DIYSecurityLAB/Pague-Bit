@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Bitcoin, Wallet, ShoppingCart } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import BackgroundLines from '../../../../components/ui/BackgroundLines';
 import { useHero } from './useHero';
 
 const Hero = () => {
@@ -9,17 +9,14 @@ const Hero = () => {
   const { getLocalizedPath } = useHero();
 
   return (
-    <section className="bg-white text-gray-800 py-12 md:py-20 relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1920&q=80"
-          alt="Bitcoin Background"
-          className="w-full h-full object-cover opacity-10"
-        />
-      </div>
-      <div className="container mx-auto text-center relative z-10">
+    <section
+      className="bg-white text-gray-800 relative overflow-hidden w-full"
+      style={{ minHeight: '600px', height: 'calc(100vh - 60px)' }}
+    >
+      <BackgroundLines />
+      <div className="container mx-auto text-center relative z-10 py-12 md:py-20 h-full flex flex-col justify-center">
         <motion.div
-          className="flex justify-center items-center mb-4"
+          className="flex justify-center items-center mb-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -39,34 +36,24 @@ const Hero = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col md:flex-row gap-4 justify-center items-center mb-16"
+          className="flex flex-col md:flex-row gap-6 justify-center items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <Link
             to={getLocalizedPath('/get-started')}
-            className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-xl flex items-center gap-2 transition-colors"
+            className="w-64 bg-white hover:bg-orange-50 text-orange-500 text-sm font-medium py-4 px-8 border-2 border-orange-500 transition-colors"
           >
-            <Bitcoin className="h-5 w-5" />
             {t('hero.getStarted')}
           </Link>
-          
+
           <Link
             to={getLocalizedPath('/wallet')}
-            className="bg-white hover:bg-orange-50 text-orange-500 font-bold py-4 px-8 rounded-xl flex items-center gap-2 border-2 border-orange-500 transition-colors"
+            className="w-64 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium py-4 px-8 transition-colors"
           >
-            <Wallet className="h-5 w-5" />
             {t('hero.chooseWallet')}
           </Link>
-          
-          <Link
-  to={getLocalizedPath('/buy')}
-  className="bg-orange-300 hover:bg-orange-400 text-orange-800 font-bold py-4 px-8 rounded-xl flex items-center gap-2 border-2 border-orange-500 transition-all shadow-lg"
->
-  <ShoppingCart className="h-5 w-5" />
-  {t('hero.buyBitcoin')}
-</Link>
         </motion.div>
       </div>
     </section>
