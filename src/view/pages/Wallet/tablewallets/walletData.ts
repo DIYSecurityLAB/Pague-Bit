@@ -27,18 +27,17 @@ export const wallets: Wallet[] = [
     os: ['W', 'L', 'M'],
     usage: 'experiente',
     description: {
-      overview:
-        'Carteira desktop robusta e versátil, uma das mais antigas e confiáveis do ecossistema Bitcoin.',
+      overview: 'walletDetail.wallets.1.overview',
       advantages: [
-        'Controle total das suas chaves privadas',
-        'Suporte a hardware wallets',
-        'Personalização avançada de taxas',
-        'Recursos de multisignature',
+        'walletDetail.wallets.1.advantages.0',
+        'walletDetail.wallets.1.advantages.1',
+        'walletDetail.wallets.1.advantages.2',
+        'walletDetail.wallets.1.advantages.3',
       ],
       disadvantages: [
-        'Interface pouco amigável para iniciantes',
-        'Curva de aprendizado íngreme',
-        'Design visual datado',
+        'walletDetail.wallets.1.disadvantages.0',
+        'walletDetail.wallets.1.disadvantages.1',
+        'walletDetail.wallets.1.disadvantages.2',
       ],
     },
     ratings: {

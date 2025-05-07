@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       className="bg-white text-gray-800 relative overflow-hidden w-full flex items-center"
-      style={{ minHeight: '550px', height: '100%' }}
+      style={{ minHeight: '565px', height: '100%' }}
     >
       <BackgroundLines />
       <div className="container mx-auto text-center relative z-10 py-8 md:py-16 flex flex-col justify-center">

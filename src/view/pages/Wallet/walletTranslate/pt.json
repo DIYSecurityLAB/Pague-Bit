@@ -141,6 +141,176 @@
     "environment": "Ambiente",
     "privacy": "Privacidade",
     "fees": "Taxas",
-    "viewDetails": "Ver detalhes"
+    "viewDetails": "Ver detalhes",
+    "wallets": {
+      "1": {
+        "overview": "Carteira desktop robusta e versátil, uma das mais antigas e confiáveis do ecossistema Bitcoin.",
+        "advantages": {
+          "0": "Controle total das suas chaves privadas",
+          "1": "Suporte a hardware wallets",
+          "2": "Personalização avançada de taxas",
+          "3": "Recursos de multisignature"
+        },
+        "disadvantages": {
+          "0": "Interface pouco amigável para iniciantes",
+          "1": "Curva de aprendizado íngreme",
+          "2": "Design visual datado"
+        }
+      },
+      "2": {
+        "overview": "Carteira multiplataforma desenvolvida pela Blockstream, combina segurança com facilidade de uso.",
+        "advantages": {
+          "0": "Interface intuitiva para iniciantes",
+          "1": "Multisignature com proteção adicional",
+          "2": "Suporte a hardware wallets",
+          "3": "Código aberto e auditável"
+        },
+        "disadvantages": {
+          "0": "Depende parcialmente dos servidores da Blockstream",
+          "1": "Menos recursos avançados que carteiras como Electrum",
+          "2": "Processo de recuperação diferente das carteiras tradicionais"
+        }
+      },
+      "3": {
+        "overview": "Carteira desktop focada em privacidade e controle, com interface mais moderna que o Electrum.",
+        "advantages": {
+          "0": "Análise detalhada de transações",
+          "1": "Excelente suporte a hardware wallets",
+          "2": "Controle avançado de moedas (coin control)",
+          "3": "Integração com nós Bitcoin próprios"
+        },
+        "disadvantages": {
+          "0": "Não disponível para dispositivos móveis",
+          "1": "Requer conhecimento técnico moderado",
+          "2": "Recursos avançados podem sobrecarregar iniciantes"
+        }
+      },
+      "4": {
+        "overview": "Carteira focada em segurança máxima com multisignature e suporte avançado a hardware wallets.",
+        "advantages": {
+          "0": "Ideal para configurações multisignature",
+          "1": "Excelente privacidade quando conectado ao próprio nó",
+          "2": "Interface clara para gerenciamento de múltiplos dispositivos",
+          "3": "Alta segurança para grandes quantias"
+        },
+        "disadvantages": {
+          "0": "Limitado principalmente a Linux",
+          "1": "Requer conhecimento técnico avançado",
+          "2": "Processo de configuração mais complexo"
+        }
+      },
+      "5": {
+        "overview": "Carteira focada em multisignature com uma das interfaces mais amigáveis para este propósito.",
+        "advantages": {
+          "0": "Multisignature simplificado e intuitivo",
+          "1": "Disponível para desktop e mobile",
+          "2": "Excelente combinação de segurança e usabilidade",
+          "3": "Bom suporte a hardware wallets"
+        },
+        "disadvantages": {
+          "0": "Recursos avançados podem não ser óbvios para iniciantes",
+          "1": "Ecossistema menor comparado a outras carteiras",
+          "2": "Algumas funcionalidades requerem pagamento"
+        }
+      },
+      "6": {
+        "overview": "Versão móvel da popular carteira Electrum, mantendo a maioria dos recursos avançados.",
+        "advantages": {
+          "0": "Mesma segurança robusta da versão desktop",
+          "1": "Controle de taxas personalizado",
+          "2": "Compatibilidade com carteiras Electrum desktop",
+          "3": "Suporte a hardware wallets via OTG"
+        },
+        "disadvantages": {
+          "0": "Interface não otimizada para mobile",
+          "1": "Menos amigável que outras carteiras móveis",
+          "2": "Atualizações menos frequentes que a versão desktop"
+        }
+      },
+      "7": {
+        "overview": "Extensão móvel do Specter Desktop, focada em segurança e privacidade em dispositivos móveis.",
+        "advantages": {
+          "0": "Integração perfeita com Specter Desktop",
+          "1": "Suporte robusto a hardware wallets",
+          "2": "Configurações multisignature móveis",
+          "3": "Alta privacidade"
+        },
+        "disadvantages": {
+          "0": "Funcionalidades limitadas comparado à versão desktop",
+          "1": "Requer conhecimento técnico",
+          "2": "Interface menos polida que concorrentes"
+        }
+      },
+      "8": {
+        "overview": "Carteira móvel amigável para iniciantes com bom equilíbrio entre usabilidade e recursos.",
+        "advantages": {
+          "0": "Interface intuitiva e moderna",
+          "1": "Suporte a Lightning Network",
+          "2": "Pode conectar ao próprio nó",
+          "3": "Bom para uso diário e pequenas quantias"
+        },
+        "disadvantages": {
+          "0": "Lightning Network depende de servidores de terceiros por padrão",
+          "1": "Menos recursos avançados que carteiras desktop",
+          "2": "Histórico de alguns problemas de segurança corrigidos"
+        }
+      },
+      "9": {
+        "overview": "Dispositivo de hardware wallet DIY com código 100% aberto, oferecendo soberania digital máxima.",
+        "advantages": {
+          "0": "Totalmente open source e transparente",
+          "1": "Você constrói seu próprio dispositivo, eliminando riscos de supply chain",
+          "2": "Sem componentes proprietários",
+          "3": "Funcionamento air-gapped para segurança máxima"
+        },
+        "disadvantages": {
+          "0": "Requer montagem (DIY)",
+          "1": "Curva de aprendizado para uso inicial",
+          "2": "Menos recursos de UX comparado a hardware wallets comerciais"
+        }
+      },
+      "10": {
+        "overview": "Hardware wallet desenvolvida pela Blockstream com boa usabilidade e integração com Green Wallet.",
+        "advantages": {
+          "0": "Tela colorida e interface amigável",
+          "1": "Integração perfeita com Blockstream Green",
+          "2": "Código-fonte disponível",
+          "3": "Design compacto e portátil"
+        },
+        "disadvantages": {
+          "0": "Ecossistema menor que concorrentes estabelecidos",
+          "1": "Depende da Blockstream para atualizações",
+          "2": "Menos recursos avançados que dispositivos DIY como Krux"
+        }
+      },
+      "11": {
+        "overview": "Dispositivo air-gapped DIY para assinatura de transações Bitcoin com foco em privacidade máxima.",
+        "advantages": {
+          "0": "Completamente air-gapped para segurança máxima",
+          "1": "Pode ser construído com componentes comuns",
+          "2": "Código 100% aberto e verificável",
+          "3": "Excelente para configurações multisignature"
+        },
+        "disadvantages": {
+          "0": "Requer montagem e conhecimento técnico",
+          "1": "Processo de assinatura menos intuitivo",
+          "2": "Interface limitada pelo hardware minimalista"
+        }
+      },
+      "12": {
+        "overview": "Carteira focada em trading de ativos na rede Liquid, com interface amigável e boa usabilidade.",
+        "advantages": {
+          "0": "Interface intuitiva para negociação de ativos",
+          "1": "Suporte a Liquid Network",
+          "2": "Troca de ativos descentralizada",
+          "3": "Disponível para desktop e mobile"
+        },
+        "disadvantages": {
+          "0": "Foco em Liquid pode confundir usuários apenas de Bitcoin",
+          "1": "Menos recursos de privacidade avançada",
+          "2": "Ecossistema ainda em desenvolvimento"
+        }
+      }
+    }
   }
 }

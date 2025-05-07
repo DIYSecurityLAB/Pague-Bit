@@ -59,7 +59,7 @@ const WalletDetailModal: React.FC<WalletDetailModalProps> = ({
             <h3 className="text-lg font-semibold mb-2 text-gray-700">
               {t('walletDetail.overview')}
             </h3>
-            <p className="text-gray-600">{wallet.description.overview}</p>
+            <p className="text-gray-600">{t(wallet.description.overview)}</p>
           </div>
 
           {/* Sistemas e Nível */}
@@ -215,7 +215,7 @@ const WalletDetailModal: React.FC<WalletDetailModalProps> = ({
                     <span className="mr-2 mt-1 text-green-500">
                       <FaCheck />
                     </span>
-                    <span>{advantage}</span>
+                    <span>{t(advantage)}</span>
                   </li>
                 ))}
               </ul>
@@ -230,7 +230,7 @@ const WalletDetailModal: React.FC<WalletDetailModalProps> = ({
                     <span className="mr-2 mt-1 text-orange-500">
                       <FaExclamationTriangle />
                     </span>
-                    <span>{disadvantage}</span>
+                    <span>{t(disadvantage)}</span>
                   </li>
                 ))}
               </ul>

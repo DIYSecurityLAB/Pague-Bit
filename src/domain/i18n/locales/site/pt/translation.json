@@ -1,11 +1,16 @@
 {
-  "button":{
-"back": "Voltar"
+  "button": {
+    "back": "Voltar"
+  },
+  "orangeBanner": {
+    "message": "Receba em Bitcoin e USDT sem burocracia"
   },
   "header": {
+    "home": "Início",
     "about": "Sobre Nós",
     "services": "Serviços",
-    "contact": "Contato"
+    "contact": "Contato",
+    "wallet": "Carteira"
   },
   "about": {
     "title": "Sobre Nós",
@@ -69,7 +74,7 @@
     "chooseWallet": "Escolha sua Carteira",
     "buyBitcoin": "Compre Bitcoin"
   },
-   "whatIsBitcoin": {
+  "whatIsBitcoin": {
     "title": "O que é Bitcoin?",
     "learnMore": "Saiba mais",
     "features": {
@@ -106,24 +111,24 @@
         "alt": "Soluções"
       }
     }
-  }, 
-    "pfSection": {
-      "heroTitle": "Bitcoin para Você",
-      "heroDescription": "Descubra como o Bitcoin pode revolucionar sua vida financeira com mais liberdade, segurança e praticidade em suas transações diárias.",
-      "whyChooseBitcoin": "Por que escolher Bitcoin?",
-      "ctaTitle": "Comece Agora",
-      "ctaDescription": "Descubra como o Bitcoin pode transformar sua vida financeira. Nossa equipe está pronta para ajudar você a começar.",
-      "contactButton": "Entre em Contato"
-    },
-    "pjSection": {
-      "heroTitle": "Bitcoin para Empresas",
-      "heroDescription": "Modernize suas operações financeiras com soluções empresariais em Bitcoin. Segurança, eficiência e inovação para seu negócio.",
-      "benefitsTitle": "Benefícios para seu Negócio",
-      "integrationTitle": "Processo de Integração",
-      "ctaTitle": "Transforme seu Negócio",
-      "ctaDescription": "Estamos prontos para ajudar sua empresa a implementar soluções em Bitcoin. Entre em contato e descubra como podemos impulsionar seu negócio.",
-      "consultingButton": "Agende uma Consultoria"
-    },
+  },
+  "pfSection": {
+    "heroTitle": "Bitcoin para Você",
+    "heroDescription": "Descubra como o Bitcoin pode revolucionar sua vida financeira com mais liberdade, segurança e praticidade em suas transações diárias.",
+    "whyChooseBitcoin": "Por que escolher Bitcoin?",
+    "ctaTitle": "Comece Agora",
+    "ctaDescription": "Descubra como o Bitcoin pode transformar sua vida financeira. Nossa equipe está pronta para ajudar você a começar.",
+    "contactButton": "Entre em Contato"
+  },
+  "pjSection": {
+    "heroTitle": "Bitcoin para Empresas",
+    "heroDescription": "Modernize suas operações financeiras com soluções empresariais em Bitcoin. Segurança, eficiência e inovação para seu negócio.",
+    "benefitsTitle": "Benefícios para seu Negócio",
+    "integrationTitle": "Processo de Integração",
+    "ctaTitle": "Transforme seu Negócio",
+    "ctaDescription": "Estamos prontos para ajudar sua empresa a implementar soluções em Bitcoin. Entre em contato e descubra como podemos impulsionar seu negócio.",
+    "consultingButton": "Agende uma Consultoria"
+  },
   "features": {
     "title": "Por Que Escolher a PagueBit?",
     "trust": {
@@ -142,11 +147,12 @@
       "title": "Foco no Cliente",
       "desc": "Nossa equipe está sempre pronta para te ajudar, com atendimento personalizado."
     }
-  },  "ticker": {
+  },
+  "ticker": {
     "loading": "Carregando preços...",
     "bitcoin_all_currencies": "Bitcoin para todas as moedas!"
   },
-    "bitcoin": {
+  "bitcoin": {
     "whatIs": {
       "title": "O Que é Bitcoin?",
       "decentralized": {

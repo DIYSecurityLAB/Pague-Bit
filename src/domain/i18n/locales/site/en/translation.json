@@ -2,10 +2,15 @@
   "button": {
     "back": "Back"
   },
+  "orangeBanner": {
+    "message": "Receive Bitcoin and USDT without bureaucracy"
+  },
   "header": {
+    "home": "Home",
     "about": "About Us",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "wallet": "Wallet"
   },
   "about": {
     "title": "About Us",
