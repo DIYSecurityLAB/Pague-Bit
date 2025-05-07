@@ -10,11 +10,11 @@ const Hero = () => {
 
   return (
     <section
-      className="bg-white text-gray-800 relative overflow-hidden w-full"
-      style={{ minHeight: '600px', height: 'calc(100vh - 60px)' }}
+      className="bg-white text-gray-800 relative overflow-hidden w-full flex items-center"
+      style={{ minHeight: '550px', height: '100%' }}
     >
       <BackgroundLines />
-      <div className="container mx-auto text-center relative z-10 py-12 md:py-20 h-full flex flex-col justify-center">
+      <div className="container mx-auto text-center relative z-10 py-8 md:py-16 flex flex-col justify-center">
         <motion.div
           className="flex justify-center items-center mb-6"
           initial={{ opacity: 0, y: 50 }}
