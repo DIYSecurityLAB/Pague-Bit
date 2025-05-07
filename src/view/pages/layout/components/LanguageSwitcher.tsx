@@ -44,13 +44,13 @@ export function LanguageSwitcher({
               <ChevronDownIcon
                 className={classNames(
                   'h-5 w-5 text-gray-400 transition-transform',
-                  open ? 'rotate-180' : ''
+                  open ? 'rotate-180' : '',
                 )}
                 aria-hidden="true"
               />
             </Popover.Button>
 
-            <Popover.Panel className="absolute z-50 mt-2 w-36 rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
+            <Popover.Panel className="absolute right-0 z-50 mt-2 w-36 rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
               <div className="py-2">
                 <button
                   onClick={() => language.change(AcceptedLanguages.pt)}
