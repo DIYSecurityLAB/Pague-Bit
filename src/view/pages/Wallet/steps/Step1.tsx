@@ -1,8 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import WalletList from '../WalletList';
 import { useWalletOptions, WalletOption } from '../data';
-import { useTranslation } from 'react-i18next';
 
 interface Step1Props {
   onSelect: (key: 'sistema', value: string) => void;
@@ -31,8 +31,12 @@ const Step1: React.FC<Step1Props> = ({ onSelect }) => {
       exit="exit"
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl font-bold mb-4">{t("wallet.step1.title")}</h2>
-      <p className="mb-6 text-gray-600">{t("wallet.step1.description")}</p>
+      <h2 className="text-2xl font-bold mb-4 text-white">
+        {t('wallet.step1.title')}
+      </h2>
+      <p className="mb-6 text-white opacity-90">
+        {t('wallet.step1.description')}
+      </p>
       <WalletList options={step1Options} onSelect={handleSelect} />
     </motion.div>
   );

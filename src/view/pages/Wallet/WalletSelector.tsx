@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import React, { useState } from 'react';
 import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
@@ -46,7 +46,7 @@ const WalletSelector: React.FC = () => {
   const getInitialFilters = (): SelectedFilters => {
     let osFilters: string[] = [];
     let usageFilters: string[] = [];
-    
+
     if (answers.sistema) {
       switch (answers.sistema) {
         case 'celular-android':
@@ -90,17 +90,20 @@ const WalletSelector: React.FC = () => {
       {/* Botão permanente "Pular Tutorial" */}
       <button
         onClick={skipTutorial}
-        className="absolute top-4 right-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+        className="absolute top-4 right-4 px-4 py-2 bg-orange-450 text-white rounded-lg hover:bg-orange-500 transition"
       >
         Pular Tutorial
       </button>
-      <div className="max-w-4xl w-full bg-white p-8 rounded-xl shadow-lg">
+      <div className="max-w-4xl w-full bg-orange-450 p-8 rounded-xl shadow-lg text-white">
         <AnimatePresence mode="wait">
           {step === 1 && <Step1 onSelect={handleSelect} />}
           {step === 2 && <Step2 onSelect={handleSelect} />}
           {step === 3 && <Step3 onSelect={handleSelect} />}
           {step === 4 && (
-            <Step4 onSelect={handleSelect} onFinish={() => setTutorialCompleted(true)} />
+            <Step4
+              onSelect={handleSelect}
+              onFinish={() => setTutorialCompleted(true)}
+            />
           )}
         </AnimatePresence>
       </div>

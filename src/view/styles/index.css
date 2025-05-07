@@ -9,10 +9,23 @@
     --color-orange-200: #ffccb8;
     --color-orange-300: #ffb194;
     --color-orange-400: #ff9770;
+    --color-orange-450: #ff854e; /* Nova cor intermediária */
     --color-orange-500: #ff6e2c;
     --color-orange-600: #ff4d00;
     --color-orange-700: #cc3d00;
     --color-orange-800: #993000;
     --color-orange-900: #662000;
   }
+}
+
+.bg-orange-450 {
+  background-color: var(--color-orange-450);
+}
+
+.text-orange-450 {
+  color: var(--color-orange-450);
+}
+
+.hover\:bg-orange-450:hover {
+  background-color: var(--color-orange-450);
 }

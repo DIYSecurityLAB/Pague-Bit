@@ -1,125 +1,146 @@
 {
-    "step1": {
-      "title": "Elige tu Sistema Operativo",
-      "description": "Selecciona la opción que corresponde al dispositivo que utilizas."
-    },
-    "step2": {
-      "title": "¿Cuál es tu nivel de conocimiento sobre Bitcoin?",
-      "description": "Selecciona la opción que mejor refleje tu experiencia."
-    },
-    "step3": {
-      "title": "¿Qué criterio es más importante para ti?",
-      "optional": "Opcional",
-      "description": "Elige el aspecto que consideras esencial al seleccionar tu monedero."
-    },
-    "step4": {
-      "title": "¿Qué función adicional buscas?",
-      "optional": "Opcional",
-      "description": "Selecciona una función que agregue valor a tu monedero.",
-      "button": "Ver resultados"
-    },
-    "dashboard": {
-      "title": "Monederos Disponibles"
-    },
-    "ratingLegend": {
-      "good": "Bueno (B)",
-      "acceptable": "Aceptable (A)",
-      "cautious": "Cauteloso (C)",
-      "neutral": "Neutral (N)"
-    },
-    "sidebar": {
-      "filters": {
-        "title": "Filtros",
-        "osTitle": "Sistema Operativo",
-        "usageTitle": "Tipo de Uso",
-        "clear": "Limpiar Filtros"
-      }
-    },
-    "table": {
-      "wallet": "Monedero",
-      "controle": "Control",
-      "validation": "Validación",
-      "transparency": "Transparencia",
-      "environment": "Ambiente",
-      "privacy": "Privacidad",
-      "fees": "Tarifas"
-    },
-    "step1Options": {
-      "celular-android": {
-        "title": "Monederos para Móvil - Android",
-        "description": "Portátil y conveniente, ideal para transacciones cara a cara. Usa códigos QR para transacciones rápidas."
-      },
-      "celular-ios": {
-        "title": "Monederos para Móvil - iOS",
-        "description": "Portátil y conveniente, ideal para transacciones cara a cara. Usa códigos QR para transacciones rápidas."
-      },
-      "desktop": {
-        "title": "Monederos para Computadora",
-        "description": "Entorno que permite control total sobre los fondos. Puede ofrecer soporte a full nodes o monederos físicos, pero está sujeto a malware."
-      },
-      "hardware": {
-        "title": "Monederos Físicos (Hardware)",
-        "description": "Una de las formas más seguras de almacenar fondos, ideal para grandes cantidades. Menos práctico para uso diario."
-      }
-    },
-   "step2Options": {
-  "novo": {
-    "title": "Bitcoin para Principiantes",
-    "description": "Mostrar billeteras ideales para nuevos usuarios."
+  "step1": {
+    "title": "Elige tu Sistema Operativo",
+    "description": "Selecciona la opción que corresponde al dispositivo que utilizas."
   },
-  "experiente": {
-    "title": "Opciones Avanzadas de Bitcoin",
-    "description": "Mostrar todas las billeteras disponibles."
+  "step2": {
+    "title": "¿Cuál es tu nivel de conocimiento sobre Bitcoin?",
+    "description": "Selecciona la opción que mejor refleje tu experiencia."
   },
-  "ignorar": {
-    "title": "Omitir Tutorial"
-  }
-},
-    "step3Options": {
-      "controle": {
-        "title": "Control",
-        "description": "Control total sobre tus bitcoins, sin depender de terceros."
-      },
-      "validacao": {
-        "title": "Validación",
-        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
-      },
-      "transparencia": {
-        "title": "Transparencia",
-        "description": "Código abierto y desarrollo determinístico."
-      },
-      "ambiente": {
-        "title": "Ambiente",
-        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
-      },
-      "privacidade": {
-        "title": "Privacidad",
-        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
-      },
-      "taxas": {
-        "title": "Tarifas",
-        "description": "Control total sobre las tarifas pagadas a la red Bitcoin."
-      },
-      "ignorar": {
-        "title": "Omitir Tutorial"
-      }
-    },
-    "step4Options": {
-      "2fa": {
-        "title": "2FA",
-        "description": "Autenticación de dos factores para seguridad adicional."
-      },
-      "bech32": {
-        "title": "Bech32",
-        "description": "Formato de dirección especial con SegWit para transacciones rápidas."
-      },
-      "fullnode": {
-        "title": "Full Node",
-        "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
-      },
-      "ignorar": {
-        "title": "Omitir Tutorial"
-      }
+  "step3": {
+    "title": "¿Qué criterio es más importante para ti?",
+    "optional": "Opcional",
+    "description": "Elige el aspecto que consideras esencial al seleccionar tu monedero."
+  },
+  "step4": {
+    "title": "¿Qué función adicional buscas?",
+    "optional": "Opcional",
+    "description": "Selecciona una función que agregue valor a tu monedero.",
+    "button": "Ver resultados"
+  },
+  "dashboard": {
+    "title": "Monederos Disponibles"
+  },
+  "ratingLegend": {
+    "good": "Bueno (B)",
+    "acceptable": "Aceptable (A)",
+    "cautious": "Cauteloso (C)",
+    "neutral": "Neutral (N)"
+  },
+  "sidebar": {
+    "filters": {
+      "title": "Filtros",
+      "osTitle": "Sistema Operativo",
+      "usageTitle": "Tipo de Uso",
+      "clear": "Limpiar Filtros"
     }
+  },
+  "table": {
+    "wallet": "Monedero",
+    "controle": "Control",
+    "validation": "Validación",
+    "transparency": "Transparencia",
+    "environment": "Ambiente",
+    "privacy": "Privacidad",
+    "fees": "Tarifas"
+  },
+  "step1Options": {
+    "celular-android": {
+      "title": "Monederos para Móvil - Android",
+      "description": "Práctico para transacciones diarias, pero ofrece menor seguridad para grandes cantidades."
+    },
+    "celular-ios": {
+      "title": "Monederos para Móvil - iOS",
+      "description": "Práctico para transacciones diarias, pero ofrece menor seguridad para grandes cantidades."
+    },
+    "desktop": {
+      "title": "Monederos para Computadora",
+      "description": "Mayor control, pero vulnerable a malware y ataques cibernéticos."
+    },
+    "hardware": {
+      "title": "Monederos Físicos (Hardware)",
+      "description": "Máxima seguridad para tus bitcoins. Dispositivos con código abierto ofrecen total soberanía."
+    }
+  },
+  "step2Options": {
+    "novo": {
+      "title": "Principiante en Bitcoin",
+      "description": "Monederos más simples e intuitivos, enfocados en la facilidad de uso."
+    },
+    "experiente": {
+      "title": "Usuario Avanzado de Bitcoin",
+      "description": "Monederos con funciones completas, priorizando seguridad y soberanía digital."
+    },
+    "ignorar": {
+      "title": "Omitir Tutorial"
+    }
+  },
+  "step3Options": {
+    "controle": {
+      "title": "Control Total",
+      "description": "Soberanía completa sobre tus claves privadas, sin dependencia de terceros."
+    },
+    "validacao": {
+      "title": "Validación",
+      "description": "Verificación independiente de transacciones en la blockchain."
+    },
+    "transparencia": {
+      "title": "Transparencia",
+      "description": "Código 100% abierto y auditable, sin componentes propietarios."
+    },
+    "ambiente": {
+      "title": "Ambiente",
+      "description": "Facilidad de uso e interfaz amigable."
+    },
+    "privacidade": {
+      "title": "Privacidad Máxima",
+      "description": "Protección de datos y transacciones contra vigilancia."
+    },
+    "taxas": {
+      "title": "Control de Tarifas",
+      "description": "Personalización completa de las tarifas de transacción."
+    },
+    "ignorar": {
+      "title": "Omitir Este Paso"
+    }
+  },
+  "step4Options": {
+    "2fa": {
+      "title": "Autenticación Multifactor",
+      "description": "Seguridad adicional con verificación en dos pasos."
+    },
+    "bech32": {
+      "title": "Direcciones Nativas SegWit",
+      "description": "Formato de dirección optimizado para ahorrar en tarifas."
+    },
+    "fullnode": {
+      "title": "Full Node",
+      "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
+    },
+    "airgap": {
+      "title": "Seguridad Air-Gapped",
+      "description": "Seguridad máxima con dispositivos que nunca se conectan a internet."
+    },
+    "ignorar": {
+      "title": "Omitir Este Paso"
+    }
+  },
+  "walletDetail": {
+    "overview": "Visión General",
+    "systems": "Sistemas",
+    "level": "Nivel",
+    "beginner": "Principiante",
+    "advanced": "Avanzado",
+    "ratings": "Evaluaciones",
+    "advantages": "Ventajas",
+    "limitations": "Limitaciones",
+    "close": "Cerrar",
+    "control": "Control",
+    "validation": "Validación",
+    "transparency": "Transparencia",
+    "environment": "Ambiente",
+    "privacy": "Privacidad",
+    "fees": "Tarifas",
+    "viewDetails": "Ver detalles"
   }
-  
+}

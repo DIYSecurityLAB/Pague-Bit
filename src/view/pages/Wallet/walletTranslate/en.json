@@ -1,125 +1,146 @@
 {
-    "step1": {
-      "title": "Choose Your Operating System",
-      "description": "Select the option that matches the device you use."
-    },
-    "step2": {
-      "title": "What is your knowledge level about Bitcoin?",
-      "description": "Select the option that best reflects your experience."
-    },
-    "step3": {
-      "title": "Which criterion is most important to you?",
-      "optional": "Optional",
-      "description": "Choose the aspect you consider essential when selecting your wallet."
-    },
-    "step4": {
-      "title": "What additional feature are you looking for?",
-      "optional": "Optional",
-      "description": "Select a feature that adds value to your wallet.",
-      "button": "View Results"
-    },
-    "dashboard": {
-      "title": "Available Wallets"
-    },
-    "ratingLegend": {
-      "good": "Good (G)",
-      "acceptable": "Acceptable (A)",
-      "cautious": "Cautious (C)",
-      "neutral": "Neutral (N)"
-    },
-    "sidebar": {
-      "filters": {
-        "title": "Filters",
-        "osTitle": "Operating System",
-        "usageTitle": "Usage Type",
-        "clear": "Clear Filters"
-      }
-    },
-    "table": {
-      "wallet": "Wallet",
-      "controle": "Control",
-      "validation": "Validation",
-      "transparency": "Transparency",
-      "environment": "Environment",
-      "privacy": "Privacy",
-      "fees": "Fees"
-    },
-    "step1Options": {
-      "celular-android": {
-        "title": "Mobile Wallets - Android",
-        "description": "Portable and convenient, ideal for face-to-face transactions. Uses QR codes for quick transactions."
-      },
-      "celular-ios": {
-        "title": "Mobile Wallets - iOS",
-        "description": "Portable and convenient, ideal for face-to-face transactions. Uses QR codes for quick transactions."
-      },
-      "desktop": {
-        "title": "Desktop Wallets",
-        "description": "An environment that allows full control over funds. Can support full nodes or hardware wallets but is susceptible to malware."
-      },
-      "hardware": {
-        "title": "Hardware Wallets",
-        "description": "One of the most secure ways to store funds, ideal for large amounts. Less practical for daily use."
-      }
-    },
-    "step2Options": {
-      "novo": {
-        "title": "plant & bitcoin (New)",
-        "description": "Show wallets ideal for new users."
-      },
-      "experiente": {
-        "title": "trees & bitcoin (Experienced)",
-        "description": "Show all available wallets."
-      },
-      "ignorar": {
-        "title": "Skip Tutorial"
-      }
-    },
-    "step3Options": {
-      "controle": {
-        "title": "Control",
-        "description": "Full control over your bitcoins, without relying on third parties."
-      },
-      "validacao": {
-        "title": "Validation",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "transparencia": {
-        "title": "Transparency",
-        "description": "Open-source code and deterministic development."
-      },
-      "ambiente": {
-        "title": "Environment",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "privacidade": {
-        "title": "Privacy",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "taxas": {
-        "title": "Fees",
-        "description": "Full control over fees paid to the Bitcoin network."
-      },
-      "ignorar": {
-        "title": "Skip Tutorial"
-      }
-    },
-    "step4Options": {
-      "2fa": {
-        "title": "2FA",
-        "description": "Two-factor authentication for additional security."
-      },
-      "bech32": {
-        "title": "Bech32",
-        "description": "Special address format with SegWit for fast transactions."
-      },
-      "fullnode": {
-        "title": "Full Node",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "ignorar": {
-        "title": "Skip Tutorial"
-      }
+  "step1": {
+    "title": "Choose Your Operating System",
+    "description": "Select the option that matches the device you use."
+  },
+  "step2": {
+    "title": "What is your knowledge level about Bitcoin?",
+    "description": "Select the option that best reflects your experience."
+  },
+  "step3": {
+    "title": "Which criterion is most important to you?",
+    "optional": "Optional",
+    "description": "Choose the aspect you consider essential when selecting your wallet."
+  },
+  "step4": {
+    "title": "What additional feature are you looking for?",
+    "optional": "Optional",
+    "description": "Select a feature that adds value to your wallet.",
+    "button": "View Results"
+  },
+  "dashboard": {
+    "title": "Available Wallets"
+  },
+  "ratingLegend": {
+    "good": "Good (G)",
+    "acceptable": "Acceptable (A)",
+    "cautious": "Cautious (C)",
+    "neutral": "Neutral (N)"
+  },
+  "sidebar": {
+    "filters": {
+      "title": "Filters",
+      "osTitle": "Operating System",
+      "usageTitle": "Usage Type",
+      "clear": "Clear Filters"
     }
+  },
+  "table": {
+    "wallet": "Wallet",
+    "controle": "Control",
+    "validation": "Validation",
+    "transparency": "Transparency",
+    "environment": "Environment",
+    "privacy": "Privacy",
+    "fees": "Fees"
+  },
+  "step1Options": {
+    "celular-android": {
+      "title": "Mobile Wallets - Android",
+      "description": "Practical for daily transactions, but offers less security for large amounts."
+    },
+    "celular-ios": {
+      "title": "Mobile Wallets - iOS",
+      "description": "Practical for daily transactions, but offers less security for large amounts."
+    },
+    "desktop": {
+      "title": "Desktop Wallets",
+      "description": "Greater control, but vulnerable to malware and cyber attacks."
+    },
+    "hardware": {
+      "title": "Hardware Wallets",
+      "description": "Maximum security for your bitcoins. Open source devices offer complete sovereignty."
+    }
+  },
+  "step2Options": {
+    "novo": {
+      "title": "Bitcoin Beginner",
+      "description": "Simpler and more intuitive wallets, focusing on ease of use."
+    },
+    "experiente": {
+      "title": "Advanced Bitcoin User",
+      "description": "Wallets with full features, prioritizing security and digital sovereignty."
+    },
+    "ignorar": {
+      "title": "Skip Tutorial"
+    }
+  },
+  "step3Options": {
+    "controle": {
+      "title": "Total Control",
+      "description": "Complete sovereignty over your private keys, without relying on third parties."
+    },
+    "validacao": {
+      "title": "Validation",
+      "description": "Independent verification of transactions on the blockchain."
+    },
+    "transparencia": {
+      "title": "Transparency",
+      "description": "100% open and auditable code, without proprietary components."
+    },
+    "ambiente": {
+      "title": "Environment",
+      "description": "Ease of use and user-friendly interface."
+    },
+    "privacidade": {
+      "title": "Maximum Privacy",
+      "description": "Protection of data and transactions against surveillance."
+    },
+    "taxas": {
+      "title": "Fee Control",
+      "description": "Complete customization of transaction fees."
+    },
+    "ignorar": {
+      "title": "Skip This Step"
+    }
+  },
+  "step4Options": {
+    "2fa": {
+      "title": "Multifactor Authentication",
+      "description": "Additional security with two-step verification."
+    },
+    "bech32": {
+      "title": "Native SegWit Addresses",
+      "description": "Optimized address format to save on fees."
+    },
+    "airgap": {
+      "title": "Air-Gapped Security",
+      "description": "Maximum security with devices that never connect to the internet."
+    },
+    "fullnode": {
+      "title": "Full Node",
+      "description": "Note: This option is unavailable due to your previous choice."
+    },
+    "ignorar": {
+      "title": "Skip This Step"
+    }
+  },
+  "walletDetail": {
+    "overview": "Overview",
+    "systems": "Systems",
+    "level": "Level",
+    "beginner": "Beginner",
+    "advanced": "Advanced",
+    "ratings": "Ratings",
+    "advantages": "Advantages",
+    "limitations": "Limitations",
+    "close": "Close",
+    "control": "Control",
+    "validation": "Validation",
+    "transparency": "Transparency",
+    "environment": "Environment",
+    "privacy": "Privacy",
+    "fees": "Fees",
+    "viewDetails": "View details"
   }
-  
+}

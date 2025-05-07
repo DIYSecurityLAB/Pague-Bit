@@ -10,6 +10,7 @@ export default {
           200: 'var(--color-orange-200)',
           300: 'var(--color-orange-300)',
           400: 'var(--color-orange-400)',
+          450: 'var(--color-orange-450)', // Nova cor intermediária
           500: 'var(--color-orange-500)', // #ff6e2c
           600: 'var(--color-orange-600)',
           700: 'var(--color-orange-700)',

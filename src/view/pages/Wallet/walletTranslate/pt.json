@@ -1,5 +1,5 @@
 {
-"step1": {
+  "step1": {
     "title": "Escolha seu Sistema Operacional",
     "description": "Selecione a opção que corresponde ao dispositivo que você utiliza."
   },
@@ -47,79 +47,100 @@
   "step1Options": {
     "celular-android": {
       "title": "Carteiras para Celular - Android",
-      "description": "Portátil e conveniente, ideal para transações face-a-face. Usa QR codes para transações rápidas."
+      "description": "Prático para transações diárias, mas oferece menor segurança para grandes quantias."
     },
     "celular-ios": {
       "title": "Carteiras para Celular - iOS",
-      "description": "Portátil e conveniente, ideal para transações face-a-face. Usa QR codes para transações rápidas."
+      "description": "Prático para transações diárias, mas oferece menor segurança para grandes quantias."
     },
     "desktop": {
       "title": "Carteiras para Computador",
-      "description": "Ambiente que permite controle total sobre os fundos. Pode oferecer suporte a full nodes ou carteiras físicas, mas está sujeito a malware."
+      "description": "Maior controle, mas vulnerável a malware e ataques cibernéticos."
     },
     "hardware": {
       "title": "Carteiras Físicas (Hardware)",
-      "description": "Uma das formas mais seguras de guardar fundos, ideal para grandes quantias. Menos prático para uso diário."
+      "description": "Máxima segurança para seus bitcoins. Dispositivos com código aberto oferecem total soberania."
     }
   },
   "step2Options": {
-  "novo": {
-    "title": "Bitcoin para Iniciantes",
-    "description": "Mostrar carteiras ideais para novos usuários."
-  },
-  "experiente": {
-    "title": "Opções Avançadas de Bitcoin",
-    "description": "Mostrar todas as carteiras disponíveis."
-  },
-  "ignorar": {
-    "title": "Pular Tutorial"
-  }
-},
-  "step3Options": {
-    "controle": {
-      "title": "Controle",
-      "description": "Controle total sobre seus bitcoins, sem depender de terceiros."
+    "novo": {
+      "title": "Iniciante em Bitcoin",
+      "description": "Carteiras mais simples e intuitivas, com foco na facilidade de uso."
     },
-    "validacao": {
-      "title": "Validação",
-      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
-    },
-    "transparencia": {
-      "title": "Transparência",
-      "description": "Código aberto e desenvolvimento determinístico."
-    },
-    "ambiente": {
-      "title": "Ambiente",
-      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
-    },
-    "privacidade": {
-      "title": "Privacidade",
-      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
-    },
-    "taxas": {
-      "title": "Taxas",
-      "description": "Controle total sobre as taxas pagas à rede Bitcoin."
+    "experiente": {
+      "title": "Usuário Avançado de Bitcoin",
+      "description": "Carteiras com recursos completos, priorizando segurança e soberania digital."
     },
     "ignorar": {
       "title": "Pular Tutorial"
     }
   },
+  "step3Options": {
+    "controle": {
+      "title": "Controle Total",
+      "description": "Soberania completa sobre suas chaves privadas, sem dependência de terceiros."
+    },
+    "validacao": {
+      "title": "Validação",
+      "description": "Verificação independente de transações na blockchain."
+    },
+    "transparencia": {
+      "title": "Transparência",
+      "description": "Código 100% aberto e auditável, sem componentes proprietários."
+    },
+    "ambiente": {
+      "title": "Ambiente",
+      "description": "Facilidade de uso e interface amigável."
+    },
+    "privacidade": {
+      "title": "Privacidade Máxima",
+      "description": "Proteção de dados e transações contra vigilância."
+    },
+    "taxas": {
+      "title": "Controle de Taxas",
+      "description": "Personalização completa das taxas de transação."
+    },
+    "ignorar": {
+      "title": "Pular Esta Etapa"
+    }
+  },
   "step4Options": {
     "2fa": {
-      "title": "2FA",
-      "description": "Autenticação de dois fatores para segurança adicional."
+      "title": "Autenticação Multifator",
+      "description": "Segurança adicional com verificação em duas etapas."
     },
     "bech32": {
-      "title": "Bech32",
-      "description": "Formato de endereço especial com SegWit para transações rápidas."
+      "title": "Endereços Nativos SegWit",
+      "description": "Formato de endereço otimizado para economizar em taxas."
+    },
+    "airgap": {
+      "title": "Segurança Air-Gapped",
+      "description": "Segurança máxima com dispositivos que nunca se conectam à internet."
     },
     "fullnode": {
       "title": "Full Node",
       "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
     },
     "ignorar": {
-      "title": "Pular Tutorial"
+      "title": "Pular Esta Etapa"
     }
+  },
+  "walletDetail": {
+    "overview": "Visão Geral",
+    "systems": "Sistemas",
+    "level": "Nível",
+    "beginner": "Iniciante",
+    "advanced": "Avançado",
+    "ratings": "Avaliações",
+    "advantages": "Vantagens",
+    "limitations": "Limitações",
+    "close": "Fechar",
+    "control": "Controle",
+    "validation": "Validação",
+    "transparency": "Transparência",
+    "environment": "Ambiente",
+    "privacy": "Privacidade",
+    "fees": "Taxas",
+    "viewDetails": "Ver detalhes"
   }
-
 }
