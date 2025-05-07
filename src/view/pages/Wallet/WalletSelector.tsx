@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
+import BackgroundLines from '../../components/ui/BackgroundLines';
 import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
 import Step3 from './steps/Step3';
@@ -86,15 +87,36 @@ const WalletSelector: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6 relative">
-      {/* Botão permanente "Pular Tutorial" */}
-      <button
-        onClick={skipTutorial}
-        className="absolute top-4 right-4 px-4 py-2 bg-orange-450 text-white rounded-lg hover:bg-orange-500 transition"
-      >
-        Pular Tutorial
-      </button>
-      <div className="max-w-4xl w-full bg-orange-450 p-8 rounded-xl shadow-lg text-white">
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      <BackgroundLines />
+
+      {/* Reposicionamento do botão com margem superior */}
+      <div className="w-full p-4 flex justify-end items-center relative z-10 max-w-4xl mx-auto mt-10">
+        <button
+          onClick={skipTutorial}
+          className="group flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-orange-500 transition-colors"
+        >
+          <span className="text-sm font-medium">
+            Ir direto para as carteiras
+          </span>
+          <svg
+            className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Container principal com o tutorial */}
+      <div className="max-w-4xl w-full bg-orange-450 p-8 rounded-xl shadow-lg text-white relative z-10 mx-auto my-4">
         <AnimatePresence mode="wait">
           {step === 1 && <Step1 onSelect={handleSelect} />}
           {step === 2 && <Step2 onSelect={handleSelect} />}

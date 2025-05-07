@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import BackButton from '../../../components/BackButton';
+import BackgroundLines from '../../../components/ui/BackgroundLines';
 import ViewToggle, { ViewMode } from './ViewToggle';
 import WalletCards from './WalletCards';
 import { Wallet, wallets } from './walletData';
@@ -71,9 +72,10 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({
     viewMode === 'auto' ? (isMobile ? 'cards' : 'table') : viewMode;
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-8">
+    <div className="min-h-screen bg-white relative overflow-hidden py-8">
+      <BackgroundLines />
       <BackButton />
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-6xl">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-6xl mx-auto relative z-10">
         {/* Sidebar com filtros */}
         <div className="w-full md:w-1/4 border-b md:border-b-0 md:border-r border-gray-200">
           <WalletFilterSidebar
