@@ -14,11 +14,15 @@ const WalletList: React.FC<WalletListProps> = ({ options, onSelect }) => {
           key={option.key}
           onClick={() => onSelect(option)}
           disabled={option.disabled}
-          className={`p-4 border rounded-xl transition hover:bg-orange-50 ${
-            option.disabled ? 'opacity-50 cursor-not-allowed' : ''
-          }`}
+          className={`p-4 border border-white/20 bg-white text-gray-800 rounded-xl 
+            transition-all duration-300 ease-in-out transform 
+            hover:-translate-y-2 hover:shadow-lg hover:scale-[1.02] 
+            active:translate-y-0 active:shadow-md active:scale-[0.98]
+            ${option.disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
-          <strong>{option.title}</strong>
+          <strong className="block text-gray-900 text-lg mb-1">
+            {option.title}
+          </strong>
           {option.description && (
             <small className="block text-sm text-gray-500 mt-2">
               {option.description}

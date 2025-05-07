@@ -1,8 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import WalletList from '../WalletList';
 import { useWalletOptions, WalletOption } from '../data';
-import { useTranslation } from 'react-i18next';
 
 interface Step3Props {
   onSelect: (key: 'criterio', value: string) => void;
@@ -16,7 +16,7 @@ const containerVariants = {
 
 const Step3: React.FC<Step3Props> = ({ onSelect }) => {
   const { t } = useTranslation();
-    const { step3Options } = useWalletOptions();
+  const { step3Options } = useWalletOptions();
 
   const handleSelect = (option: WalletOption) => {
     onSelect('criterio', option.key);
@@ -31,10 +31,15 @@ const Step3: React.FC<Step3Props> = ({ onSelect }) => {
       exit="exit"
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl font-bold mb-4">
-        {t("wallet.step3.title")} <span className="text-sm text-gray-500">({t("wallet.step3.optional")})</span>
+      <h2 className="text-2xl font-bold mb-4 text-white">
+        {t('wallet.step3.title')}{' '}
+        <span className="text-sm text-white opacity-75">
+          ({t('wallet.step3.optional')})
+        </span>
       </h2>
-      <p className="mb-6 text-gray-600">{t("wallet.step3.description")}</p>
+      <p className="mb-6 text-white opacity-90">
+        {t('wallet.step3.description')}
+      </p>
       <WalletList options={step3Options} onSelect={handleSelect} />
     </motion.div>
   );

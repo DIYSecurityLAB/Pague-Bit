@@ -1,125 +1,316 @@
 {
-    "step1": {
-      "title": "Choose Your Operating System",
-      "description": "Select the option that matches the device you use."
+  "step1": {
+    "title": "Choose Your Operating System",
+    "description": "Select the option that matches the device you use."
+  },
+  "step2": {
+    "title": "What is your knowledge level about Bitcoin?",
+    "description": "Select the option that best reflects your experience."
+  },
+  "step3": {
+    "title": "Which criterion is most important to you?",
+    "optional": "Optional",
+    "description": "Choose the aspect you consider essential when selecting your wallet."
+  },
+  "step4": {
+    "title": "What additional feature are you looking for?",
+    "optional": "Optional",
+    "description": "Select a feature that adds value to your wallet.",
+    "button": "View Results"
+  },
+  "dashboard": {
+    "title": "Available Wallets"
+  },
+  "ratingLegend": {
+    "good": "Good (G)",
+    "acceptable": "Acceptable (A)",
+    "cautious": "Cautious (C)",
+    "neutral": "Neutral (N)"
+  },
+  "sidebar": {
+    "filters": {
+      "title": "Filters",
+      "osTitle": "Operating System",
+      "usageTitle": "Usage Type",
+      "clear": "Clear Filters"
+    }
+  },
+  "table": {
+    "wallet": "Wallet",
+    "controle": "Control",
+    "validation": "Validation",
+    "transparency": "Transparency",
+    "environment": "Environment",
+    "privacy": "Privacy",
+    "fees": "Fees"
+  },
+  "step1Options": {
+    "celular-android": {
+      "title": "Mobile Wallets - Android",
+      "description": "Practical for daily transactions, but offers less security for large amounts."
     },
-    "step2": {
-      "title": "What is your knowledge level about Bitcoin?",
-      "description": "Select the option that best reflects your experience."
+    "celular-ios": {
+      "title": "Mobile Wallets - iOS",
+      "description": "Practical for daily transactions, but offers less security for large amounts."
     },
-    "step3": {
-      "title": "Which criterion is most important to you?",
-      "optional": "Optional",
-      "description": "Choose the aspect you consider essential when selecting your wallet."
+    "desktop": {
+      "title": "Desktop Wallets",
+      "description": "Greater control, but vulnerable to malware and cyber attacks."
     },
-    "step4": {
-      "title": "What additional feature are you looking for?",
-      "optional": "Optional",
-      "description": "Select a feature that adds value to your wallet.",
-      "button": "View Results"
+    "hardware": {
+      "title": "Hardware Wallets",
+      "description": "Maximum security for your bitcoins. Open source devices offer complete sovereignty."
+    }
+  },
+  "step2Options": {
+    "novo": {
+      "title": "Bitcoin Beginner",
+      "description": "Simpler and more intuitive wallets, focusing on ease of use."
     },
-    "dashboard": {
-      "title": "Available Wallets"
+    "experiente": {
+      "title": "Advanced Bitcoin User",
+      "description": "Wallets with full features, prioritizing security and digital sovereignty."
     },
-    "ratingLegend": {
-      "good": "Good (G)",
-      "acceptable": "Acceptable (A)",
-      "cautious": "Cautious (C)",
-      "neutral": "Neutral (N)"
+    "ignorar": {
+      "title": "Skip Tutorial"
+    }
+  },
+  "step3Options": {
+    "controle": {
+      "title": "Total Control",
+      "description": "Complete sovereignty over your private keys, without relying on third parties."
     },
-    "sidebar": {
-      "filters": {
-        "title": "Filters",
-        "osTitle": "Operating System",
-        "usageTitle": "Usage Type",
-        "clear": "Clear Filters"
-      }
+    "validacao": {
+      "title": "Validation",
+      "description": "Independent verification of transactions on the blockchain."
     },
-    "table": {
-      "wallet": "Wallet",
-      "controle": "Control",
-      "validation": "Validation",
-      "transparency": "Transparency",
-      "environment": "Environment",
-      "privacy": "Privacy",
-      "fees": "Fees"
+    "transparencia": {
+      "title": "Transparency",
+      "description": "100% open and auditable code, without proprietary components."
     },
-    "step1Options": {
-      "celular-android": {
-        "title": "Mobile Wallets - Android",
-        "description": "Portable and convenient, ideal for face-to-face transactions. Uses QR codes for quick transactions."
-      },
-      "celular-ios": {
-        "title": "Mobile Wallets - iOS",
-        "description": "Portable and convenient, ideal for face-to-face transactions. Uses QR codes for quick transactions."
-      },
-      "desktop": {
-        "title": "Desktop Wallets",
-        "description": "An environment that allows full control over funds. Can support full nodes or hardware wallets but is susceptible to malware."
-      },
-      "hardware": {
-        "title": "Hardware Wallets",
-        "description": "One of the most secure ways to store funds, ideal for large amounts. Less practical for daily use."
-      }
+    "ambiente": {
+      "title": "Environment",
+      "description": "Ease of use and user-friendly interface."
     },
-    "step2Options": {
-      "novo": {
-        "title": "plant & bitcoin (New)",
-        "description": "Show wallets ideal for new users."
-      },
-      "experiente": {
-        "title": "trees & bitcoin (Experienced)",
-        "description": "Show all available wallets."
-      },
-      "ignorar": {
-        "title": "Skip Tutorial"
-      }
+    "privacidade": {
+      "title": "Maximum Privacy",
+      "description": "Protection of data and transactions against surveillance."
     },
-    "step3Options": {
-      "controle": {
-        "title": "Control",
-        "description": "Full control over your bitcoins, without relying on third parties."
-      },
-      "validacao": {
-        "title": "Validation",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "transparencia": {
-        "title": "Transparency",
-        "description": "Open-source code and deterministic development."
-      },
-      "ambiente": {
-        "title": "Environment",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "privacidade": {
-        "title": "Privacy",
-        "description": "Note: This option is unavailable due to your previous choice."
-      },
-      "taxas": {
-        "title": "Fees",
-        "description": "Full control over fees paid to the Bitcoin network."
-      },
-      "ignorar": {
-        "title": "Skip Tutorial"
-      }
+    "taxas": {
+      "title": "Fee Control",
+      "description": "Complete customization of transaction fees."
     },
-    "step4Options": {
-      "2fa": {
-        "title": "2FA",
-        "description": "Two-factor authentication for additional security."
+    "ignorar": {
+      "title": "Skip This Step"
+    }
+  },
+  "step4Options": {
+    "2fa": {
+      "title": "Multifactor Authentication",
+      "description": "Additional security with two-step verification."
+    },
+    "bech32": {
+      "title": "Native SegWit Addresses",
+      "description": "Optimized address format to save on fees."
+    },
+    "airgap": {
+      "title": "Air-Gapped Security",
+      "description": "Maximum security with devices that never connect to the internet."
+    },
+    "fullnode": {
+      "title": "Full Node",
+      "description": "Note: This option is unavailable due to your previous choice."
+    },
+    "ignorar": {
+      "title": "Skip This Step"
+    }
+  },
+  "walletDetail": {
+    "overview": "Overview",
+    "systems": "Systems",
+    "level": "Level",
+    "beginner": "Beginner",
+    "advanced": "Advanced",
+    "ratings": "Ratings",
+    "advantages": "Advantages",
+    "limitations": "Limitations",
+    "close": "Close",
+    "control": "Control",
+    "validation": "Validation",
+    "transparency": "Transparency",
+    "environment": "Environment",
+    "privacy": "Privacy",
+    "fees": "Fees",
+    "viewDetails": "View details",
+    "wallets": {
+      "1": {
+        "overview": "Robust and versatile desktop wallet, one of the oldest and most reliable in the Bitcoin ecosystem.",
+        "advantages": {
+          "0": "Full control of your private keys",
+          "1": "Hardware wallet support",
+          "2": "Advanced fee customization",
+          "3": "Multisignature features"
+        },
+        "disadvantages": {
+          "0": "User interface not friendly for beginners",
+          "1": "Steep learning curve",
+          "2": "Dated visual design"
+        }
       },
-      "bech32": {
-        "title": "Bech32",
-        "description": "Special address format with SegWit for fast transactions."
+      "2": {
+        "overview": "Multiplatform wallet developed by Blockstream, combines security with ease of use.",
+        "advantages": {
+          "0": "Intuitive interface for beginners",
+          "1": "Multisignature with additional protection",
+          "2": "Hardware wallet support",
+          "3": "Open source and auditable code"
+        },
+        "disadvantages": {
+          "0": "Partially depends on Blockstream servers",
+          "1": "Fewer advanced features than wallets like Electrum",
+          "2": "Recovery process different from traditional wallets"
+        }
       },
-      "fullnode": {
-        "title": "Full Node",
-        "description": "Note: This option is unavailable due to your previous choice."
+      "3": {
+        "overview": "Desktop wallet focused on privacy and control, with a more modern interface than Electrum.",
+        "advantages": {
+          "0": "Detailed transaction analysis",
+          "1": "Excellent hardware wallet support",
+          "2": "Advanced coin control features",
+          "3": "Integration with own Bitcoin nodes"
+        },
+        "disadvantages": {
+          "0": "Not available for mobile devices",
+          "1": "Requires moderate technical knowledge",
+          "2": "Advanced features may overwhelm beginners"
+        }
       },
-      "ignorar": {
-        "title": "Skip Tutorial"
+      "4": {
+        "overview": "Wallet focused on maximum security with multisignature and advanced hardware wallet support.",
+        "advantages": {
+          "0": "Ideal for multisignature setups",
+          "1": "Excellent privacy when connected to own node",
+          "2": "Clear interface for managing multiple devices",
+          "3": "High security for large amounts"
+        },
+        "disadvantages": {
+          "0": "Limited mainly to Linux",
+          "1": "Requires advanced technical knowledge",
+          "2": "More complex setup process"
+        }
+      },
+      "5": {
+        "overview": "Wallet focused on multisignature with one of the most user-friendly interfaces for this purpose.",
+        "advantages": {
+          "0": "Simplified and intuitive multisignature",
+          "1": "Available for desktop and mobile",
+          "2": "Excellent combination of security and usability",
+          "3": "Good hardware wallet support"
+        },
+        "disadvantages": {
+          "0": "Advanced features may not be obvious for beginners",
+          "1": "Smaller ecosystem compared to other wallets",
+          "2": "Some features require payment"
+        }
+      },
+      "6": {
+        "overview": "Mobile version of the popular Electrum wallet, retaining most advanced features.",
+        "advantages": {
+          "0": "Same robust security as the desktop version",
+          "1": "Customizable fee control",
+          "2": "Compatibility with Electrum desktop wallets",
+          "3": "Hardware wallet support via OTG"
+        },
+        "disadvantages": {
+          "0": "Interface not optimized for mobile",
+          "1": "Less user-friendly than other mobile wallets",
+          "2": "Less frequent updates than the desktop version"
+        }
+      },
+      "7": {
+        "overview": "Mobile extension of Specter Desktop, focused on security and privacy on mobile devices.",
+        "advantages": {
+          "0": "Seamless integration with Specter Desktop",
+          "1": "Robust hardware wallet support",
+          "2": "Mobile multisignature setups",
+          "3": "High privacy"
+        },
+        "disadvantages": {
+          "0": "Limited features compared to the desktop version",
+          "1": "Requires technical knowledge",
+          "2": "Less polished interface than competitors"
+        }
+      },
+      "8": {
+        "overview": "Beginner-friendly mobile wallet with a good balance of usability and features.",
+        "advantages": {
+          "0": "Intuitive and modern interface",
+          "1": "Lightning Network support",
+          "2": "Can connect to your own node",
+          "3": "Good for daily use and small amounts"
+        },
+        "disadvantages": {
+          "0": "Lightning Network relies on third-party servers by default",
+          "1": "Fewer advanced features than desktop wallets",
+          "2": "History of some resolved security issues"
+        }
+      },
+      "9": {
+        "overview": "DIY hardware wallet device with 100% open-source code, offering maximum digital sovereignty.",
+        "advantages": {
+          "0": "Fully open source and transparent",
+          "1": "Build your own device, eliminating supply chain risks",
+          "2": "No proprietary components",
+          "3": "Air-gapped operation for maximum security"
+        },
+        "disadvantages": {
+          "0": "Requires assembly (DIY)",
+          "1": "Learning curve for initial use",
+          "2": "Fewer UX features compared to commercial hardware wallets"
+        }
+      },
+      "10": {
+        "overview": "Hardware wallet developed by Blockstream with good usability and integration with Green Wallet.",
+        "advantages": {
+          "0": "Color screen and user-friendly interface",
+          "1": "Seamless integration with Blockstream Green",
+          "2": "Open-source code available",
+          "3": "Compact and portable design"
+        },
+        "disadvantages": {
+          "0": "Smaller ecosystem compared to established competitors",
+          "1": "Depends on Blockstream for updates",
+          "2": "Fewer advanced features than DIY devices like Krux"
+        }
+      },
+      "11": {
+        "overview": "DIY air-gapped device for signing Bitcoin transactions with a focus on maximum privacy.",
+        "advantages": {
+          "0": "Completely air-gapped for maximum security",
+          "1": "Can be built with common components",
+          "2": "100% open-source and verifiable code",
+          "3": "Excellent for multisignature setups"
+        },
+        "disadvantages": {
+          "0": "Requires assembly and technical knowledge",
+          "1": "Less intuitive signing process",
+          "2": "Limited interface due to minimalist hardware"
+        }
+      },
+      "12": {
+        "overview": "Wallet focused on trading assets on the Liquid network, with a user-friendly interface and good usability.",
+        "advantages": {
+          "0": "Intuitive interface for asset trading",
+          "1": "Liquid Network support",
+          "2": "Decentralized asset exchange",
+          "3": "Available for desktop and mobile"
+        },
+        "disadvantages": {
+          "0": "Focus on Liquid may confuse Bitcoin-only users",
+          "1": "Fewer advanced privacy features",
+          "2": "Ecosystem still under development"
+        }
       }
     }
   }
-  
+}
