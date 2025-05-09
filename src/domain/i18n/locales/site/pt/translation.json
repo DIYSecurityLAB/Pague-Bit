@@ -28,6 +28,15 @@
         "title": "Soluções Completas",
         "description": "Oferecemos tudo que você precisa para comprar, vender, usar e aceitar Bitcoin."
       }
+    },
+    "journey": {
+      "title": "Nossa Jornada no Mundo Bitcoin",
+      "quote": "\"Acreditamos que a tecnologia Bitcoin tem o poder de transformar a forma como lidamos com dinheiro, oferecendo mais liberdade e controle financeiro para todos.\"",
+      "paragraphs": [
+        "Desde o início, nossa missão tem sido tornar o Bitcoin acessível e compreensível para todos os brasileiros. Começamos com uma simples ideia: criar um ambiente onde pessoas comuns possam explorar o potencial das criptomoedas sem medo ou complicações.",
+        "Ao longo dos anos, desenvolvemos uma plataforma completa que atende tanto a entusiastas que estão começando sua jornada quanto a empresas que buscam integrar o Bitcoin em suas operações comerciais.",
+        "Nossa equipe é formada por especialistas apaixonados por tecnologia blockchain, sempre atualizados com as últimas inovações do mercado para oferecer as melhores e mais seguras soluções para nossos clientes."
+      ]
     }
   },
   "contact": {
@@ -228,5 +237,33 @@
     "pt": "Português",
     "en": "English",
     "es": "Español"
+  },
+  "service": {
+    "title": "Serviços",
+    "description": "Conheça os serviços que oferecemos para facilitar sua experiência com Bitcoin.",
+    "overview": {
+      "title": "Visão Geral Rápida para",
+      "individuals": {
+        "title": "Indivíduos",
+        "learnMore": "Saber mais"
+      },
+      "business": {
+        "title": "Negócios",
+        "learnMore": "Saber mais"
+      }
+    },
+    "bitcoin": {
+      "title": "Comece pelo Bitcoin",
+      "description": {
+        "paragraph1": "O Bitcoin usa uma tecnologia que conecta <strong>pessoas diretamente</strong>, sem precisar de banco ou governo no meio. <strong>As transações e a criação de novas moedas são feitas por todo mundo na rede, juntos</strong>.",
+        "paragraph2": "O Bitcoin tem seu código liberado por qualquer um ver. Todo o projeto é transparente, ninguém é dono ou manda no Bitcoin e qualquer pessoa pode entrar na jogada.",
+        "paragraph3": "Por causa de vários recursos bacanas que ele tem, <strong>o Bitcoin permite fazer coisas interessantes que nenhum outro sistema de grana conseguiu fazer antes</strong>."
+      },
+      "benefits": [
+        "Transferências rápidas de pessoa pra pessoa",
+        "Envio de dinheiro pra qualquer lugar do mundo",
+        "Taxas de processamento baixas"
+      ]
+    }
   }
 }

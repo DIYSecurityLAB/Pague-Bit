@@ -28,6 +28,15 @@
         "title": "Soluciones Completas",
         "description": "Ofrecemos todo lo que necesitas para comprar, vender, usar y aceptar Bitcoin."
       }
+    },
+    "journey": {
+      "title": "Nuestro Camino en el Mundo Bitcoin",
+      "quote": "\"Creemos que la tecnología Bitcoin tiene el poder de transformar la forma en que tratamos el dinero, ofreciendo más libertad y control financiero para todos.\"",
+      "paragraphs": [
+        "Desde el principio, nuestra misión ha sido hacer que Bitcoin sea accesible y comprensible para todos los brasileños. Comenzamos con una idea simple: crear un entorno donde las personas comunes puedan explorar el potencial de las criptomonedas sin miedo ni complicaciones.",
+        "A lo largo de los años, hemos desarrollado una plataforma completa que atiende tanto a entusiastas que están comenzando su viaje como a empresas que buscan integrar Bitcoin en sus operaciones comerciales.",
+        "Nuestro equipo está formado por expertos apasionados por la tecnología blockchain, siempre actualizados con las últimas innovaciones del mercado para ofrecer las mejores y más seguras soluciones a nuestros clientes."
+      ]
     }
   },
   "contact": {
@@ -243,5 +252,33 @@
     "pt": "Portugués",
     "en": "Inglés",
     "es": "Español"
+  },
+  "service": {
+    "title": "Servicios",
+    "description": "Conozca los servicios que ofrecemos para facilitar su experiencia con Bitcoin.",
+    "overview": {
+      "title": "Visión General Rápida para",
+      "individuals": {
+        "title": "Individuos",
+        "learnMore": "Saber más"
+      },
+      "business": {
+        "title": "Negocios",
+        "learnMore": "Saber más"
+      }
+    },
+    "bitcoin": {
+      "title": "Comienza con Bitcoin",
+      "description": {
+        "paragraph1": "Bitcoin utiliza una tecnología que conecta a las <strong>personas directamente</strong>, sin necesidad de bancos o gobiernos intermediarios. <strong>Las transacciones y la creación de nuevas monedas son realizadas colectivamente por todos en la red</strong>.",
+        "paragraph2": "Bitcoin tiene su código disponible para que cualquiera lo vea. Todo el proyecto es transparente, nadie es dueño ni controla Bitcoin y cualquiera puede participar.",
+        "paragraph3": "Debido a varias características geniales que tiene, <strong>Bitcoin permite hacer cosas interesantes que ningún otro sistema de dinero ha podido hacer antes</strong>."
+      },
+      "benefits": [
+        "Transferencias rápidas de persona a persona",
+        "Envío de dinero a cualquier parte del mundo",
+        "Bajas tasas de procesamiento"
+      ]
+    }
   }
 }

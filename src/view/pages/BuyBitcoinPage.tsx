@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import alfredlogo from '../assets/Alfredo Pose 1.png';
+import { useLocation } from 'react-router-dom';
+import alfredlogo from '../assets/Alfred_Pose.png';
 import paguebitlogo from '../assets/logos/Logo_PAGUEBIT_ICON_BLACK.svg';
 import BackButton from '../components/BackButton';
+import BackgroundLines from '../components/ui/BackgroundLines';
 
 // Variantes de animação
 const containerVariants = {
@@ -44,12 +47,23 @@ const featureVariants = {
 
 const BuyBitcoinPage = () => {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'alfredSection') {
+      const alfredSection = document.getElementById('alfredSection');
+      if (alfredSection) {
+        alfredSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      <BackgroundLines />
       <BackButton />
       <motion.main
-        className="container mx-auto px-6 md:px-10 py-16 space-y-20"
+        className="container mx-auto px-6 md:px-10 py-16 space-y-20 relative z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -184,7 +198,7 @@ const BuyBitcoinPage = () => {
         </section>
 
         {/* Seção - Para Pessoa Física — Nossa Recomendação */}
-        <section className="px-8 md:px-20">
+        <section id="alfredSection" className="px-8 md:px-20">
           <motion.aside
             className="p-10 rounded-xl shadow-md bg-gradient-to-r from-[#FF6A1F]/95 to-[#FF8C50]/95 text-white relative overflow-hidden"
             initial={{ opacity: 0, y: 50 }}

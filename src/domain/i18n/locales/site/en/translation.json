@@ -28,6 +28,15 @@
         "title": "Complete Solutions",
         "description": "We offer everything you need to buy, sell, use, and accept Bitcoin."
       }
+    },
+    "journey": {
+      "title": "Our Journey in the Bitcoin World",
+      "quote": "\"We believe Bitcoin technology has the power to transform how we deal with money, offering more freedom and financial control for everyone.\"",
+      "paragraphs": [
+        "Since the beginning, our mission has been to make Bitcoin accessible and understandable for all Brazilians. We started with a simple idea: create an environment where ordinary people can explore the potential of cryptocurrencies without fear or complications.",
+        "Over the years, we've developed a complete platform that serves both enthusiasts who are starting their journey and businesses looking to integrate Bitcoin into their commercial operations.",
+        "Our team consists of experts passionate about blockchain technology, always updated with the latest market innovations to offer the best and most secure solutions to our clients."
+      ]
     }
   },
   "contact": {
@@ -226,5 +235,33 @@
     "pt": "Portuguese",
     "en": "English",
     "es": "Spanish"
+  },
+  "service": {
+    "title": "Services",
+    "description": "Discover the services we offer to enhance your Bitcoin experience.",
+    "overview": {
+      "title": "Quick Overview for",
+      "individuals": {
+        "title": "Individuals",
+        "learnMore": "Learn more"
+      },
+      "business": {
+        "title": "Business",
+        "learnMore": "Learn more"
+      }
+    },
+    "bitcoin": {
+      "title": "Start with Bitcoin",
+      "description": {
+        "paragraph1": "Bitcoin uses a technology that connects <strong>people directly</strong>, without needing banks or governments in the middle. <strong>Transactions and the creation of new coins are done collectively by everyone in the network</strong>.",
+        "paragraph2": "Bitcoin has its code released for anyone to see. The entire project is transparent, no one owns or controls Bitcoin, and anyone can join in.",
+        "paragraph3": "Because of several cool features it has, <strong>Bitcoin allows for interesting things that no other money system has been able to do before</strong>."
+      },
+      "benefits": [
+        "Fast person-to-person transfers",
+        "Send money anywhere in the world",
+        "Low processing fees"
+      ]
+    }
   }
 }
