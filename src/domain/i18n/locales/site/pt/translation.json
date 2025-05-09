@@ -170,24 +170,29 @@
     }
   },
   "buyBitcoinPage": {
-    "heroTitle": "Revolucione Suas Transações com PagueBit P2P",
+    "heroTitle": "Revolucione Suas Transações com PagueBit",
     "heroDescription": "Uma experiência premium para compra e venda de Bitcoin e USDT com segurança e inovação.",
-    "mainSection": {
-      "title": "Experiência Premium",
-      "description": "Na PagueBit você desfruta de um ambiente seguro e inovador para negociações P2P, com máxima integridade e suporte exclusivo para clientes Premium.",
+    "businessSection": {
+      "title": "Experiência Premium para Empresas",
+      "description": "No pagueBit, sua empresa conta com uma solução segura, moderna e eficiente para receber pagamentos em Bitcoin e USDT. Com uma integração simples e rápida, os valores recebidos são convertidos automaticamente em Bitcoin, facilitando sua gestão de criptoativos com agilidade e confiabilidade.",
       "features": [
-        "Segurança reforçada e verificada",
-        "Transações com integridade premium",
-        "Suporte exclusivo para clientes Premium",
-        "Facilidade e inovação em cada negociação"
+        "Segurança Reforçada e Auditada",
+        "Plataforma Exclusiva e Transparente",
+        "Atendimento Especializado e Prioritário",
+        "Autonomia e Facilidade nas Operações"
       ],
       "button": "Acessar PagueBit"
     },
-    "recommendation": {
-      "title": "Recomendação",
-      "alt": "Logotipo do Alfred",
-      "description": "Se você prefere uma compra anônima e direta, recomendamos utilizar o alfred para transações P2P.",
-      "button": "Comprar com alfred"
+    "personalSection": {
+      "title": "Para Pessoa Física — Nossa Recomendação",
+      "description": "Se você busca uma compra rápida e com privacidade, recomendamos o uso do AlfredP2P:",
+      "features": [
+        "O P2P mais rápido do mercado",
+        "Totalmente anônimo, sem burocracia",
+        "Troca simultânea com segurança garantida",
+        "Ideal para quem valoriza soberania e autonomia financeira"
+      ],
+      "button": "Comprar com ALFRED"
     }
   },
   "getStartedPage": {

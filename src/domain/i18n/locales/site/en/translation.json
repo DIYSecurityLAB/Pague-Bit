@@ -168,24 +168,29 @@
     }
   },
   "buyBitcoinPage": {
-    "heroTitle": "Revolutionize Your Transactions with PagueBit P2P",
+    "heroTitle": "Revolutionize Your Transactions with PagueBit",
     "heroDescription": "A premium experience for buying and selling Bitcoin and USDT with security and innovation.",
-    "mainSection": {
-      "title": "Premium Experience",
-      "description": "At PagueBit, you enjoy a secure and innovative environment for P2P trading, with utmost integrity and exclusive support for Premium clients.",
+    "businessSection": {
+      "title": "Premium Experience for Businesses",
+      "description": "At PagueBit, your company has a secure, modern, and efficient solution to receive payments in Bitcoin and USDT. With simple and fast integration, received values are automatically converted to Bitcoin, facilitating your crypto asset management with agility and reliability.",
       "features": [
-        "Reinforced and verified security",
-        "Transactions with premium integrity",
-        "Exclusive support for Premium clients",
-        "Ease and innovation in every transaction"
+        "Reinforced and Audited Security",
+        "Exclusive and Transparent Platform",
+        "Specialized and Priority Support",
+        "Autonomy and Ease in Operations"
       ],
       "button": "Access PagueBit"
     },
-    "recommendation": {
-      "title": "Recommendation",
-      "alt": "Alfred Logo",
-      "description": "If you prefer an anonymous and direct purchase, we recommend using Alfred for P2P transactions.",
-      "button": "Buy with Alfred"
+    "personalSection": {
+      "title": "For Individuals — Our Recommendation",
+      "description": "If you're looking for a quick and private purchase, we recommend using AlfredP2P:",
+      "features": [
+        "The fastest P2P in the market",
+        "Completely anonymous, no bureaucracy",
+        "Simultaneous exchange with guaranteed security",
+        "Ideal for those who value financial sovereignty and autonomy"
+      ],
+      "button": "Buy with ALFRED"
     }
   },
   "getStartedPage": {

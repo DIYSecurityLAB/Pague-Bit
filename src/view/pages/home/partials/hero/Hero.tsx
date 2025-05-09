@@ -58,7 +58,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <Link
-            to={getLocalizedPath('/get-started')}
+            to={getLocalizedPath('/buy')}
             className="w-64 bg-white hover:bg-orange-50 text-orange-500 text-xs font-medium py-4 px-8 border-2 border-orange-500 transition-colors"
           >
             {t('hero.getStarted')}

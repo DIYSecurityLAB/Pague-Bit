@@ -168,8 +168,8 @@
     }
   },
   "buyBitcoinPage": {
-    "heroTitle": "Revoluciona tus Transacciones con PagueBit P2P",
-    "heroDescription": "Una experiencia premium para la compra y venta de Bitcoin y USDT con seguridad e innovación.",
+    "heroTitle": "Revoluciona tus Transacciones con PagueBit",
+    "heroDescription": "Una experiencia premium para compra y venta de Bitcoin y USDT con seguridad e innovación.",
     "mainSection": {
       "title": "Experiencia Premium",
       "description": "En PagueBit disfrutas de un entorno seguro e innovador para negociaciones P2P, con máxima integridad y soporte exclusivo para clientes Premium.",
@@ -186,6 +186,28 @@
       "alt": "Logotipo de Alfred",
       "description": "Si prefieres una compra anónima y directa, recomendamos utilizar Alfred para transacciones P2P.",
       "button": "Comprar con Alfred"
+    },
+    "businessSection": {
+      "title": "Experiencia Premium para Empresas",
+      "description": "En PagueBit, tu empresa cuenta con una solución segura, moderna y eficiente para recibir pagos en Bitcoin y USDT. Con una integración simple y rápida, los valores recibidos se convierten automáticamente en Bitcoin, facilitando tu gestión de criptoactivos con agilidad y confiabilidad.",
+      "features": [
+        "Seguridad Reforzada y Auditada",
+        "Plataforma Exclusiva y Transparente",
+        "Atención Especializada y Prioritaria",
+        "Autonomía y Facilidad en las Operaciones"
+      ],
+      "button": "Acceder a PagueBit"
+    },
+    "personalSection": {
+      "title": "Para Personas Físicas — Nuestra Recomendación",
+      "description": "Si buscas una compra rápida y con privacidad, recomendamos el uso de AlfredP2P:",
+      "features": [
+        "El P2P más rápido del mercado",
+        "Totalmente anónimo, sin burocracia",
+        "Intercambio simultáneo con seguridad garantizada",
+        "Ideal para quienes valoran la soberanía y autonomía financiera"
+      ],
+      "button": "Comprar con ALFRED"
     }
   },
   "getStartedPage": {
