@@ -1,74 +1,73 @@
 {
-    "features": {
-      "securityEnterprise": {
-        "title": "Enterprise Security",
-        "description": "Robust security system with multiple layers of protection for your corporate transactions."
-      },
-      "internationalPayments": {
-        "title": "International Payments",
-        "description": "Conduct global transactions without bureaucracy, with reduced costs and fast settlement."
-      },
-      "completeIntegration": {
-        "title": "Complete Integration",
-        "description": "Customized solutions to integrate Bitcoin into your existing systems."
-      },
-      "financialManagement": {
-        "title": "Financial Management",
-        "description": "Complete dashboard for control and analysis of all your Bitcoin operations."
-      },
-      "compliance": {
-        "title": "Compliance",
-        "description": "Operations in full compliance with current regulations."
-      },
-      "dedicatedSupport": {
-        "title": "Dedicated Support",
-        "description": "Specialized team to assist your company 24/7."
-      }
+  "features": {
+    "securityEnterprise": {
+      "title": "Enterprise Security",
+      "description": "Robust security system with multiple layers of protection for your corporate transactions."
     },
-    "benefits": {
-      "costReduction": {
-        "title": "Cost Reduction",
-        "description": "Minimize transaction fees and eliminate unnecessary intermediaries."
-      },
-      "operationalEfficiency": {
-        "title": "Operational Efficiency",
-        "description": "Automate processes and reduce payment settlement time."
-      },
-      "globalExpansion": {
-        "title": "Global Expansion",
-        "description": "Reach new markets without the limitations of the traditional banking system."
-      },
-      "technologicalInnovation": {
-        "title": "Technological Innovation",
-        "description": "Position your company at the forefront of the digital financial revolution."
-      }
+    "internationalPayments": {
+      "title": "International Payments",
+      "description": "Conduct global transactions without bureaucracy, with reduced costs and fast settlement."
     },
-    "integrationSteps": {
-      "consultingInitial": {
-        "title": "Initial Consulting",
-        "description": "Detailed analysis of your company's needs and strategic planning."
-      },
-      "development": {
-        "title": "Development",
-        "description": "Customization and implementation of solutions tailored to your business."
-      },
-      "training": {
-        "title": "Training",
-        "description": "Comprehensive training of your team to operate the system."
-      },
-      "continuousSupport": {
-        "title": "Continuous Support",
-        "description": "Ongoing monitoring and specialized technical support to ensure the success of the operation."
-      }
+    "completeIntegration": {
+      "title": "Complete Integration",
+      "description": "Customized solutions to integrate Bitcoin into your existing systems."
     },
-    "pjSection": {
-      "heroTitle": "Business Solutions with Bitcoin",
-      "heroDescription": "The ideal way to integrate Bitcoin into your company's processes.",
-      "benefitsTitle": "Benefits for Your Company",
-      "integrationTitle": "Integration Process",
-      "ctaTitle": "Start transforming your business",
-      "ctaDescription": "Contact us and discover how to integrate Bitcoin in a safe and efficient way.",
-      "consultingButton": "Request Consulting"
+    "financialManagement": {
+      "title": "Financial Management",
+      "description": "Complete dashboard for control and analysis of all your Bitcoin operations."
+    },
+    "compliance": {
+      "title": "Compliance",
+      "description": "Operations in full compliance with current regulations."
+    },
+    "dedicatedSupport": {
+      "title": "Dedicated Support",
+      "description": "Specialized team to assist your company 24/7."
     }
+  },
+  "benefits": {
+    "costReduction": {
+      "title": "Cost Reduction",
+      "description": "Minimize transaction fees and eliminate unnecessary intermediaries."
+    },
+    "operationalEfficiency": {
+      "title": "Operational Efficiency",
+      "description": "Automate processes and reduce payment settlement time."
+    },
+    "globalExpansion": {
+      "title": "Global Expansion",
+      "description": "Reach new markets without the limitations of the traditional banking system."
+    },
+    "technologicalInnovation": {
+      "title": "Technological Innovation",
+      "description": "Position your company at the forefront of the digital financial revolution."
+    }
+  },
+  "integrationSteps": {
+    "consultingInitial": {
+      "title": "Initial Consulting",
+      "description": "Detailed analysis of your company's needs and strategic planning."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Customization and implementation of solutions tailored to your business."
+    },
+    "training": {
+      "title": "Training",
+      "description": "Comprehensive training of your team to operate the system."
+    },
+    "continuousSupport": {
+      "title": "Continuous Support",
+      "description": "Ongoing monitoring and specialized technical support to ensure the success of the operation."
+    }
+  },
+  "pjSection": {
+    "heroTitle": "Business Solutions with Bitcoin",
+    "heroDescription": "The ideal way to integrate Bitcoin into your company's processes.",
+    "benefitsTitle": "Benefits for Your Company",
+    "integrationTitle": "Integration Process",
+    "ctaTitle": "Start transforming your business",
+    "ctaDescription": "Contact us and discover how to integrate Bitcoin in a safe and efficient way.",
+    "consultingButton": "Request Consulting"
   }
-  
+}

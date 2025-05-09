@@ -1,41 +1,32 @@
 {
-    "title": "Our Services",
-    "description": "We offer a complete range of services to meet the needs of individuals and businesses interested in using Bitcoin in a safe, efficient, and innovative manner.",
-    "buySellBTC": {
-      "title": "Buy and Sell BTC",
-      "description": "Safe operations with KYC for individuals and businesses",
-      "features": [
-        "Simplified KYC process",
-        "Competitive fees",
-        "Dedicated support"
-      ]
-    },
-    "specializedConsulting": {
-      "title": "Specialized Consulting",
-      "description": "Implementation of Bitcoin in your business and payment management",
-      "features": [
-        "Personalized analysis",
-        "Strategic planning",
-        "Assisted implementation"
-      ]
-    },
-    "paymentApp": {
-      "title": "Payment App",
-      "description": "Intuitive interface to manage Bitcoin transactions",
-      "features": [
-        "Complete dashboard",
-        "Detailed reports",
-        "API integration"
-      ]
-    },
-    "btcMachine": {
-      "title": "BTC Machine",
-      "description": "Physical solution to accept Bitcoin at your establishment",
-      "features": [
-        "Setup in minutes",
-        "No monthly fee",
-        "24/7 support"
-      ]
-    }
+  "title": "Our Services",
+  "description": "We offer a complete range of services to meet the needs of individuals and businesses interested in using Bitcoin in a safe, efficient, and innovative manner.",
+  "buySellBTC": {
+    "title": "Buy and Sell BTC",
+    "description": "Safe operations with KYC for individuals and businesses",
+    "features": [
+      "Simplified KYC process",
+      "Competitive fees",
+      "Dedicated support"
+    ]
+  },
+  "specializedConsulting": {
+    "title": "Specialized Consulting",
+    "description": "Implementation of Bitcoin in your business and payment management",
+    "features": [
+      "Personalized analysis",
+      "Strategic planning",
+      "Assisted implementation"
+    ]
+  },
+  "paymentApp": {
+    "title": "Payment App",
+    "description": "Intuitive interface to manage Bitcoin transactions",
+    "features": ["Complete dashboard", "Detailed reports", "API integration"]
+  },
+  "btcMachine": {
+    "title": "BTC Machine",
+    "description": "Physical solution to accept Bitcoin at your establishment",
+    "features": ["Setup in minutes", "No monthly fee", "24/7 support"]
   }
-  
+}

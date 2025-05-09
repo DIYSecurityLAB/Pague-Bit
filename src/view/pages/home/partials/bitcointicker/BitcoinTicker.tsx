@@ -1,35 +1,64 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { useBitcoinTickerPrices } from "./useBitcoinTickerPrices";
-import { useTranslation } from "react-i18next";
+import { motion } from 'framer-motion';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useBitcoinTickerPrices } from './useBitcoinTickerPrices';
 
 const BitcoinTicker: React.FC = () => {
   const { t } = useTranslation();
-  const { prices, loading, itemsRef, controls, isHovered, setIsHovered } = useBitcoinTickerPrices();
+  const { prices, loading, itemsRef, controls, setIsHovered } =
+    useBitcoinTickerPrices();
 
   if (loading) {
     return (
       <div className="w-full bg-orange-500 text-white py-2 text-center text-lg font-semibold relative z-40">
-        {t("ticker.loading")}
+        {t('ticker.loading')}
       </div>
     );
   }
 
   const formattedPrices = [
-    { label: "USD", value: prices.usd?.toLocaleString("en-US", { style: "currency", currency: "USD" }) || "N/A" },
-    { label: "BRL", value: prices.brl?.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) || "N/A" },
-    { label: "CNY", value: prices.cny?.toLocaleString("zh-CN", { style: "currency", currency: "CNY" }) || "N/A" },
-    { label: "EUR", value: prices.eur?.toLocaleString("de-DE", { style: "currency", currency: "EUR" }) || "N/A" }
+    {
+      label: 'USD',
+      value:
+        prices.usd?.toLocaleString('en-US', {
+          style: 'currency',
+          currency: 'USD',
+        }) || 'N/A',
+    },
+    {
+      label: 'BRL',
+      value:
+        prices.brl?.toLocaleString('pt-BR', {
+          style: 'currency',
+          currency: 'BRL',
+        }) || 'N/A',
+    },
+    {
+      label: 'CNY',
+      value:
+        prices.cny?.toLocaleString('zh-CN', {
+          style: 'currency',
+          currency: 'CNY',
+        }) || 'N/A',
+    },
+    {
+      label: 'EUR',
+      value:
+        prices.eur?.toLocaleString('de-DE', {
+          style: 'currency',
+          currency: 'EUR',
+        }) || 'N/A',
+    },
   ];
 
   // Duplicação para um loop infinito real
   const tickerItems = [
-    { label: "🔥", value: t("ticker.bitcoin_all_currencies") },
+    { label: '🔥', value: t('ticker.bitcoin_all_currencies') },
     ...formattedPrices,
     ...formattedPrices,
-    { label: "🔥", value: t("ticker.bitcoin_all_currencies") },
+    { label: '🔥', value: t('ticker.bitcoin_all_currencies') },
     ...formattedPrices,
-    ...formattedPrices
+    ...formattedPrices,
   ];
 
   return (

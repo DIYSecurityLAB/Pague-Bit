@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { useServicesContent } from './arrays';
 import { useServicesSection } from './useServicesSection';
-import { useTranslation } from 'react-i18next';
 
 const ServicesSection = () => {
   const { t } = useTranslation();
-  const {   variants } = useServicesSection();
+  const { variants } = useServicesSection();
   const { services } = useServicesContent();
 
   return (
@@ -19,10 +19,10 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-bold mb-6 text-gray-800">
-            {t("service.title")}
+            {t('service.title')}
           </h2>
           <p className="text-lg text-gray-600 mb-12">
-            {t("service.description")}
+            {t('service.description')}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -39,7 +39,9 @@ const ServicesSection = () => {
                 <h3 className="text-xl font-bold mb-2 text-gray-800">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-center">{service.description}</p>
+                <p className="text-gray-600 text-center">
+                  {service.description}
+                </p>
                 <ul className="list-disc list-inside mt-2 text-gray-600">
                   {service.features.map((feature: string, i: number) => (
                     <li key={i}>{feature}</li>

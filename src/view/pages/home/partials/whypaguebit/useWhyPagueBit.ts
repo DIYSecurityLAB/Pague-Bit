@@ -1,5 +1,5 @@
-import { useRef, useState, useEffect } from "react";
-import { useAnimation } from "framer-motion";
+import { useAnimation } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 export const useWhyPagueBit = () => {
   const itemsRef = useRef<HTMLDivElement | null>(null); // ⬅ Define o tipo corretamente
@@ -25,10 +25,10 @@ export const useWhyPagueBit = () => {
       controls.start({
         x: 0,
         transition: {
-          ease: "linear",
+          ease: 'linear',
           duration: duration,
           repeat: Infinity,
-          repeatType: "loop",
+          repeatType: 'loop',
         },
       });
     } else {

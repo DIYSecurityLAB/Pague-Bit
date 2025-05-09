@@ -1,10 +1,10 @@
-import BackButton from "../../components/BackButton";
-import ContactSection from "./components/ContactSection/ContactSection";
+import BackButton from '../../components/BackButton';
+import ContactSection from './components/ContactSection/ContactSection';
 
 const Contact = () => {
   return (
     <div className="min-h-screen py-24">
-       <BackButton/>
+      <BackButton />
       <ContactSection />
     </div>
   );

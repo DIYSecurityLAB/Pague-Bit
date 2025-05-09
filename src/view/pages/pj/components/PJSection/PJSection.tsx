@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Bitcoin, ArrowRight } from 'lucide-react';
+import { ArrowRight, Bitcoin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { usePJContent } from './arrays'; // Hook com textos traduzidos
 import { usePJSection } from './usePJSection';
-import { useTranslation } from 'react-i18next';
 
 const PJSection = () => {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ const PJSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {t("pjSection.heroTitle")}
+              {t('pjSection.heroTitle')}
             </motion.h1>
             <motion.p
               className="text-xl mb-8 text-gray-600"
@@ -31,7 +31,7 @@ const PJSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              {t("pjSection.heroDescription")}
+              {t('pjSection.heroDescription')}
             </motion.p>
           </div>
         </div>
@@ -54,7 +54,9 @@ const PJSection = () => {
                 <div className="bg-orange-50 w-20 h-20 rounded-xl flex items-center justify-center mb-6">
                   <feature.Icon className="h-8 w-8 text-orange-500" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 text-gray-800">{feature.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+                  {feature.title}
+                </h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
@@ -68,7 +70,7 @@ const PJSection = () => {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-16 text-center relative">
               <span className="relative text-gray-800">
-                {t("pjSection.benefitsTitle")}
+                {t('pjSection.benefitsTitle')}
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-orange-500"></div>
               </span>
             </h2>
@@ -80,7 +82,9 @@ const PJSection = () => {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">{benefit.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+                    {benefit.title}
+                  </h3>
                   <p className="text-gray-600">{benefit.description}</p>
                 </motion.div>
               ))}
@@ -94,7 +98,7 @@ const PJSection = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-16 text-center relative">
             <span className="relative text-gray-800">
-              {t("pjSection.integrationTitle")}
+              {t('pjSection.integrationTitle')}
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-orange-500"></div>
             </span>
           </h2>
@@ -122,15 +126,19 @@ const PJSection = () => {
           <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-12 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa')] bg-cover bg-center opacity-10"></div>
             <div className="relative">
-              <h2 className="text-4xl font-bold mb-6">{t("pjSection.ctaTitle")}</h2>
-              <p className="text-xl mb-8 text-orange-50">{t("pjSection.ctaDescription")}</p>
+              <h2 className="text-4xl font-bold mb-6">
+                {t('pjSection.ctaTitle')}
+              </h2>
+              <p className="text-xl mb-8 text-orange-50">
+                {t('pjSection.ctaDescription')}
+              </p>
               <motion.button
                 onClick={handleConsultingClick}
                 className="bg-white text-orange-500 px-8 py-4 rounded-xl font-semibold hover:bg-orange-50 transition-colors inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                {t("pjSection.consultingButton")}
+                {t('pjSection.consultingButton')}
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </div>

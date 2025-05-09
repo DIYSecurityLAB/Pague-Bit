@@ -1,6 +1,6 @@
-import { CreditCard, Building, Smartphone, Globe } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { Building, CreditCard, Globe, Smartphone } from 'lucide-react';
 import { ComponentType, SVGProps } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export interface Service {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
@@ -21,28 +21,28 @@ export const useServicesContent = (): { services: Service[] } => {
   const services: Service[] = [
     {
       Icon: CreditCard,
-      title: t("service.buySellBTC.title"),
-      description: t("service.buySellBTC.description"),
-      features: getFeatures("service.buySellBTC.features")
+      title: t('service.buySellBTC.title'),
+      description: t('service.buySellBTC.description'),
+      features: getFeatures('service.buySellBTC.features'),
     },
     {
       Icon: Building,
-      title: t("service.specializedConsulting.title"),
-      description: t("service.specializedConsulting.description"),
-      features: getFeatures("service.specializedConsulting.features")
+      title: t('service.specializedConsulting.title'),
+      description: t('service.specializedConsulting.description'),
+      features: getFeatures('service.specializedConsulting.features'),
     },
     {
       Icon: Smartphone,
-      title: t("service.paymentApp.title"),
-      description: t("service.paymentApp.description"),
-      features: getFeatures("service.paymentApp.features")
+      title: t('service.paymentApp.title'),
+      description: t('service.paymentApp.description'),
+      features: getFeatures('service.paymentApp.features'),
     },
     {
       Icon: Globe,
-      title: t("service.btcMachine.title"),
-      description: t("service.btcMachine.description"),
-      features: getFeatures("service.btcMachine.features")
-    }
+      title: t('service.btcMachine.title'),
+      description: t('service.btcMachine.description'),
+      features: getFeatures('service.btcMachine.features'),
+    },
   ];
 
   return { services };

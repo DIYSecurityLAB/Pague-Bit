@@ -1,10 +1,10 @@
-import BackButton from "../../components/BackButton";
-import ServicesSection from "./components/ServicesSection/ServicesSection";
+import BackButton from '../../components/BackButton';
+import ServicesSection from './components/ServicesSection/ServicesSection';
 
 const Services = () => {
   return (
     <div className="min-h-screen py-24">
-       <BackButton/>
+      <BackButton />
       <ServicesSection />
     </div>
   );

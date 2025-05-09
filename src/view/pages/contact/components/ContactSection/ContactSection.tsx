@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { socialLinks } from './arrays';
 import { useContactSection } from './useContactSection';
-import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
   const { t } = useTranslation();
-  const { formData, isLoading, handleSubmit, handleChange } = useContactSection();
+  const { formData, isLoading, handleSubmit, handleChange } =
+    useContactSection();
 
   return (
     <section className="flex items-start justify-center bg-white p-4  ">
@@ -46,7 +47,7 @@ const ContactSection = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <h3 className="text-3xl font-bold text-center text-gray-800">
-                {t("contact.title")}
+                {t('contact.title')}
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -55,7 +56,7 @@ const ContactSection = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder={t("contact.form.name")}
+                  placeholder={t('contact.form.name')}
                   required
                   className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
                 />
@@ -64,7 +65,7 @@ const ContactSection = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  placeholder={t("contact.form.company")}
+                  placeholder={t('contact.form.company')}
                   required
                   className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
                 />
@@ -75,7 +76,7 @@ const ContactSection = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder={t("contact.form.email")}
+                placeholder={t('contact.form.email')}
                 required
                 className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
               />
@@ -84,7 +85,7 @@ const ContactSection = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder={t("contact.form.message")}
+                placeholder={t('contact.form.message')}
                 required
                 rows={5}
                 className="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition-all"
@@ -95,7 +96,9 @@ const ContactSection = () => {
                 disabled={isLoading}
                 className="w-full py-4 rounded-lg font-semibold bg-orange-600 text-white transition-all hover:bg-orange-700 disabled:bg-gray-400"
               >
-                {isLoading ? t("contact.form.sending") : t("contact.form.submit")}
+                {isLoading
+                  ? t('contact.form.sending')
+                  : t('contact.form.submit')}
               </button>
             </motion.form>
           </article>

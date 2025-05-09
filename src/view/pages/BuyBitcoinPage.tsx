@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { ShieldCheck, ArrowRight } from 'lucide-react';
+import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import alfredlogo from "../assets/AlfredComercial.png";
+import alfredlogo from '../assets/AlfredComercial.png';
 import BackButton from '../components/BackButton';
 
 const BuyBitcoinPage = () => {
@@ -9,7 +9,7 @@ const BuyBitcoinPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-           <BackButton/>
+      <BackButton />
       <main className="container mx-auto px-4 py-12 space-y-16">
         {/* Título da Página */}
         <motion.div
@@ -19,10 +19,10 @@ const BuyBitcoinPage = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800">
-            {t("buyBitcoinPage.heroTitle")}
+            {t('buyBitcoinPage.heroTitle')}
           </h1>
           <p className="mt-4 text-xl md:text-2xl text-gray-700">
-            {t("buyBitcoinPage.heroDescription")}
+            {t('buyBitcoinPage.heroDescription')}
           </p>
         </motion.div>
 
@@ -41,27 +41,27 @@ const BuyBitcoinPage = () => {
             </figure>
             <div className="flex-1">
               <h2 className="text-3xl font-bold text-gray-800">
-                {t("buyBitcoinPage.mainSection.title")}
+                {t('buyBitcoinPage.mainSection.title')}
               </h2>
               <p className="mt-4 text-gray-600">
-                {t("buyBitcoinPage.mainSection.description")}
+                {t('buyBitcoinPage.mainSection.description')}
               </p>
               <ul className="mt-6 space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <ArrowRight className="h-5 w-5 text-orange-500 mr-2" />
-                  {t("buyBitcoinPage.mainSection.features.0")}
+                  {t('buyBitcoinPage.mainSection.features.0')}
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-5 w-5 text-orange-500 mr-2" />
-                  {t("buyBitcoinPage.mainSection.features.1")}
+                  {t('buyBitcoinPage.mainSection.features.1')}
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-5 w-5 text-orange-500 mr-2" />
-                  {t("buyBitcoinPage.mainSection.features.2")}
+                  {t('buyBitcoinPage.mainSection.features.2')}
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-5 w-5 text-orange-500 mr-2" />
-                  {t("buyBitcoinPage.mainSection.features.3")}
+                  {t('buyBitcoinPage.mainSection.features.3')}
                 </li>
               </ul>
               <div className="mt-6">
@@ -71,7 +71,7 @@ const BuyBitcoinPage = () => {
                   rel="noopener noreferrer"
                   className="inline-block bg-orange-500 text-white px-8 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
                 >
-                  {t("buyBitcoinPage.mainSection.button")}
+                  {t('buyBitcoinPage.mainSection.button')}
                 </a>
               </div>
             </div>
@@ -87,19 +87,19 @@ const BuyBitcoinPage = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              {t("buyBitcoinPage.recommendation.title")}
+              {t('buyBitcoinPage.recommendation.title')}
             </h3>
             <div className="flex flex-col md:flex-row items-center">
               <figure className="mb-4 md:mb-0 md:mr-8">
-                <img 
-                  src={alfredlogo} 
-                  alt={t("buyBitcoinPage.recommendation.alt")} 
-                  className="w-[190px] h-[100px] object-contain" 
+                <img
+                  src={alfredlogo}
+                  alt={t('buyBitcoinPage.recommendation.alt')}
+                  className="w-[190px] h-[100px] object-contain"
                 />
               </figure>
               <div className="flex-1">
                 <p className="text-gray-600">
-                  {t("buyBitcoinPage.recommendation.description")}
+                  {t('buyBitcoinPage.recommendation.description')}
                 </p>
                 <div className="mt-4">
                   <a
@@ -108,7 +108,7 @@ const BuyBitcoinPage = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-orange-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-600 transition-colors"
                   >
-                    {t("buyBitcoinPage.recommendation.button")}
+                    {t('buyBitcoinPage.recommendation.button')}
                   </a>
                 </div>
               </div>

@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Bitcoin, Building2, ArrowRight, ShoppingCart } from 'lucide-react';
-import { ROUTES } from '../routes/Routes';
+import { ArrowRight, Bitcoin, Building2, ShoppingCart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import i18n from '../../domain/i18n';
 import BackButton from '../components/BackButton';
+import { ROUTES } from '../routes/Routes';
 
 const GetStartedPage = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const GetStartedPage = () => {
 
   return (
     <div className="min-h-screen py-24 bg-white">
-           <BackButton/>
+      <BackButton />
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center max-w-3xl mx-auto mb-16"
@@ -21,10 +21,10 @@ const GetStartedPage = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            {t("getStartedPage.heroTitle")}
+            {t('getStartedPage.heroTitle')}
           </h1>
           <p className="text-xl text-gray-600">
-            {t("getStartedPage.heroDescription")}
+            {t('getStartedPage.heroDescription')}
           </p>
         </motion.div>
 
@@ -41,23 +41,23 @@ const GetStartedPage = () => {
               <Bitcoin className="h-8 w-8 text-orange-500" />
             </div>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              {t("getStartedPage.pf.title")}
+              {t('getStartedPage.pf.title')}
             </h2>
             <p className="text-gray-600 mb-6">
-              {t("getStartedPage.pf.description")}
+              {t('getStartedPage.pf.description')}
             </p>
             <ul className="space-y-3 mb-8 text-gray-600">
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                {t("getStartedPage.pf.features.0")}
+                {t('getStartedPage.pf.features.0')}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                {t("getStartedPage.pf.features.1")}
+                {t('getStartedPage.pf.features.1')}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                {t("getStartedPage.pf.features.2")}
+                {t('getStartedPage.pf.features.2')}
               </li>
             </ul>
 
@@ -66,14 +66,14 @@ const GetStartedPage = () => {
               className="flex items-center justify-center gap-2 bg-orange-50 text-orange-600 px-6 py-2 rounded-xl font-semibold hover:bg-orange-100 transition-colors w-full"
             >
               <ShoppingCart className="h-5 w-5" />
-              {t("getStartedPage.pf.buyButton")}
+              {t('getStartedPage.pf.buyButton')}
             </Link>
 
             <Link
               to={ROUTES.pf.call(currentLang)}
               className="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors w-full justify-center mt-4"
             >
-              {t("getStartedPage.pf.moreButton")}
+              {t('getStartedPage.pf.moreButton')}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </motion.div>
@@ -90,23 +90,23 @@ const GetStartedPage = () => {
               <Building2 className="h-8 w-8 text-orange-500" />
             </div>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              {t("getStartedPage.pj.title")}
+              {t('getStartedPage.pj.title')}
             </h2>
             <p className="text-gray-600 mb-6">
-              {t("getStartedPage.pj.description")}
+              {t('getStartedPage.pj.description')}
             </p>
             <ul className="space-y-3 mb-8 text-gray-600">
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                {t("getStartedPage.pj.features.0")}
+                {t('getStartedPage.pj.features.0')}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                {t("getStartedPage.pj.features.1")}
+                {t('getStartedPage.pj.features.1')}
               </li>
               <li className="flex items-center gap-2">
                 <ArrowRight className="h-5 w-5 text-orange-500" />
-                {t("getStartedPage.pj.features.2")}
+                {t('getStartedPage.pj.features.2')}
               </li>
             </ul>
 
@@ -115,14 +115,14 @@ const GetStartedPage = () => {
               className="flex items-center justify-center gap-2 bg-orange-50 text-orange-600 px-6 py-2 rounded-xl font-semibold hover:bg-orange-100 transition-colors w-full"
             >
               <ShoppingCart className="h-5 w-5" />
-              {t("getStartedPage.pj.buyButton")}
+              {t('getStartedPage.pj.buyButton')}
             </Link>
 
             <Link
               to={ROUTES.pj.call(currentLang)}
               className="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors w-full justify-center mt-4"
             >
-              {t("getStartedPage.pj.moreButton")}
+              {t('getStartedPage.pj.moreButton')}
               <ArrowRight className="h-5 w-5" />
             </Link>
           </motion.div>

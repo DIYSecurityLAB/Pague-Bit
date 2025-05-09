@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
-import { useReasons } from "./arrays";
-import { useWhyPagueBit } from "./useWhyPagueBit";
-import { useTranslation } from "react-i18next";
+import { motion } from 'framer-motion';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useReasons } from './arrays';
+import { useWhyPagueBit } from './useWhyPagueBit';
 interface Reason {
   id: number;
   Icon: React.ElementType;
@@ -17,7 +18,10 @@ const WhyPagueBit = () => {
   const duplicatedReasons = [...reasons, ...reasons]; // Garante a rolagem contínua
 
   const renderCard = (reason: Reason, isDuplicate = false) => (
-    <div key={`${reason.id}${isDuplicate ? "-duplicate" : ""}`} className="flex-shrink-0 w-1/3 px-2">
+    <div
+      key={`${reason.id}${isDuplicate ? '-duplicate' : ''}`}
+      className="flex-shrink-0 w-1/3 px-2"
+    >
       <div className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center h-full border border-orange-100 hover:border-orange-300 transition-colors">
         <div className="bg-orange-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
           <reason.Icon className="h-8 w-8 text-orange-500" />
@@ -32,8 +36,14 @@ const WhyPagueBit = () => {
   return (
     <section className="py-12 bg-white text-gray-800">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">{t("whyPagueBit.title")}</h2>
-        <div className="overflow-hidden" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <h2 className="text-4xl font-bold mb-12 text-center">
+          {t('whyPagueBit.title')}
+        </h2>
+        <div
+          className="overflow-hidden"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <motion.div animate={controls} className="flex">
             <div ref={itemsRef} className="flex">
               {duplicatedReasons.map((reason) => renderCard(reason))}

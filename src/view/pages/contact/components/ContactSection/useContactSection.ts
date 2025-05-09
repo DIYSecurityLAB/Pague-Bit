@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 interface FormData {
   name: string;
@@ -8,6 +8,9 @@ interface FormData {
 }
 
 export const useContactSection = () => {
+  // Número para o qual será enviada a mensagem (substitua pelo número correto)
+  const whatsappNumber = '5511977328121';
+
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -17,22 +20,43 @@ export const useContactSection = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const formatWhatsAppMessage = (data: FormData): string => {
+    const message = `
+*Novo contato PagueBit*
+-------------------
+*Nome:* ${data.name}
+*Empresa:* ${data.company}
+*Email:* ${data.email}
+*Mensagem:* ${data.message}
+-------------------
+    `;
+
+    return encodeURIComponent(message);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log('Form submitted:', formData);
 
-    // Simula uma chamada à API com um delay
-    setTimeout(() => {
-      setIsLoading(false);
-      alert('Mensagem enviada com sucesso!');
+    try {
+      // Prepara a URL do WhatsApp com a mensagem formatada
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${formatWhatsAppMessage(formData)}`;
+
+      // Redireciona para o WhatsApp
+      window.open(whatsappUrl, '_blank');
+
+      // Limpa o formulário após enviar
       setFormData({ name: '', email: '', company: '', message: '' });
-    }, 2000);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   return {
