@@ -180,7 +180,7 @@ const BuyBitcoinPage = () => {
                   </motion.ul>
                   <motion.div className="mt-6">
                     <motion.a
-                      href="https://wa.me/5511919050416?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20PagueBit!"
+                      href="https://admin.paguebit.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-black text-white px-8 py-3 rounded-xl font-semibold hover:bg-gray-900 transition-colors"
