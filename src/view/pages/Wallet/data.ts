@@ -12,14 +12,9 @@ export const useWalletOptions = () => {
 
   const step1Options: WalletOption[] = [
     {
-      key: 'celular-android',
-      title: t('wallet.step1Options.celular-android.title'),
-      description: t('wallet.step1Options.celular-android.description'),
-    },
-    {
-      key: 'celular-ios',
-      title: t('wallet.step1Options.celular-ios.title'),
-      description: t('wallet.step1Options.celular-ios.description'),
+      key: 'mobile',
+      title: t('wallet.step1Options.mobile.title'),
+      description: t('wallet.step1Options.mobile.description'),
     },
     {
       key: 'desktop',
@@ -31,22 +26,28 @@ export const useWalletOptions = () => {
       title: t('wallet.step1Options.hardware.title'),
       description: t('wallet.step1Options.hardware.description'),
     },
+    {
+      key: 'skip',
+      title: t('wallet.step1Options.skip.title'),
+      description: t('wallet.step1Options.skip.description'),
+    },
   ];
 
   const step2Options: WalletOption[] = [
     {
-      key: 'novo',
-      title: t('wallet.step2Options.novo.title'),
-      description: t('wallet.step2Options.novo.description'),
+      key: 'controle',
+      title: t('wallet.step2Options.controle.title'),
+      description: t('wallet.step2Options.controle.description'),
     },
     {
-      key: 'experiente',
-      title: t('wallet.step2Options.experiente.title'),
-      description: t('wallet.step2Options.experiente.description'),
+      key: 'autonomia',
+      title: t('wallet.step2Options.autonomia.title'),
+      description: t('wallet.step2Options.autonomia.description'),
     },
     {
       key: 'ignorar',
       title: t('wallet.step2Options.ignorar.title'),
+      description: t('wallet.step2Options.ignorar.description'),
     },
   ];
 

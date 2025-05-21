@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import BackgroundLines from '../../components/ui/BackgroundLines';
 import Step1 from './steps/Step1';
 import Step2 from './steps/Step2';
-import Step3 from './steps/Step3';
-import Step4 from './steps/Step4';
 import WalletDashboard from './tablewallets/WalletDashboard';
 import { SelectedFilters } from './tablewallets/WalletFilterSidebar';
 
@@ -25,16 +23,19 @@ const WalletSelector: React.FC = () => {
   });
   const [tutorialCompleted, setTutorialCompleted] = useState<boolean>(false);
 
-  const skipTutorial = () => {
-    setTutorialCompleted(true);
-  };
-
   const handleSelect = (key: keyof TutorialAnswers, value: string) => {
-    // Se a opção for "ignorar" (pular tutorial), encerra o tutorial imediatamente.
+    // Se a opção for "skip" (pular tutorial), encerra o tutorial imediatamente.
+    if (value === 'skip') {
+      setTutorialCompleted(true);
+      return;
+    }
+
+    // Se a opção for "ignorar" (pular tutorial nas etapas 2-4), encerra o tutorial imediatamente.
     if (value === 'ignorar') {
       setTutorialCompleted(true);
       return;
     }
+
     setAnswers((prev) => ({ ...prev, [key]: value }));
     if (step < 4) {
       setStep((prev) => prev + 1);
@@ -47,14 +48,12 @@ const WalletSelector: React.FC = () => {
   const getInitialFilters = (): SelectedFilters => {
     let osFilters: string[] = [];
     let usageFilters: string[] = [];
+    let coinTypeFilters: string[] = [];
 
     if (answers.sistema) {
       switch (answers.sistema) {
-        case 'celular-android':
-          osFilters.push('A');
-          break;
-        case 'celular-ios':
-          osFilters.push('I');
+        case 'mobile':
+          osFilters.push('A', 'I'); // Ambos Android e iOS
           break;
         case 'desktop':
           osFilters.push('L', 'W', 'M');
@@ -62,12 +61,27 @@ const WalletSelector: React.FC = () => {
         case 'hardware':
           osFilters.push('H');
           break;
+        // Manter compatibilidade com as opções antigas
+        case 'celular-android':
+          osFilters.push('A');
+          break;
+        case 'celular-ios':
+          osFilters.push('I');
+          break;
         default:
           break;
       }
     }
+
     if (answers.conhecimento) {
       switch (answers.conhecimento) {
+        case 'controle':
+          coinTypeFilters.push('bitcoin-only');
+          break;
+        case 'autonomia':
+          coinTypeFilters.push('multi-coin');
+          break;
+        // Manter compatibilidade com as opções antigas
         case 'novo':
           usageFilters.push('novo');
           break;
@@ -78,7 +92,8 @@ const WalletSelector: React.FC = () => {
           break;
       }
     }
-    return { os: osFilters, usage: usageFilters };
+
+    return { os: osFilters, usage: usageFilters, coinType: coinTypeFilters };
   };
 
   if (tutorialCompleted) {
@@ -87,42 +102,15 @@ const WalletSelector: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden">
+    <div className="min-h-screen bg-white relative overflow-hidden flex flex-col justify-center items-center">
       <BackgroundLines />
 
-      {/* Reposicionamento do botão com margem superior */}
-      <div className="w-full p-4 flex justify-end items-center relative z-10 max-w-4xl mx-auto mt-10">
-        <button
-          onClick={skipTutorial}
-          className="group flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-orange-500 transition-colors"
-        >
-          <span className="text-sm font-medium">
-            Ir direto para as carteiras
-          </span>
-          <svg
-            className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Container principal com o tutorial */}
-      <div className="max-w-4xl w-full bg-orange-450 p-8 rounded-xl shadow-lg text-white relative z-10 mx-auto my-4">
+      {/* Container principal com o tutorial - ajustado para posicionar melhor verticalmente */}
+      <div className="max-w-4xl w-full bg-orange-450 p-8 rounded-xl shadow-lg text-white relative z-10 mx-auto mt-16 mb-0">
         <AnimatePresence mode="wait">
           {step === 1 && <Step1 onSelect={handleSelect} />}
-          {step === 2 && <Step2 onSelect={handleSelect} />}
-          {step === 3 && <Step3 onSelect={handleSelect} />}
-          {step === 4 && (
-            <Step4
+          {step === 2 && (
+            <Step2
               onSelect={handleSelect}
               onFinish={() => setTutorialCompleted(true)}
             />

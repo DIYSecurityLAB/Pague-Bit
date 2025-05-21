@@ -4,19 +4,8 @@
     "description": "Selecione a opção que corresponde ao dispositivo que você utiliza."
   },
   "step2": {
-    "title": "Qual seu nível de conhecimento sobre Bitcoin?",
-    "description": "Selecione a opção que melhor reflete sua experiência."
-  },
-  "step3": {
-    "title": "Qual critério é mais importante para você?",
-    "optional": "Opcional",
-    "description": "Escolha o aspecto que você considera essencial ao selecionar sua carteira."
-  },
-  "step4": {
-    "title": "Qual recurso adicional você procura?",
-    "optional": "Opcional",
-    "description": "Selecione um recurso que agregue valor à sua carteira.",
-    "button": "Ver resultados"
+    "title": "Qual Critério é mais importante para você?",
+    "description": "Escolha o aspecto que você considera essencial ao selecionar sua carteira"
   },
   "dashboard": {
     "title": "Carteiras Disponíveis"
@@ -32,6 +21,8 @@
       "title": "Filtros",
       "osTitle": "Sistema Operacional",
       "usageTitle": "Tipo de Uso",
+      "experienceTitle": "Nível de Experiência",
+      "coinTypeTitle": "Tipo de Moeda",
       "clear": "Limpar Filtros"
     }
   },
@@ -45,6 +36,22 @@
     "fees": "Taxas"
   },
   "step1Options": {
+    "mobile": {
+      "title": "Carteira para Celular",
+      "description": "Portátil e fácil de usar, perfeita para o dia a dia. Recomendada para valores menores, pois é mais vulnerável a roubo ou perda do aparelho."
+    },
+    "desktop": {
+      "title": "Carteira para Computador",
+      "description": "Oferece mais controle e recursos. A segurança depende da proteção do computador — use antivírus e senhas fortes para maior segurança."
+    },
+    "hardware": {
+      "title": "Carteira Física (Hardware)",
+      "description": "A opção mais segura para armazenar grandes quantias. Mantém seus ativos offline, fora do alcance de hackers e malwares."
+    },
+    "skip": {
+      "title": "Pular Tutorial",
+      "description": "Já sabe o que está fazendo? Pule o passo a passo e escolha sua carteira direto."
+    },
     "celular-android": {
       "title": "Carteiras para Celular - Android",
       "description": "Prático para transações diárias, mas oferece menor segurança para grandes quantias."
@@ -52,17 +59,21 @@
     "celular-ios": {
       "title": "Carteiras para Celular - iOS",
       "description": "Prático para transações diárias, mas oferece menor segurança para grandes quantias."
-    },
-    "desktop": {
-      "title": "Carteiras para Computador",
-      "description": "Maior controle, mas vulnerável a malware e ataques cibernéticos."
-    },
-    "hardware": {
-      "title": "Carteiras Físicas (Hardware)",
-      "description": "Máxima segurança para seus bitcoins. Dispositivos com código aberto oferecem total soberania."
     }
   },
   "step2Options": {
+    "controle": {
+      "title": "Controle Total",
+      "description": "Tenha controle absoluto sobre seus Bitcoins. Apenas carteiras exclusivas para Bitcoin (Bitcoin Only) oferecem o mais alto nível de segurança para quem busca verdadeira autocustódia."
+    },
+    "autonomia": {
+      "title": "Mais Autonomia",
+      "description": "Aumente a segurança dos seus ativos digitais com carteiras que suportam tanto Bitcoin quanto USDT, oferecendo mais flexibilidade sem abrir mão da proteção."
+    },
+    "ignorar": {
+      "title": "Pular Tutorial",
+      "description": "Já sabe o que está fazendo? Pule o passo a passo e escolha sua carteira direto."
+    },
     "novo": {
       "title": "Iniciante em Bitcoin",
       "description": "Carteiras mais simples e intuitivas, com foco na facilidade de uso."
@@ -70,59 +81,6 @@
     "experiente": {
       "title": "Usuário Avançado de Bitcoin",
       "description": "Carteiras com recursos completos, priorizando segurança e soberania digital."
-    },
-    "ignorar": {
-      "title": "Pular Tutorial"
-    }
-  },
-  "step3Options": {
-    "controle": {
-      "title": "Controle Total",
-      "description": "Soberania completa sobre suas chaves privadas, sem dependência de terceiros."
-    },
-    "validacao": {
-      "title": "Validação",
-      "description": "Verificação independente de transações na blockchain."
-    },
-    "transparencia": {
-      "title": "Transparência",
-      "description": "Código 100% aberto e auditável, sem componentes proprietários."
-    },
-    "ambiente": {
-      "title": "Ambiente",
-      "description": "Facilidade de uso e interface amigável."
-    },
-    "privacidade": {
-      "title": "Privacidade Máxima",
-      "description": "Proteção de dados e transações contra vigilância."
-    },
-    "taxas": {
-      "title": "Controle de Taxas",
-      "description": "Personalização completa das taxas de transação."
-    },
-    "ignorar": {
-      "title": "Pular Esta Etapa"
-    }
-  },
-  "step4Options": {
-    "2fa": {
-      "title": "Autenticação Multifator",
-      "description": "Segurança adicional com verificação em duas etapas."
-    },
-    "bech32": {
-      "title": "Endereços Nativos SegWit",
-      "description": "Formato de endereço otimizado para economizar em taxas."
-    },
-    "airgap": {
-      "title": "Segurança Air-Gapped",
-      "description": "Segurança máxima com dispositivos que nunca se conectam à internet."
-    },
-    "fullnode": {
-      "title": "Full Node",
-      "description": "Nota: Esta opção está indisponível devido à sua escolha anterior."
-    },
-    "ignorar": {
-      "title": "Pular Esta Etapa"
     }
   },
   "walletDetail": {
@@ -261,7 +219,8 @@
           "0": "Totalmente open source e transparente",
           "1": "Você constrói seu próprio dispositivo, eliminando riscos de supply chain",
           "2": "Sem componentes proprietários",
-          "3": "Funcionamento air-gapped para segurança máxima"
+          "3": "Funcionamento air-gapped para segurança máxima",
+          "4": "Controle total sobre seu hardware e software"
         },
         "disadvantages": {
           "0": "Requer montagem (DIY)",
@@ -289,26 +248,13 @@
           "0": "Completamente air-gapped para segurança máxima",
           "1": "Pode ser construído com componentes comuns",
           "2": "Código 100% aberto e verificável",
-          "3": "Excelente para configurações multisignature"
+          "3": "Excelente para configurações multisignature",
+          "4": "Não armazena chaves permanentemente (stateless)"
         },
         "disadvantages": {
           "0": "Requer montagem e conhecimento técnico",
           "1": "Processo de assinatura menos intuitivo",
           "2": "Interface limitada pelo hardware minimalista"
-        }
-      },
-      "12": {
-        "overview": "Carteira focada em trading de ativos na rede Liquid, com interface amigável e boa usabilidade.",
-        "advantages": {
-          "0": "Interface intuitiva para negociação de ativos",
-          "1": "Suporte a Liquid Network",
-          "2": "Troca de ativos descentralizada",
-          "3": "Disponível para desktop e mobile"
-        },
-        "disadvantages": {
-          "0": "Foco em Liquid pode confundir usuários apenas de Bitcoin",
-          "1": "Menos recursos de privacidade avançada",
-          "2": "Ecossistema ainda em desenvolvimento"
         }
       }
     }

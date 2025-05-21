@@ -6,6 +6,7 @@ import { useWalletOptions, WalletOption } from '../data';
 
 interface Step2Props {
   onSelect: (key: 'conhecimento', value: string) => void;
+  onFinish: () => void; // Adicionada a propriedade onFinish
 }
 
 const containerVariants = {
@@ -14,12 +15,21 @@ const containerVariants = {
   exit: { opacity: 0, x: 50 },
 };
 
-const Step2: React.FC<Step2Props> = ({ onSelect }) => {
+const Step2: React.FC<Step2Props> = ({ onSelect, onFinish }) => {
   const { t } = useTranslation();
   const { step2Options } = useWalletOptions();
 
   const handleSelect = (option: WalletOption) => {
     onSelect('conhecimento', option.key);
+
+    // Como este é o último passo, chamamos onFinish após a seleção
+    // Apenas se a opção não for "ignorar", pois nesse caso o WalletSelector
+    // já vai chamar setTutorialCompleted direto
+    if (option.key !== 'ignorar') {
+      setTimeout(() => {
+        onFinish();
+      }, 300); // Pequeno atraso para melhor experiência do usuário
+    }
   };
 
   return (

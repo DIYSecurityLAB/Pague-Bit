@@ -97,9 +97,10 @@ const WalletCards: React.FC<WalletCardsProps> = ({ wallets }) => {
           <div className="mt-3 pt-2 border-t flex items-center justify-between">
             <span className="text-sm text-gray-500">
               {wallet.os.map((os) => os).join(', ')} |{' '}
-              {wallet.usage === 'novo'
-                ? t('walletDetail.beginner')
-                : t('walletDetail.advanced')}
+              {wallet.type === 'hot' ? 'Hot Wallet' : 'Cold Wallet'} |{' '}
+              {wallet.coinType === 'bitcoin-only'
+                ? 'Bitcoin Only'
+                : 'Multi-Moeda'}
             </span>
             <button
               onClick={() => handleOpenDetails(wallet)}

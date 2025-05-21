@@ -4,19 +4,8 @@
     "description": "Selecciona la opción que corresponde al dispositivo que utilizas."
   },
   "step2": {
-    "title": "¿Cuál es tu nivel de conocimiento sobre Bitcoin?",
-    "description": "Selecciona la opción que mejor refleje tu experiencia."
-  },
-  "step3": {
     "title": "¿Qué criterio es más importante para ti?",
-    "optional": "Opcional",
-    "description": "Elige el aspecto que consideras esencial al seleccionar tu monedero."
-  },
-  "step4": {
-    "title": "¿Qué función adicional buscas?",
-    "optional": "Opcional",
-    "description": "Selecciona una función que agregue valor a tu monedero.",
-    "button": "Ver resultados"
+    "description": "Elige el aspecto que consideras esencial al seleccionar tu monedero"
   },
   "dashboard": {
     "title": "Monederos Disponibles"
@@ -32,6 +21,8 @@
       "title": "Filtros",
       "osTitle": "Sistema Operativo",
       "usageTitle": "Tipo de Uso",
+      "experienceTitle": "Nivel de Experiencia",
+      "coinTypeTitle": "Tipo de Moneda",
       "clear": "Limpiar Filtros"
     }
   },
@@ -45,6 +36,22 @@
     "fees": "Tarifas"
   },
   "step1Options": {
+    "mobile": {
+      "title": "Monedero para Móvil",
+      "description": "Portátil y fácil de usar, perfecto para el día a día. Recomendado para cantidades menores, ya que es más vulnerable al robo o pérdida del dispositivo."
+    },
+    "desktop": {
+      "title": "Monedero para Computadora",
+      "description": "Ofrece más control y funciones. La seguridad depende de la protección de la computadora — use antivirus y contraseñas fuertes para mayor seguridad."
+    },
+    "hardware": {
+      "title": "Monedero Físico (Hardware)",
+      "description": "La opción más segura para almacenar grandes cantidades. Mantiene sus activos offline, fuera del alcance de hackers y malware."
+    },
+    "skip": {
+      "title": "Omitir Tutorial",
+      "description": "¿Ya sabes lo que estás haciendo? Salta el paso a paso y elige tu monedero directamente."
+    },
     "celular-android": {
       "title": "Monederos para Móvil - Android",
       "description": "Práctico para transacciones diarias, pero ofrece menor seguridad para grandes cantidades."
@@ -52,17 +59,21 @@
     "celular-ios": {
       "title": "Monederos para Móvil - iOS",
       "description": "Práctico para transacciones diarias, pero ofrece menor seguridad para grandes cantidades."
-    },
-    "desktop": {
-      "title": "Monederos para Computadora",
-      "description": "Mayor control, pero vulnerable a malware y ataques cibernéticos."
-    },
-    "hardware": {
-      "title": "Monederos Físicos (Hardware)",
-      "description": "Máxima seguridad para tus bitcoins. Dispositivos con código abierto ofrecen total soberanía."
     }
   },
   "step2Options": {
+    "controle": {
+      "title": "Control Total",
+      "description": "Ten control absoluto sobre tus Bitcoins. Solo los monederos exclusivos para Bitcoin (Bitcoin Only) ofrecen el más alto nivel de seguridad para quienes buscan verdadera autocustodia."
+    },
+    "autonomia": {
+      "title": "Más Autonomía",
+      "description": "Aumenta la seguridad de tus activos digitales con monederos que soportan tanto Bitcoin como USDT, ofreciendo más flexibilidad sin comprometer la protección."
+    },
+    "ignorar": {
+      "title": "Omitir Tutorial",
+      "description": "¿Ya sabes lo que estás haciendo? Salta el paso a paso y elige tu monedero directamente."
+    },
     "novo": {
       "title": "Principiante en Bitcoin",
       "description": "Monederos más simples e intuitivos, enfocados en la facilidad de uso."
@@ -70,59 +81,6 @@
     "experiente": {
       "title": "Usuario Avanzado de Bitcoin",
       "description": "Monederos con funciones completas, priorizando seguridad y soberanía digital."
-    },
-    "ignorar": {
-      "title": "Omitir Tutorial"
-    }
-  },
-  "step3Options": {
-    "controle": {
-      "title": "Control Total",
-      "description": "Soberanía completa sobre tus claves privadas, sin dependencia de terceros."
-    },
-    "validacao": {
-      "title": "Validación",
-      "description": "Verificación independiente de transacciones en la blockchain."
-    },
-    "transparencia": {
-      "title": "Transparencia",
-      "description": "Código 100% abierto y auditable, sin componentes propietarios."
-    },
-    "ambiente": {
-      "title": "Ambiente",
-      "description": "Facilidad de uso e interfaz amigable."
-    },
-    "privacidade": {
-      "title": "Privacidad Máxima",
-      "description": "Protección de datos y transacciones contra vigilancia."
-    },
-    "taxas": {
-      "title": "Control de Tarifas",
-      "description": "Personalización completa de las tarifas de transacción."
-    },
-    "ignorar": {
-      "title": "Omitir Este Paso"
-    }
-  },
-  "step4Options": {
-    "2fa": {
-      "title": "Autenticación Multifactor",
-      "description": "Seguridad adicional con verificación en dos pasos."
-    },
-    "bech32": {
-      "title": "Direcciones Nativas SegWit",
-      "description": "Formato de dirección optimizado para ahorrar en tarifas."
-    },
-    "fullnode": {
-      "title": "Full Node",
-      "description": "Nota: Esta opción no está disponible debido a tu elección anterior."
-    },
-    "airgap": {
-      "title": "Seguridad Air-Gapped",
-      "description": "Seguridad máxima con dispositivos que nunca se conectan a internet."
-    },
-    "ignorar": {
-      "title": "Omitir Este Paso"
     }
   },
   "walletDetail": {
@@ -261,7 +219,8 @@
           "0": "Completamente open source y transparente",
           "1": "Construye tu propio dispositivo, eliminando riesgos de la cadena de suministro",
           "2": "Sin componentes propietarios",
-          "3": "Operación air-gapped para máxima seguridad"
+          "3": "Operación air-gapped para máxima seguridad",
+          "4": "Control total sobre tu hardware y software"
         },
         "disadvantages": {
           "0": "Requiere ensamblaje (DIY)",
@@ -289,26 +248,13 @@
           "0": "Completamente air-gapped para máxima seguridad",
           "1": "Puede ser construido con componentes comunes",
           "2": "Código 100% abierto y verificable",
-          "3": "Excelente para configuraciones multifirma"
+          "3": "Excelente para configuraciones multifirma",
+          "4": "No almacena claves permanentemente (stateless)"
         },
         "disadvantages": {
           "0": "Requiere ensamblaje y conocimiento técnico",
           "1": "Proceso de firma menos intuitivo",
           "2": "Interfaz limitada por el hardware minimalista"
-        }
-      },
-      "12": {
-        "overview": "Monedero centrado en el trading de activos en la red Liquid, con una interfaz amigable y buena usabilidad.",
-        "advantages": {
-          "0": "Interfaz intuitiva para el trading de activos",
-          "1": "Soporte para Liquid Network",
-          "2": "Intercambio descentralizado de activos",
-          "3": "Disponible para escritorio y móvil"
-        },
-        "disadvantages": {
-          "0": "El enfoque en Liquid puede confundir a los usuarios solo de Bitcoin",
-          "1": "Menos funciones avanzadas de privacidad",
-          "2": "Ecosistema aún en desarrollo"
         }
       }
     }

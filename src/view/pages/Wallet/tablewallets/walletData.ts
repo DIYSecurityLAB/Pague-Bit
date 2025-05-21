@@ -5,6 +5,8 @@ export interface Wallet {
   name: string;
   os: string[]; // Abreviações: 'A' (Android), 'I' (iOS), 'L' (Linux), 'M' (Mac), 'W' (Windows), 'H' (Hardware)
   usage: 'novo' | 'experiente';
+  type: 'hot' | 'cold'; // Tipo de carteira (hot ou cold)
+  coinType: 'bitcoin-only' | 'multi-coin'; // Tipo de moeda suportada
   description: {
     advantages: string[]; // Vantagens/diferenciais da carteira
     disadvantages: string[]; // Pontos fracos
@@ -21,11 +23,14 @@ export interface Wallet {
 }
 
 export const wallets: Wallet[] = [
+  // Hot Wallets
   {
     id: 1,
     name: 'Electrum',
     os: ['W', 'L', 'M'],
     usage: 'experiente',
+    type: 'hot',
+    coinType: 'bitcoin-only',
     description: {
       overview: 'walletDetail.wallets.1.overview',
       advantages: [
@@ -51,22 +56,23 @@ export const wallets: Wallet[] = [
   },
   {
     id: 2,
-    name: 'Blockstream Green',
+    name: 'Green Wallet',
     os: ['A', 'I', 'W', 'L', 'M'],
     usage: 'novo',
+    type: 'hot',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Carteira multiplataforma desenvolvida pela Blockstream, combina segurança com facilidade de uso.',
+      overview: 'walletDetail.wallets.2.overview',
       advantages: [
-        'Interface intuitiva para iniciantes',
-        'Multisignature com proteção adicional',
-        'Suporte a hardware wallets',
-        'Código aberto e auditável',
+        'walletDetail.wallets.2.advantages.0',
+        'walletDetail.wallets.2.advantages.1',
+        'walletDetail.wallets.2.advantages.2',
+        'walletDetail.wallets.2.advantages.3',
       ],
       disadvantages: [
-        'Depende parcialmente dos servidores da Blockstream',
-        'Menos recursos avançados que carteiras como Electrum',
-        'Processo de recuperação diferente das carteiras tradicionais',
+        'walletDetail.wallets.2.disadvantages.0',
+        'walletDetail.wallets.2.disadvantages.1',
+        'walletDetail.wallets.2.disadvantages.2',
       ],
     },
     ratings: {
@@ -83,19 +89,20 @@ export const wallets: Wallet[] = [
     name: 'Sparrow Wallet',
     os: ['L', 'W', 'M'],
     usage: 'experiente',
+    type: 'hot',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Carteira desktop focada em privacidade e controle, com interface mais moderna que o Electrum.',
+      overview: 'walletDetail.wallets.3.overview',
       advantages: [
-        'Análise detalhada de transações',
-        'Excelente suporte a hardware wallets',
-        'Controle avançado de moedas (coin control)',
-        'Integração com nós Bitcoin próprios',
+        'walletDetail.wallets.3.advantages.0',
+        'walletDetail.wallets.3.advantages.1',
+        'walletDetail.wallets.3.advantages.2',
+        'walletDetail.wallets.3.advantages.3',
       ],
       disadvantages: [
-        'Não disponível para dispositivos móveis',
-        'Requer conhecimento técnico moderado',
-        'Recursos avançados podem sobrecarregar iniciantes',
+        'walletDetail.wallets.3.disadvantages.0',
+        'walletDetail.wallets.3.disadvantages.1',
+        'walletDetail.wallets.3.disadvantages.2',
       ],
     },
     ratings: {
@@ -112,19 +119,20 @@ export const wallets: Wallet[] = [
     name: 'Specter Desktop',
     os: ['L'],
     usage: 'experiente',
+    type: 'hot',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Carteira focada em segurança máxima com multisignature e suporte avançado a hardware wallets.',
+      overview: 'walletDetail.wallets.4.overview',
       advantages: [
-        'Ideal para configurações multisignature',
-        'Excelente privacidade quando conectado ao próprio nó',
-        'Interface clara para gerenciamento de múltiplos dispositivos',
-        'Alta segurança para grandes quantias',
+        'walletDetail.wallets.4.advantages.0',
+        'walletDetail.wallets.4.advantages.1',
+        'walletDetail.wallets.4.advantages.2',
+        'walletDetail.wallets.4.advantages.3',
       ],
       disadvantages: [
-        'Limitado principalmente a Linux',
-        'Requer conhecimento técnico avançado',
-        'Processo de configuração mais complexo',
+        'walletDetail.wallets.4.disadvantages.0',
+        'walletDetail.wallets.4.disadvantages.1',
+        'walletDetail.wallets.4.disadvantages.2',
       ],
     },
     ratings: {
@@ -141,19 +149,20 @@ export const wallets: Wallet[] = [
     name: 'Nunchuck Wallet',
     os: ['A', 'I', 'W', 'M'],
     usage: 'experiente',
+    type: 'hot',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Carteira focada em multisignature com uma das interfaces mais amigáveis para este propósito.',
+      overview: 'walletDetail.wallets.5.overview',
       advantages: [
-        'Multisignature simplificado e intuitivo',
-        'Disponível para desktop e mobile',
-        'Excelente combinação de segurança e usabilidade',
-        'Bom suporte a hardware wallets',
+        'walletDetail.wallets.5.advantages.0',
+        'walletDetail.wallets.5.advantages.1',
+        'walletDetail.wallets.5.advantages.2',
+        'walletDetail.wallets.5.advantages.3',
       ],
       disadvantages: [
-        'Recursos avançados podem não ser óbvios para iniciantes',
-        'Ecossistema menor comparado a outras carteiras',
-        'Algumas funcionalidades requerem pagamento',
+        'walletDetail.wallets.5.disadvantages.0',
+        'walletDetail.wallets.5.disadvantages.1',
+        'walletDetail.wallets.5.disadvantages.2',
       ],
     },
     ratings: {
@@ -166,81 +175,24 @@ export const wallets: Wallet[] = [
     },
   },
   {
-    id: 6,
-    name: 'Electrum Mobile',
-    os: ['A', 'I'],
-    usage: 'experiente',
-    description: {
-      overview:
-        'Versão móvel da popular carteira Electrum, mantendo a maioria dos recursos avançados.',
-      advantages: [
-        'Mesma segurança robusta da versão desktop',
-        'Controle de taxas personalizado',
-        'Compatibilidade com carteiras Electrum desktop',
-        'Suporte a hardware wallets via OTG',
-      ],
-      disadvantages: [
-        'Interface não otimizada para mobile',
-        'Menos amigável que outras carteiras móveis',
-        'Atualizações menos frequentes que a versão desktop',
-      ],
-    },
-    ratings: {
-      controle: 'B',
-      validacao: 'A',
-      transparencia: 'A',
-      ambiente: 'N',
-      privacidade: 'B',
-      taxas: 'A',
-    },
-  },
-  {
-    id: 7,
-    name: 'Specter Mobile',
-    os: ['A', 'I'],
-    usage: 'experiente',
-    description: {
-      overview:
-        'Extensão móvel do Specter Desktop, focada em segurança e privacidade em dispositivos móveis.',
-      advantages: [
-        'Integração perfeita com Specter Desktop',
-        'Suporte robusto a hardware wallets',
-        'Configurações multisignature móveis',
-        'Alta privacidade',
-      ],
-      disadvantages: [
-        'Funcionalidades limitadas comparado à versão desktop',
-        'Requer conhecimento técnico',
-        'Interface menos polida que concorrentes',
-      ],
-    },
-    ratings: {
-      controle: 'A',
-      validacao: 'A',
-      transparencia: 'B',
-      ambiente: 'N',
-      privacidade: 'N',
-      taxas: 'A',
-    },
-  },
-  {
     id: 8,
     name: 'BlueWallet',
     os: ['A', 'I'],
     usage: 'novo',
+    type: 'hot',
+    coinType: 'multi-coin',
     description: {
-      overview:
-        'Carteira móvel amigável para iniciantes com bom equilíbrio entre usabilidade e recursos.',
+      overview: 'walletDetail.wallets.8.overview',
       advantages: [
-        'Interface intuitiva e moderna',
-        'Suporte a Lightning Network',
-        'Pode conectar ao próprio nó',
-        'Bom para uso diário e pequenas quantias',
+        'walletDetail.wallets.8.advantages.0',
+        'walletDetail.wallets.8.advantages.1',
+        'walletDetail.wallets.8.advantages.2',
+        'walletDetail.wallets.8.advantages.3',
       ],
       disadvantages: [
-        'Lightning Network depende de servidores de terceiros por padrão',
-        'Menos recursos avançados que carteiras desktop',
-        'Histórico de alguns problemas de segurança corrigidos',
+        'walletDetail.wallets.8.disadvantages.0',
+        'walletDetail.wallets.8.disadvantages.1',
+        'walletDetail.wallets.8.disadvantages.2',
       ],
     },
     ratings: {
@@ -252,34 +204,37 @@ export const wallets: Wallet[] = [
       taxas: 'A',
     },
   },
+
+  // Cold Wallets
   {
     id: 9,
     name: 'Krux',
     os: ['H'],
     usage: 'experiente',
+    type: 'cold',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Dispositivo de hardware wallet DIY com código 100% aberto, oferecendo soberania digital máxima.',
+      overview: 'walletDetail.wallets.9.overview',
       advantages: [
-        'Totalmente open source e transparente',
-        'Você constrói seu próprio dispositivo, eliminando riscos de supply chain',
-        'Sem componentes proprietários',
-        'Funcionamento air-gapped para segurança máxima',
-        'Controle total sobre seu hardware e software',
+        'walletDetail.wallets.9.advantages.0',
+        'walletDetail.wallets.9.advantages.1',
+        'walletDetail.wallets.9.advantages.2',
+        'walletDetail.wallets.9.advantages.3',
+        'walletDetail.wallets.9.advantages.4',
       ],
       disadvantages: [
-        'Requer montagem (DIY)',
-        'Curva de aprendizado para uso inicial',
-        'Menos recursos de UX comparado a hardware wallets comerciais',
+        'walletDetail.wallets.9.disadvantages.0',
+        'walletDetail.wallets.9.disadvantages.1',
+        'walletDetail.wallets.9.disadvantages.2',
       ],
     },
     ratings: {
-      controle: 'B', // Alterado para B (Bom) - Alto controle do usuário
-      validacao: 'B', // Suporta validação completa
-      transparencia: 'B', // Código 100% aberto e auditável
-      ambiente: 'C', // Melhorado - DIY mas com boa documentação
-      privacidade: 'B', // Não armazena dados do usuário
-      taxas: 'B', // Permite controle avançado de taxas
+      controle: 'B',
+      validacao: 'B',
+      transparencia: 'B',
+      ambiente: 'C',
+      privacidade: 'B',
+      taxas: 'B',
     },
   },
   {
@@ -287,28 +242,29 @@ export const wallets: Wallet[] = [
     name: 'Jade',
     os: ['H'],
     usage: 'novo',
+    type: 'cold',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Hardware wallet desenvolvida pela Blockstream com boa usabilidade e integração com Green Wallet.',
+      overview: 'walletDetail.wallets.10.overview',
       advantages: [
-        'Tela colorida e interface amigável',
-        'Integração perfeita com Blockstream Green',
-        'Código-fonte disponível',
-        'Design compacto e portátil',
+        'walletDetail.wallets.10.advantages.0',
+        'walletDetail.wallets.10.advantages.1',
+        'walletDetail.wallets.10.advantages.2',
+        'walletDetail.wallets.10.advantages.3',
       ],
       disadvantages: [
-        'Ecossistema menor que concorrentes estabelecidos',
-        'Depende da Blockstream para atualizações',
-        'Menos recursos avançados que dispositivos DIY como Krux',
+        'walletDetail.wallets.10.disadvantages.0',
+        'walletDetail.wallets.10.disadvantages.1',
+        'walletDetail.wallets.10.disadvantages.2',
       ],
     },
     ratings: {
-      controle: 'A', // Bom controle do usuário
-      validacao: 'A', // Suporta validação completa
-      transparencia: 'B', // Código aberto, mas fabricado por empresa
-      ambiente: 'B', // Fácil de usar, mas requer confiança no fabricante
-      privacidade: 'A', // Suporta uso sem estado
-      taxas: 'A', // Permite controle de taxas
+      controle: 'A',
+      validacao: 'A',
+      transparencia: 'B',
+      ambiente: 'B',
+      privacidade: 'A',
+      taxas: 'A',
     },
   },
   {
@@ -316,56 +272,28 @@ export const wallets: Wallet[] = [
     name: 'SeedSigner',
     os: ['H'],
     usage: 'experiente',
+    type: 'cold',
+    coinType: 'bitcoin-only',
     description: {
-      overview:
-        'Dispositivo air-gapped DIY para assinatura de transações Bitcoin com foco em privacidade máxima.',
+      overview: 'walletDetail.wallets.11.overview',
       advantages: [
-        'Completamente air-gapped para segurança máxima',
-        'Pode ser construído com componentes comuns',
-        'Código 100% aberto e verificável',
-        'Excelente para configurações multisignature',
-        'Não armazena chaves permanentemente (stateless)',
+        'walletDetail.wallets.11.advantages.0',
+        'walletDetail.wallets.11.advantages.1',
+        'walletDetail.wallets.11.advantages.2',
+        'walletDetail.wallets.11.advantages.3',
+        'walletDetail.wallets.11.advantages.4',
       ],
       disadvantages: [
-        'Requer montagem e conhecimento técnico',
-        'Processo de assinatura menos intuitivo',
-        'Interface limitada pelo hardware minimalista',
-      ],
-    },
-    ratings: {
-      controle: 'B', // Alto controle do usuário
-      validacao: 'B', // Suporta validação completa
-      transparencia: 'B', // Código aberto e auditável
-      ambiente: 'C', // Requer montagem DIY
-      privacidade: 'B', // Não armazena dados do usuário
-      taxas: 'A', // Permite controle avançado de taxas
-    },
-  },
-  {
-    id: 12,
-    name: 'SideSwap',
-    os: ['A', 'I', 'W', 'L', 'M'],
-    usage: 'novo',
-    description: {
-      overview:
-        'Carteira focada em trading de ativos na rede Liquid, com interface amigável e boa usabilidade.',
-      advantages: [
-        'Interface intuitiva para negociação de ativos',
-        'Suporte a Liquid Network',
-        'Troca de ativos descentralizada',
-        'Disponível para desktop e mobile',
-      ],
-      disadvantages: [
-        'Foco em Liquid pode confundir usuários apenas de Bitcoin',
-        'Menos recursos de privacidade avançada',
-        'Ecossistema ainda em desenvolvimento',
+        'walletDetail.wallets.11.disadvantages.0',
+        'walletDetail.wallets.11.disadvantages.1',
+        'walletDetail.wallets.11.disadvantages.2',
       ],
     },
     ratings: {
       controle: 'B',
-      validacao: 'A',
+      validacao: 'B',
       transparencia: 'B',
-      ambiente: 'B',
+      ambiente: 'C',
       privacidade: 'B',
       taxas: 'A',
     },
@@ -408,4 +336,9 @@ export const osFilterGroups: FilterGroup[] = [
 export const usageFilters: FilterOption[] = [
   { key: 'novo', label: 'Novo' },
   { key: 'experiente', label: 'Com experiência' },
+];
+
+export const coinTypeFilters: FilterOption[] = [
+  { key: 'bitcoin-only', label: 'Bitcoin Only' },
+  { key: 'multi-coin', label: 'Multi-Moeda' },
 ];

@@ -53,7 +53,7 @@ const WalletTable: React.FC<WalletTableProps> = ({ wallets }) => {
   };
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto mt-6">
       <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
         <thead className="bg-orange-450">
           <tr>

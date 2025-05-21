@@ -4,19 +4,8 @@
     "description": "Select the option that matches the device you use."
   },
   "step2": {
-    "title": "What is your knowledge level about Bitcoin?",
-    "description": "Select the option that best reflects your experience."
-  },
-  "step3": {
-    "title": "Which criterion is most important to you?",
-    "optional": "Optional",
-    "description": "Choose the aspect you consider essential when selecting your wallet."
-  },
-  "step4": {
-    "title": "What additional feature are you looking for?",
-    "optional": "Optional",
-    "description": "Select a feature that adds value to your wallet.",
-    "button": "View Results"
+    "title": "Which Criterion is Most Important to You?",
+    "description": "Choose the aspect you consider essential when selecting your wallet"
   },
   "dashboard": {
     "title": "Available Wallets"
@@ -32,6 +21,8 @@
       "title": "Filters",
       "osTitle": "Operating System",
       "usageTitle": "Usage Type",
+      "experienceTitle": "Experience Level",
+      "coinTypeTitle": "Coin Type",
       "clear": "Clear Filters"
     }
   },
@@ -45,6 +36,22 @@
     "fees": "Fees"
   },
   "step1Options": {
+    "mobile": {
+      "title": "Mobile Wallet",
+      "description": "Portable and easy to use, perfect for everyday use. Recommended for smaller amounts, as it's more vulnerable to device theft or loss."
+    },
+    "desktop": {
+      "title": "Desktop Wallet",
+      "description": "Offers more control and features. Security depends on computer protection — use antivirus and strong passwords for greater security."
+    },
+    "hardware": {
+      "title": "Hardware Wallet",
+      "description": "The safest option for storing large amounts. Keeps your assets offline, out of reach of hackers and malware."
+    },
+    "skip": {
+      "title": "Skip Tutorial",
+      "description": "Already know what you're doing? Skip the step-by-step and choose your wallet directly."
+    },
     "celular-android": {
       "title": "Mobile Wallets - Android",
       "description": "Practical for daily transactions, but offers less security for large amounts."
@@ -52,17 +59,21 @@
     "celular-ios": {
       "title": "Mobile Wallets - iOS",
       "description": "Practical for daily transactions, but offers less security for large amounts."
-    },
-    "desktop": {
-      "title": "Desktop Wallets",
-      "description": "Greater control, but vulnerable to malware and cyber attacks."
-    },
-    "hardware": {
-      "title": "Hardware Wallets",
-      "description": "Maximum security for your bitcoins. Open source devices offer complete sovereignty."
     }
   },
   "step2Options": {
+    "controle": {
+      "title": "Full Control",
+      "description": "Have absolute control over your Bitcoins. Only Bitcoin-exclusive wallets (Bitcoin Only) offer the highest level of security for those seeking true self-custody."
+    },
+    "autonomia": {
+      "title": "More Autonomy",
+      "description": "Enhance the security of your digital assets with wallets that support both Bitcoin and USDT, offering more flexibility without compromising protection."
+    },
+    "ignorar": {
+      "title": "Skip Tutorial",
+      "description": "Already know what you're doing? Skip the step-by-step and choose your wallet directly."
+    },
     "novo": {
       "title": "Bitcoin Beginner",
       "description": "Simpler and more intuitive wallets, focusing on ease of use."
@@ -70,59 +81,6 @@
     "experiente": {
       "title": "Advanced Bitcoin User",
       "description": "Wallets with full features, prioritizing security and digital sovereignty."
-    },
-    "ignorar": {
-      "title": "Skip Tutorial"
-    }
-  },
-  "step3Options": {
-    "controle": {
-      "title": "Total Control",
-      "description": "Complete sovereignty over your private keys, without relying on third parties."
-    },
-    "validacao": {
-      "title": "Validation",
-      "description": "Independent verification of transactions on the blockchain."
-    },
-    "transparencia": {
-      "title": "Transparency",
-      "description": "100% open and auditable code, without proprietary components."
-    },
-    "ambiente": {
-      "title": "Environment",
-      "description": "Ease of use and user-friendly interface."
-    },
-    "privacidade": {
-      "title": "Maximum Privacy",
-      "description": "Protection of data and transactions against surveillance."
-    },
-    "taxas": {
-      "title": "Fee Control",
-      "description": "Complete customization of transaction fees."
-    },
-    "ignorar": {
-      "title": "Skip This Step"
-    }
-  },
-  "step4Options": {
-    "2fa": {
-      "title": "Multifactor Authentication",
-      "description": "Additional security with two-step verification."
-    },
-    "bech32": {
-      "title": "Native SegWit Addresses",
-      "description": "Optimized address format to save on fees."
-    },
-    "airgap": {
-      "title": "Air-Gapped Security",
-      "description": "Maximum security with devices that never connect to the internet."
-    },
-    "fullnode": {
-      "title": "Full Node",
-      "description": "Note: This option is unavailable due to your previous choice."
-    },
-    "ignorar": {
-      "title": "Skip This Step"
     }
   },
   "walletDetail": {
@@ -261,7 +219,8 @@
           "0": "Fully open source and transparent",
           "1": "Build your own device, eliminating supply chain risks",
           "2": "No proprietary components",
-          "3": "Air-gapped operation for maximum security"
+          "3": "Air-gapped operation for maximum security",
+          "4": "Complete control over your hardware and software"
         },
         "disadvantages": {
           "0": "Requires assembly (DIY)",
@@ -289,26 +248,13 @@
           "0": "Completely air-gapped for maximum security",
           "1": "Can be built with common components",
           "2": "100% open-source and verifiable code",
-          "3": "Excellent for multisignature setups"
+          "3": "Excellent for multisignature setups",
+          "4": "Does not store keys permanently (stateless)"
         },
         "disadvantages": {
           "0": "Requires assembly and technical knowledge",
           "1": "Less intuitive signing process",
           "2": "Limited interface due to minimalist hardware"
-        }
-      },
-      "12": {
-        "overview": "Wallet focused on trading assets on the Liquid network, with a user-friendly interface and good usability.",
-        "advantages": {
-          "0": "Intuitive interface for asset trading",
-          "1": "Liquid Network support",
-          "2": "Decentralized asset exchange",
-          "3": "Available for desktop and mobile"
-        },
-        "disadvantages": {
-          "0": "Focus on Liquid may confuse Bitcoin-only users",
-          "1": "Fewer advanced privacy features",
-          "2": "Ecosystem still under development"
         }
       }
     }

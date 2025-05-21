@@ -61,10 +61,17 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({
     const matchOs =
       selectedFilters.os.length === 0 ||
       wallet.os.some((os) => selectedFilters.os.includes(os));
+
     const matchUsage =
       selectedFilters.usage.length === 0 ||
       selectedFilters.usage.includes(wallet.usage);
-    return matchOs && matchUsage;
+
+    // Filtrar por tipo de moeda (bitcoin-only ou multi-coin)
+    const matchCoinType =
+      selectedFilters.coinType.length === 0 ||
+      selectedFilters.coinType.includes(wallet.coinType);
+
+    return matchOs && matchUsage && matchCoinType;
   });
 
   // Determinar qual visualização mostrar
@@ -72,10 +79,10 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({
     viewMode === 'auto' ? (isMobile ? 'cards' : 'table') : viewMode;
 
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden py-8">
+    <div className="min-h-screen bg-white relative overflow-hidden py-16">
       <BackgroundLines />
       <BackButton />
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-6xl mx-auto relative z-10">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-6xl mx-auto relative z-10 mt-8">
         {/* Sidebar com filtros */}
         <div className="w-full md:w-1/4 border-b md:border-b-0 md:border-r border-gray-200">
           <WalletFilterSidebar
@@ -86,7 +93,7 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({
 
         {/* Conteúdo principal */}
         <div className="w-full md:w-3/4 p-6">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-2 sm:mb-0">
               {t('wallet.dashboard.title')}
             </h2>
@@ -95,11 +102,13 @@ const WalletDashboard: React.FC<WalletDashboardProps> = ({
 
           <RatingLegend />
 
-          {currentView === 'table' ? (
-            <WalletTable wallets={filteredWallets} />
-          ) : (
-            <WalletCards wallets={filteredWallets} />
-          )}
+          <div className="mt-4">
+            {currentView === 'table' ? (
+              <WalletTable wallets={filteredWallets} />
+            ) : (
+              <WalletCards wallets={filteredWallets} />
+            )}
+          </div>
         </div>
       </div>
     </div>
