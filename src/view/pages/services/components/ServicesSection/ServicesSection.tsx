@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
-import { Briefcase, ChevronRight, User } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import businessImage from '../../../../assets/icone_maleta.svg';
+import individualImage from '../../../../assets/icone_pessoa.svg';
+import brl_btc from '../../../../assets/R$+BTC.svg';
 import BackgroundLines from '../../../../components/ui/BackgroundLines';
 import { ROUTES } from '../../../../routes/Routes';
 import { useServicesSection } from './useServicesSection';
 
-// Variantes de animação
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -41,27 +43,25 @@ const ServicesSection = () => {
   const navigate = useNavigate();
   const currentLang = i18n.language;
 
-  // Função para redirecionar para a página de compra com scroll para a seção do Alfred
   const handleIndividualsClick = () => {
     navigate(ROUTES.buy.call(currentLang), {
       state: { scrollTo: 'alfredSection' },
     });
   };
 
-  // Função para redirecionar para a página de compra
   const handleBusinessClick = () => {
     navigate(ROUTES.buy.call(currentLang));
   };
 
   return (
-    <section className="mt-0 pt-24">
+    <section className="mt-0 pt-16">
       {/* Primeira parte com background lines */}
-      <div className="relative overflow-hidden pb-16">
+      <div className="relative overflow-hidden pb-10">
         <BackgroundLines />
         <div className="container mx-auto px-4 relative z-10">
           {/* Bloco laranja com Visão Geral Rápida - Reduzido e centralizado */}
           <motion.div
-            className="bg-[#FF6A1F] rounded-xl p-8 mb-16 text-center shadow-lg max-w-3xl mx-auto"
+            className="bg-[#FF6A1F] rounded-xl p-8 mb-10 text-center shadow-lg max-w-3xl mx-auto"
             initial="hidden"
             animate="visible"
             variants={variants}
@@ -89,21 +89,26 @@ const ServicesSection = () => {
             </motion.h2>
 
             <motion.div
-              className="flex flex-col md:flex-row justify-center gap-12"
+              className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-6"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
             >
               {/* Botão Indivíduos */}
               <motion.div
-                className="bg-black rounded-lg p-6 cursor-pointer shadow-md flex-1 max-w-[220px]"
+                className="bg-black rounded-lg p-6 md:px-8 cursor-pointer shadow-md w-full md:flex-1 md:max-w-[45%]"
                 variants={itemVariants}
                 whileHover={buttonVariants.hover}
                 whileTap={buttonVariants.tap}
                 onClick={handleIndividualsClick}
               >
                 <div className="flex flex-col items-center">
-                  <User className="h-12 w-12 text-white mb-4" />
+                  {/* Substituindo o ícone User por uma imagem */}
+                  <img
+                    src={individualImage}
+                    alt="Indivíduos"
+                    className="h-12 w-12 mb-4 object-contain"
+                  />
                   <h3 className="text-xl font-bold text-white mb-1">
                     {t('service.overview.individuals.title')}
                   </h3>
@@ -115,14 +120,18 @@ const ServicesSection = () => {
 
               {/* Botão Negócios */}
               <motion.div
-                className="bg-black rounded-lg p-6 cursor-pointer shadow-md flex-1 max-w-[220px]"
+                className="bg-black rounded-lg p-6 md:px-8 cursor-pointer shadow-md w-full md:flex-1 md:max-w-[45%]"
                 variants={itemVariants}
                 whileHover={buttonVariants.hover}
                 whileTap={buttonVariants.tap}
                 onClick={handleBusinessClick}
               >
                 <div className="flex flex-col items-center">
-                  <Briefcase className="h-12 w-12 text-white mb-4" />
+                  <img
+                    src={businessImage}
+                    alt="Negócios"
+                    className="h-12 w-12 mb-4 object-contain"
+                  />
                   <h3 className="text-xl font-bold text-white mb-1">
                     {t('service.overview.business.title')}
                   </h3>
@@ -140,8 +149,8 @@ const ServicesSection = () => {
       <div className="border-t border-gray-200 w-full"></div>
 
       {/* Segunda parte - Comece pelo Bitcoin */}
-      <div className="py-16">
-        <div className="container mx-auto px-4">
+      <div className="py-16 relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             className="max-w-5xl mx-auto"
             initial="hidden"
@@ -153,40 +162,58 @@ const ServicesSection = () => {
               {t('service.bitcoin.title')}
             </h2>
 
-            <div className="text-gray-700 mb-8 space-y-4">
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: t('service.bitcoin.description.paragraph1'),
-                }}
-              />
-              <p>{t('service.bitcoin.description.paragraph2')}</p>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: t('service.bitcoin.description.paragraph3'),
-                }}
-              />
-            </div>
+            <div className="flex flex-col md:flex-row gap-16 items-center">
+              <div className="flex-1 relative z-10">
+                <div className="text-gray-700 mb-8 space-y-4">
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('service.bitcoin.description.paragraph1'),
+                    }}
+                  />
+                  <p>{t('service.bitcoin.description.paragraph2')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('service.bitcoin.description.paragraph3'),
+                    }}
+                  />
+                </div>
 
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <ChevronRight className="h-6 w-6 text-[#FF6A1F] mr-2" />
-                <span className="text-[#FF6A1F] font-medium">
-                  {t('service.bitcoin.benefits.0')}
-                </span>
-              </li>
-              <li className="flex items-center">
-                <ChevronRight className="h-6 w-6 text-[#FF6A1F] mr-2" />
-                <span className="text-[#FF6A1F] font-medium">
-                  {t('service.bitcoin.benefits.1')}
-                </span>
-              </li>
-              <li className="flex items-center">
-                <ChevronRight className="h-6 w-6 text-[#FF6A1F] mr-2" />
-                <span className="text-[#FF6A1F] font-medium">
-                  {t('service.bitcoin.benefits.2')}
-                </span>
-              </li>
-            </ul>
+                <ul className="space-y-4">
+                  <li className="flex items-center">
+                    <ChevronRight className="h-6 w-6 text-[#FF6A1F] mr-2" />
+                    <span className="text-[#FF6A1F] font-medium">
+                      {t('service.bitcoin.benefits.0')}
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <ChevronRight className="h-6 w-6 text-[#FF6A1F] mr-2" />
+                    <span className="text-[#FF6A1F] font-medium">
+                      {t('service.bitcoin.benefits.1')}
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <ChevronRight className="h-6 w-6 text-[#FF6A1F] mr-2" />
+                    <span className="text-[#FF6A1F] font-medium">
+                      {t('service.bitcoin.benefits.2')}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Imagem BRL+BTC à direita */}
+              <motion.div
+                className="flex-shrink-0 md:w-2/5 md:pl-4 md:flex md:justify-end relative z-10"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <img
+                  src={brl_btc}
+                  alt="Real e Bitcoin"
+                  className="w-full max-w-[320px] mx-auto"
+                />
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
