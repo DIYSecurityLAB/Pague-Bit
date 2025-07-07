@@ -1,16 +1,14 @@
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaTelegramPlane } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const phoneNumber = '+5511977328121';
-const message = 'Olá, vim do Pague Bit, gostaria de entrar em contato'; // Mensagem exclusiva para PJ
-const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+const url = `https://t.me/paguebit`;
 
 export const socialLinks = [
   {
-    Icon: FaWhatsapp,
-    name: 'WhatsApp',
+    Icon: FaTelegramPlane,
+    name: 'Telegram',
     url: url,
-    colorClass: 'text-green-500',
+    colorClass: 'text-blue-500',
   },
   {
     Icon: FaInstagram,
