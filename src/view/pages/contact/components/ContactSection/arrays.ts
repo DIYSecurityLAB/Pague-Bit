@@ -1,14 +1,16 @@
-import { FaInstagram, FaTelegramPlane } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const url = `https://t.me/paguebit`;
+const phoneNumber = '+5511919050416';
+const message = 'Olá, vim do Pague Bit, gostaria de entrar em contato';
+const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
 export const socialLinks = [
   {
-    Icon: FaTelegramPlane,
-    name: 'Telegram',
+    Icon: FaWhatsapp,
+    name: 'WhatsApp',
     url: url,
-    colorClass: 'text-blue-500',
+    colorClass: 'text-green-500',
   },
   {
     Icon: FaInstagram,
