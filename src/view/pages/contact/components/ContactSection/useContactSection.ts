@@ -8,8 +8,8 @@ interface FormData {
 }
 
 export const useContactSection = () => {
-  // Número para o qual será enviada a mensagem (substitua pelo número correto)
-  const telegramUsername = 'paguebit';
+  // Número para o qual será enviada a mensagem
+  const whatsappNumber = '5511919050416';
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -20,15 +20,16 @@ export const useContactSection = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const formatTelegramMessage = (data: FormData): string => {
-    const message = `🔔 Novo contato PagueBit
-
-👤 Nome: ${data.name}
-🏢 Empresa: ${data.company}
-📧 Email: ${data.email}
-💬 Mensagem: ${data.message}
-
-Enviado através do site PagueBit`;
+  const formatWhatsAppMessage = (data: FormData): string => {
+    const message = `
+*Novo contato PagueBit*
+-------------------
+*Nome:* ${data.name}
+*Empresa:* ${data.company}
+*Email:* ${data.email}
+*Mensagem:* ${data.message}
+-------------------
+    `;
 
     return encodeURIComponent(message);
   };
@@ -38,11 +39,11 @@ Enviado através do site PagueBit`;
     setIsLoading(true);
 
     try {
-      // Prepara a URL do Telegram com a mensagem formatada
-      const telegramUrl = `https://t.me/${telegramUsername}?text=${formatTelegramMessage(formData)}`;
+      // Prepara a URL do WhatsApp com a mensagem formatada
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${formatWhatsAppMessage(formData)}`;
 
-      // Redireciona para o Telegram
-      window.open(telegramUrl, '_blank');
+      // Redireciona para o WhatsApp
+      window.open(whatsappUrl, '_blank');
 
       // Limpa o formulário após enviar
       setFormData({ name: '', email: '', company: '', message: '' });
