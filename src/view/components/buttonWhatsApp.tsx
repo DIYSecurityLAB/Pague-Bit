@@ -5,7 +5,7 @@ function WhatsAppButton() {
     <button
       onClick={() =>
         window.open(
-          'https://wa.me/5511919050416?text=Ol%C3%A1,%20Tudo%20bem?%0A%0APreciso%20de%20ajuda%20sobre%20os%20produtos%20da%20PAGUE%20BIT...',
+          'https://wa.me/5511948532735?text=Ol%C3%A1,%20Tudo%20bem?%0A%0APreciso%20de%20ajuda%20sobre%20os%20produtos%20da%20PAGUE%20BIT...',
           '_blank',
         )
       }
