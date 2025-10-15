@@ -9,7 +9,7 @@ interface FormData {
 
 export const useContactSection = () => {
   // Número para o qual será enviada a mensagem
-  const whatsappNumber = '5511919050416';
+  const whatsappNumber = '5511948532735';
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
