@@ -1,7 +1,7 @@
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const phoneNumber = '+5511919050416';
+const phoneNumber = '+5511948532735';
 const message = 'Olá, vim do Pague Bit, gostaria de entrar em contato';
 const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
